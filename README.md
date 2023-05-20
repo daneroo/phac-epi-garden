@@ -4,22 +4,24 @@ Monorepo based on [create-t3-turbo](https://github.com/t3-oss/create-t3-turbo)
 
 ## TODO
 
+- [x] recreate phac-epi_center db to prisma pull
+  - [ ] get and connect a neon db for production
+- [ ] rename @acme to @phac
+- [ ] deploy to vercel
+- [ ] rename `apps/nextjs -> apps/epi-t3` (adjust vercel build)
+  - [ ] deploy with neon (for prod)
+- Other services from t3 tutorial: <https://www.youtube.com/watch?v=YkOSUVzOAA4>
+  - Changing stack: <https://www.youtube.com/watch?v=hgglCqAXHuE>
+- `----- DONE (for now) -----`
+- [x] seed database based on epi_center
+  - [ ] docs (here) to recreate (diesel seed, then pull generate push)
+- [x] build and run locally
+  - [x] setup turbo token for ci and locally
+- [x] create git repo
 - [x] remove expo
   - [x] remove all references to expo
   - [ ] `.npmrc`: could remove `node-linker=hoisted`
   - [ ] `turbo.json` could remove `build:outputs[] ".expo/**"`
-- [x] recreate phac-epi_center db to prisma pull
-  - [ ] get and connect a neon db for production
-- [x] build and run locally
-  - [x] setup turbo token for ci
-- [ ] rename @acme to @phac
-- [ ] rename and deploy `apps/nextjs -> apps/epi-t3`to vercel
-  - [ ] deploy with planetscale or neon
-- Other services from t3 tutorial: <https://www.youtube.com/watch?v=YkOSUVzOAA4>
-  - Changing stack: <https://www.youtube.com/watch?v=hgglCqAXHuE>
-- [x] seed database based on epi_center
-  - [ ] docs (here) to recreate (diesel seed, then pull generate push)
-- [x] create git repo
 
 ## Usage
 
@@ -67,7 +69,23 @@ pnpm db:push
 
 ### neon db
 
-- provision and set vars in vercel/github/local def of prod?
+- Docs: <https://neon.tech/docs/guides/prisma>
+- Manage your db's at <https://console.neon.tech/app/projects>.
+
+- provision and set vars in vercel/github/local dev or prod?
+
+### deploy to vercel
+
+Deploying to domain: <https://t3.epi.phac.v.imetrical.com/>
+
+Added Vars:
+
+- DATABASE_URL=postgres://daneroo:..
+- DIRECT_URL=postgres://daneroo:...
+- DISCORD_CLIENT_ID=... (same as local)
+- DISCORD_CLIENT_SECRET=... (same as local)
+- NEXTAUTH_URL=https://t3.epi.phac.v.imetrical.com/
+- NEXTAUTH_SECRET=`openssl rand -base64 32` : newly generated for prod
 
 ### turbo cache
 
