@@ -4,8 +4,11 @@ Monorepo based on [create-t3-turbo](https://github.com/t3-oss/create-t3-turbo)
 
 ## TODO
 
+- [ ] build and run locally
 - [ ] create git repo
+  - setup turbo token for ci
 - [ ] rename and deploy `apps/nextjs` to vercel
+  - [ ] deploy with planetscale or neon
 - [ ] seed database based on epi_center
 
 ## Usage
@@ -28,13 +31,16 @@ npx create-turbo@latest -e https://github.com/t3-oss/create-t3-turbo
 ```
 
 ---
+
 ## UPSTREAM README create-t3-turbo
 
+<!-- markdownlint-disable MD033 -->
 <img width="1758" alt="turbo2" src="https://user-images.githubusercontent.com/51714798/213819392-33e50db9-3e38-4c51-9a22-03abe5e48f3d.png">
 
 ## Installation
 
 There are two ways of initializing an app using `create-t3-turbo` starter. You can either use this repository as a template or use Turbo's CLI to init your project:
+
 ```bash
 npx create-turbo@latest -e https://github.com/t3-oss/create-t3-turbo
 ```
@@ -45,7 +51,7 @@ Ever wondered how to migrate your T3 application into a monorepo? Stop right her
 
 It uses [Turborepo](https://turborepo.org/) and contains:
 
-```
+```txt
 .github
   └─ workflows
         └─ CI with pnpm cache setup
