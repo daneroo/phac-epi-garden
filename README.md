@@ -65,7 +65,8 @@ pnpm db:push
     - set NEXTAUTH_SECRET=$(openssl rand -base64 32)
     - create application: <https://discord.com/developers/applications>
     - get DISCORD_CLIENT_ID, DISCORD_CLIENT_SECRET
-    - set at least on redirect url in application : <http://localhost:3000/api/auth/callback/discord>
+    - set at least one redirect url in application : <http://localhost:3000/api/auth/callback/discord>
+    - also for prod: redirect url: <https://t3.epi.phac.v.imetrical.com/api/auth/callback/discord>
 
 ### neon db
 
