@@ -7,7 +7,9 @@ Monorepo based on [create-t3-turbo](https://github.com/t3-oss/create-t3-turbo)
 - [ ] build and run locally
 - [ ] create git repo
   - setup turbo token for ci
-- [ ] rename and deploy `apps/nextjs` to vercel
+- [ ] remove expo
+- [ ] rename @acme to @phac
+- [ ] rename and deploy `apps/nextjs -> apps/epi-t3`to vercel
   - [ ] deploy with planetscale or neon
 - [ ] seed database based on epi_center
 
