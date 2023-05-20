@@ -1,5 +1,6 @@
 packages:
-  - apps/expo
+  # removing expo
+  # - apps/expo
   - apps/nextjs
   - packages/api
   - packages/auth

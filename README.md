@@ -4,7 +4,8 @@ Monorepo based on [create-t3-turbo](https://github.com/t3-oss/create-t3-turbo)
 
 ## TODO
 
-- [ ] remove expo
+- [x] remove expo
+  - [ ] remove all references to expo  
 - [x] recreate phac-epi_center db to prisma pull
   - [ ] get and connect a neon db for production
 - [ ] build and run locally
@@ -18,6 +19,8 @@ Monorepo based on [create-t3-turbo](https://github.com/t3-oss/create-t3-turbo)
 ## Usage
 
 ```txt
+pnpm run db:push db:generate
+   Update the Models and generated code: what order?
 pnpm run build
    Build all apps and packages
 
@@ -34,7 +37,7 @@ pnpm run lint
 npx create-turbo@latest -e https://github.com/t3-oss/create-t3-turbo
 ```
 
-### Introspect fom
+### Introspect from existing epi_center db
 
 ```bash
 cd packages/db
@@ -42,8 +45,17 @@ pnpm db:pull # prisma db pull
 # but keep model Post
 pnpm db:generate
 pnpm db:push
+```
 
-``
+### Next Auth
+
+- <https://next-auth.js.org/providers/discord>
+  - .env:
+    - set NEXTAUTH_SECRET=$(openssl rand -base64 32)
+    - create application: <https://discord.com/developers/applications>
+    - get DISCORD_CLIENT_ID, DISCORD_CLIENT_SECRET
+    - set at least on redirect url in application : <http://localhost:3000/api/auth/callback/discord>
+
 ---
 
 ## UPSTREAM README create-t3-turbo
