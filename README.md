@@ -5,30 +5,39 @@ Monorepo based on [create-t3-turbo](https://github.com/t3-oss/create-t3-turbo)
 ## TODO
 
 - [x] remove expo
-  - [ ] remove all references to expo  
+  - [x] remove all references to expo
+  - [ ] `.npmrc`: could remove `node-linker=hoisted`
+  - [ ] `turbo.json` could remove `build:outputs[] ".expo/**"`
 - [x] recreate phac-epi_center db to prisma pull
   - [ ] get and connect a neon db for production
-- [ ] build and run locally
-- [ ] create git repo
-  - setup turbo token for ci
+- [x] build and run locally
+  - [x] setup turbo token for ci
 - [ ] rename @acme to @phac
 - [ ] rename and deploy `apps/nextjs -> apps/epi-t3`to vercel
   - [ ] deploy with planetscale or neon
-- [ ] seed database based on epi_center
+- Other services from t3 tutorial: <https://www.youtube.com/watch?v=YkOSUVzOAA4>
+  - Changing stack: <https://www.youtube.com/watch?v=hgglCqAXHuE>
+- [x] seed database based on epi_center
+  - [ ] docs (here) to recreate (diesel seed, then pull generate push)
+- [x] create git repo
 
 ## Usage
 
 ```txt
 pnpm run db:push db:generate
    Update the Models and generated code: what order?
+
 pnpm run build
-   Build all apps and packages
+  Build all apps and packages
 
 pnpm run dev
-   Develop all apps and packages
+  Develop all apps and packages
 
 pnpm run lint
-   Lint all apps and packages
+  Lint all apps and packages
+
+pnpm manypkg check
+  Not sure, part of ci
 ```
 
 ## Setup
@@ -56,6 +65,20 @@ pnpm db:push
     - get DISCORD_CLIENT_ID, DISCORD_CLIENT_SECRET
     - set at least on redirect url in application : <http://localhost:3000/api/auth/callback/discord>
 
+### neon db
+
+- provision and set vars in vercel/github/local def of prod?
+
+### turbo cache
+
+- `npx turbo login`
+- `npx turbo link`: to undo `npx turbo unlink`
+- Link remote caching on vercel/github: <https://turbo.build/repo/docs/ci/github-actions>
+  - TURBO_TOKEN, is a secret in GitHub actions secrets
+  - TURBO_TEAM=daneroo, is a variable in GitHub actions variables
+- To verify, delete your local Turborepo cache with:
+  - `rm -rf ./node_modules/.cache/turbo`
+- [ ] sign remote cache: <https://turbo.build/repo/docs/core-concepts/remote-caching#artifact-integrity-and-authenticity-verification>
 ---
 
 ## UPSTREAM README create-t3-turbo
