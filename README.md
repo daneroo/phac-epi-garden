@@ -4,10 +4,12 @@ Monorepo based on [create-t3-turbo](https://github.com/t3-oss/create-t3-turbo)
 
 ## TODO
 
+- [ ] remove expo
+- [x] recreate phac-epi_center db to prisma pull
+  - [ ] get and connect a neon db for production
 - [ ] build and run locally
 - [ ] create git repo
   - setup turbo token for ci
-- [ ] remove expo
 - [ ] rename @acme to @phac
 - [ ] rename and deploy `apps/nextjs -> apps/epi-t3`to vercel
   - [ ] deploy with planetscale or neon
@@ -32,6 +34,16 @@ pnpm run lint
 npx create-turbo@latest -e https://github.com/t3-oss/create-t3-turbo
 ```
 
+### Introspect fom
+
+```bash
+cd packages/db
+pnpm db:pull # prisma db pull
+# but keep model Post
+pnpm db:generate
+pnpm db:push
+
+``
 ---
 
 ## UPSTREAM README create-t3-turbo
