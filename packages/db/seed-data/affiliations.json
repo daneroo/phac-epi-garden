@@ -1,0 +1,2432 @@
+[
+  {
+    "id": "f7f0622c-22f2-4240-a119-6683af5e8923",
+    "person_id": "ea9dbff4-70b0-4ef3-bb0f-8214be1b8c89",
+    "organization_id": "7b969060-f5bf-4dd8-b2e1-0d8bed065ce5",
+    "affiliation_role": "Research Affiliate",
+    "start_datestamp": "2023-05-20T06:21:25.409Z",
+    "end_date": null,
+    "created_at": "2023-05-20T06:21:25.409Z",
+    "updated_at": "2023-05-20T06:21:25.409Z"
+  },
+  {
+    "id": "487bce00-cc56-4be8-abdf-ccd8f1e4ed00",
+    "person_id": "8388155f-b07e-43a5-9c46-97da1c05c15a",
+    "organization_id": "7b969060-f5bf-4dd8-b2e1-0d8bed065ce5",
+    "affiliation_role": "Research Affiliate",
+    "start_datestamp": "2023-05-20T06:21:25.413Z",
+    "end_date": null,
+    "created_at": "2023-05-20T06:21:25.413Z",
+    "updated_at": "2023-05-20T06:21:25.413Z"
+  },
+  {
+    "id": "28df1e96-170e-425f-a2c7-2c25f276492f",
+    "person_id": "c766ddb2-1115-4221-aa2a-e6c1c2ca8507",
+    "organization_id": "712529e4-0f3c-41f1-b51d-931d09d6e06c",
+    "affiliation_role": "Research Affiliate",
+    "start_datestamp": "2023-05-20T06:21:25.416Z",
+    "end_date": null,
+    "created_at": "2023-05-20T06:21:25.416Z",
+    "updated_at": "2023-05-20T06:21:25.416Z"
+  },
+  {
+    "id": "f0f9b87c-5591-4dc6-92bf-7cbb55468a64",
+    "person_id": "39cd63cc-de9c-49aa-b59f-c6e7678e9afb",
+    "organization_id": "712529e4-0f3c-41f1-b51d-931d09d6e06c",
+    "affiliation_role": "Research Affiliate",
+    "start_datestamp": "2023-05-20T06:21:25.421Z",
+    "end_date": null,
+    "created_at": "2023-05-20T06:21:25.421Z",
+    "updated_at": "2023-05-20T06:21:25.421Z"
+  },
+  {
+    "id": "49db4657-e7f2-4ba0-be33-062a145e50aa",
+    "person_id": "a1bf55d8-40c9-4f2f-b982-2619706074db",
+    "organization_id": "d82f0108-c7ad-43ed-8ba7-195f10800cc0",
+    "affiliation_role": "Research Affiliate",
+    "start_datestamp": "2023-05-20T06:21:25.424Z",
+    "end_date": null,
+    "created_at": "2023-05-20T06:21:25.424Z",
+    "updated_at": "2023-05-20T06:21:25.424Z"
+  },
+  {
+    "id": "850e6221-521a-4a79-8cf4-849f0aca9d9e",
+    "person_id": "64f0bce4-52d2-420e-9efc-666903a88ad9",
+    "organization_id": "16f7f189-d469-4091-aadc-9ea91eab9269",
+    "affiliation_role": "Research Affiliate",
+    "start_datestamp": "2023-05-20T06:21:25.425Z",
+    "end_date": null,
+    "created_at": "2023-05-20T06:21:25.425Z",
+    "updated_at": "2023-05-20T06:21:25.425Z"
+  },
+  {
+    "id": "71324661-9b85-47b0-980b-1222cd92adb1",
+    "person_id": "2a46c60f-4a80-45ad-a34a-cfc431d0661b",
+    "organization_id": "8a585313-b1eb-425d-a649-950a0209292a",
+    "affiliation_role": "Research Affiliate",
+    "start_datestamp": "2023-05-20T06:21:25.426Z",
+    "end_date": null,
+    "created_at": "2023-05-20T06:21:25.426Z",
+    "updated_at": "2023-05-20T06:21:25.426Z"
+  },
+  {
+    "id": "a2431e96-ce18-4edb-b8ec-a1d0e1bb85d3",
+    "person_id": "8a0cc0a9-0bd4-40d1-bd99-a6e5d870acf2",
+    "organization_id": "a7bfbc87-d99a-44cb-aa31-ba2e98a8174d",
+    "affiliation_role": "Research Affiliate",
+    "start_datestamp": "2023-05-20T06:21:25.429Z",
+    "end_date": null,
+    "created_at": "2023-05-20T06:21:25.429Z",
+    "updated_at": "2023-05-20T06:21:25.429Z"
+  },
+  {
+    "id": "00b57a5d-fe46-44c3-99a6-9fbcd120195d",
+    "person_id": "2cd18ed3-0f2d-4f8d-8d20-12192cf51f45",
+    "organization_id": "8a585313-b1eb-425d-a649-950a0209292a",
+    "affiliation_role": "Research Affiliate",
+    "start_datestamp": "2023-05-20T06:21:25.430Z",
+    "end_date": null,
+    "created_at": "2023-05-20T06:21:25.430Z",
+    "updated_at": "2023-05-20T06:21:25.430Z"
+  },
+  {
+    "id": "4ca76684-5a1a-48a8-8843-f203a9661ab7",
+    "person_id": "7236b696-8413-4c2b-9e4b-22031ce79310",
+    "organization_id": "d82f0108-c7ad-43ed-8ba7-195f10800cc0",
+    "affiliation_role": "Research Affiliate",
+    "start_datestamp": "2023-05-20T06:21:25.445Z",
+    "end_date": null,
+    "created_at": "2023-05-20T06:21:25.445Z",
+    "updated_at": "2023-05-20T06:21:25.445Z"
+  },
+  {
+    "id": "9db4233d-9af7-4ac7-965f-7178a135df93",
+    "person_id": "0b1358ac-2bb9-467c-9fb0-27202ff3057f",
+    "organization_id": "8df34528-94d7-4db8-98f1-4ef4b72f9f9c",
+    "affiliation_role": "Research Affiliate",
+    "start_datestamp": "2023-05-20T06:21:25.445Z",
+    "end_date": null,
+    "created_at": "2023-05-20T06:21:25.445Z",
+    "updated_at": "2023-05-20T06:21:25.445Z"
+  },
+  {
+    "id": "1a7af85b-881b-4bbb-b023-88e8fdb02034",
+    "person_id": "b82cf5f1-8d47-472f-8c93-c419e5a19654",
+    "organization_id": "8a585313-b1eb-425d-a649-950a0209292a",
+    "affiliation_role": "Research Affiliate",
+    "start_datestamp": "2023-05-20T06:21:25.448Z",
+    "end_date": null,
+    "created_at": "2023-05-20T06:21:25.448Z",
+    "updated_at": "2023-05-20T06:21:25.448Z"
+  },
+  {
+    "id": "9fa0b9e2-d1ba-4395-9a00-3a8533f1a928",
+    "person_id": "8785bcfa-0c9a-483d-b11d-814642eb037f",
+    "organization_id": "a7bfbc87-d99a-44cb-aa31-ba2e98a8174d",
+    "affiliation_role": "Research Affiliate",
+    "start_datestamp": "2023-05-20T06:21:25.453Z",
+    "end_date": null,
+    "created_at": "2023-05-20T06:21:25.453Z",
+    "updated_at": "2023-05-20T06:21:25.453Z"
+  },
+  {
+    "id": "7633466d-2c01-49ad-9177-694a398990fd",
+    "person_id": "6979101f-0795-48fa-a68b-9fb2330a3892",
+    "organization_id": "8df34528-94d7-4db8-98f1-4ef4b72f9f9c",
+    "affiliation_role": "Research Affiliate",
+    "start_datestamp": "2023-05-20T06:21:25.462Z",
+    "end_date": null,
+    "created_at": "2023-05-20T06:21:25.462Z",
+    "updated_at": "2023-05-20T06:21:25.462Z"
+  },
+  {
+    "id": "9433d54c-e6bc-4b9d-bfcd-706186f4362a",
+    "person_id": "df0105d1-ddea-4f1f-aca5-67b95a9b486f",
+    "organization_id": "712529e4-0f3c-41f1-b51d-931d09d6e06c",
+    "affiliation_role": "Research Affiliate",
+    "start_datestamp": "2023-05-20T06:21:25.469Z",
+    "end_date": null,
+    "created_at": "2023-05-20T06:21:25.469Z",
+    "updated_at": "2023-05-20T06:21:25.469Z"
+  },
+  {
+    "id": "91fe27d1-cb09-4788-85da-9b051993d7b5",
+    "person_id": "13bfd5b0-9578-4fdf-8709-0145782d20fb",
+    "organization_id": "712529e4-0f3c-41f1-b51d-931d09d6e06c",
+    "affiliation_role": "Research Affiliate",
+    "start_datestamp": "2023-05-20T06:21:25.524Z",
+    "end_date": null,
+    "created_at": "2023-05-20T06:21:25.524Z",
+    "updated_at": "2023-05-20T06:21:25.524Z"
+  },
+  {
+    "id": "fe486de1-f6e7-4dcb-a7fa-a819f9652e6c",
+    "person_id": "a827eb82-6990-4deb-9c4f-1d8d0d93ed4a",
+    "organization_id": "8a585313-b1eb-425d-a649-950a0209292a",
+    "affiliation_role": "Research Affiliate",
+    "start_datestamp": "2023-05-20T06:21:25.563Z",
+    "end_date": null,
+    "created_at": "2023-05-20T06:21:25.563Z",
+    "updated_at": "2023-05-20T06:21:25.563Z"
+  },
+  {
+    "id": "b3878890-7603-47a6-ac97-d2514351134b",
+    "person_id": "f74ae138-bc96-4dc3-9cc4-9f3f32947cd0",
+    "organization_id": "8df34528-94d7-4db8-98f1-4ef4b72f9f9c",
+    "affiliation_role": "Research Affiliate",
+    "start_datestamp": "2023-05-20T06:21:25.576Z",
+    "end_date": null,
+    "created_at": "2023-05-20T06:21:25.576Z",
+    "updated_at": "2023-05-20T06:21:25.576Z"
+  },
+  {
+    "id": "bdb56540-fed7-47fd-bf23-8a1f76e9777d",
+    "person_id": "7a755f60-1467-4e74-98b1-0d148796da91",
+    "organization_id": "16f7f189-d469-4091-aadc-9ea91eab9269",
+    "affiliation_role": "Research Affiliate",
+    "start_datestamp": "2023-05-20T06:21:25.583Z",
+    "end_date": null,
+    "created_at": "2023-05-20T06:21:25.583Z",
+    "updated_at": "2023-05-20T06:21:25.583Z"
+  },
+  {
+    "id": "79f965cd-3984-4126-97a8-e417b42348d4",
+    "person_id": "6a32894a-3528-453e-ab7a-4ee2a3fb37bc",
+    "organization_id": "62452d77-be85-4720-b720-ebcef2f0bf51",
+    "affiliation_role": "Research Affiliate",
+    "start_datestamp": "2023-05-20T06:21:25.590Z",
+    "end_date": null,
+    "created_at": "2023-05-20T06:21:25.590Z",
+    "updated_at": "2023-05-20T06:21:25.590Z"
+  },
+  {
+    "id": "91016fba-e585-4db7-99c8-f0f352aaad15",
+    "person_id": "4719a9ee-bcb1-419a-9ba4-e11effd10a50",
+    "organization_id": "712529e4-0f3c-41f1-b51d-931d09d6e06c",
+    "affiliation_role": "Research Affiliate",
+    "start_datestamp": "2023-05-20T06:21:25.593Z",
+    "end_date": null,
+    "created_at": "2023-05-20T06:21:25.593Z",
+    "updated_at": "2023-05-20T06:21:25.593Z"
+  },
+  {
+    "id": "8e8004b5-3017-469b-af33-a445aa6948fe",
+    "person_id": "1f9f6f6d-3c2d-4506-afcd-de2763e46778",
+    "organization_id": "7b969060-f5bf-4dd8-b2e1-0d8bed065ce5",
+    "affiliation_role": "Research Affiliate",
+    "start_datestamp": "2023-05-20T06:21:25.597Z",
+    "end_date": null,
+    "created_at": "2023-05-20T06:21:25.597Z",
+    "updated_at": "2023-05-20T06:21:25.597Z"
+  },
+  {
+    "id": "387aceb6-d519-4379-8899-6e288d127f4e",
+    "person_id": "1824a525-eb23-4c22-95fb-a36697a2caa8",
+    "organization_id": "62452d77-be85-4720-b720-ebcef2f0bf51",
+    "affiliation_role": "Research Affiliate",
+    "start_datestamp": "2023-05-20T06:21:25.602Z",
+    "end_date": null,
+    "created_at": "2023-05-20T06:21:25.602Z",
+    "updated_at": "2023-05-20T06:21:25.602Z"
+  },
+  {
+    "id": "d5ac51fc-69e1-4e77-a114-9206203eaf38",
+    "person_id": "fbc475bb-5f45-4b74-a914-9d9e4034e73d",
+    "organization_id": "62452d77-be85-4720-b720-ebcef2f0bf51",
+    "affiliation_role": "Research Affiliate",
+    "start_datestamp": "2023-05-20T06:21:25.621Z",
+    "end_date": null,
+    "created_at": "2023-05-20T06:21:25.621Z",
+    "updated_at": "2023-05-20T06:21:25.621Z"
+  },
+  {
+    "id": "8ff17948-b240-4f1e-8997-91d375a86999",
+    "person_id": "23e889a2-3ff5-4887-8131-617c0cd35b0d",
+    "organization_id": "62452d77-be85-4720-b720-ebcef2f0bf51",
+    "affiliation_role": "Research Affiliate",
+    "start_datestamp": "2023-05-20T06:21:25.650Z",
+    "end_date": null,
+    "created_at": "2023-05-20T06:21:25.650Z",
+    "updated_at": "2023-05-20T06:21:25.650Z"
+  },
+  {
+    "id": "cb5f854f-667c-4019-8020-e5e69fc32ecb",
+    "person_id": "62a7b26c-a955-4a6e-a2e8-8fe64402c217",
+    "organization_id": "8df34528-94d7-4db8-98f1-4ef4b72f9f9c",
+    "affiliation_role": "Research Affiliate",
+    "start_datestamp": "2023-05-20T06:21:25.681Z",
+    "end_date": null,
+    "created_at": "2023-05-20T06:21:25.681Z",
+    "updated_at": "2023-05-20T06:21:25.681Z"
+  },
+  {
+    "id": "be32f8fd-b8dc-49b5-b1e7-7835127fd63e",
+    "person_id": "13ca63e7-a293-4ca2-94d0-0fb96b45d3bb",
+    "organization_id": "8df34528-94d7-4db8-98f1-4ef4b72f9f9c",
+    "affiliation_role": "Research Affiliate",
+    "start_datestamp": "2023-05-20T06:21:25.682Z",
+    "end_date": null,
+    "created_at": "2023-05-20T06:21:25.682Z",
+    "updated_at": "2023-05-20T06:21:25.682Z"
+  },
+  {
+    "id": "d2e4579b-56db-45e7-930d-aa153e469610",
+    "person_id": "0e195d12-20eb-4342-9ff3-465a1b884d0a",
+    "organization_id": "62452d77-be85-4720-b720-ebcef2f0bf51",
+    "affiliation_role": "Research Affiliate",
+    "start_datestamp": "2023-05-20T06:21:25.688Z",
+    "end_date": null,
+    "created_at": "2023-05-20T06:21:25.688Z",
+    "updated_at": "2023-05-20T06:21:25.688Z"
+  },
+  {
+    "id": "9faa5763-24c2-407a-b926-3bae0d6e235e",
+    "person_id": "a44d8326-33fc-4667-9d6e-643906002f7f",
+    "organization_id": "62452d77-be85-4720-b720-ebcef2f0bf51",
+    "affiliation_role": "Research Affiliate",
+    "start_datestamp": "2023-05-20T06:21:25.700Z",
+    "end_date": null,
+    "created_at": "2023-05-20T06:21:25.700Z",
+    "updated_at": "2023-05-20T06:21:25.700Z"
+  },
+  {
+    "id": "a0136e1e-03ec-40af-a6cb-9a8c7624b3b4",
+    "person_id": "df4f7d1b-5773-4447-a0b2-4c443aabf74c",
+    "organization_id": "d82f0108-c7ad-43ed-8ba7-195f10800cc0",
+    "affiliation_role": "Research Affiliate",
+    "start_datestamp": "2023-05-20T06:21:25.702Z",
+    "end_date": null,
+    "created_at": "2023-05-20T06:21:25.702Z",
+    "updated_at": "2023-05-20T06:21:25.702Z"
+  },
+  {
+    "id": "c5d75a4f-55b7-4528-bd1d-9e290ca154bc",
+    "person_id": "1b295d99-fbd5-4eb0-a426-f62b4f210173",
+    "organization_id": "62452d77-be85-4720-b720-ebcef2f0bf51",
+    "affiliation_role": "Research Affiliate",
+    "start_datestamp": "2023-05-20T06:21:25.707Z",
+    "end_date": null,
+    "created_at": "2023-05-20T06:21:25.707Z",
+    "updated_at": "2023-05-20T06:21:25.707Z"
+  },
+  {
+    "id": "9fab9698-4e17-4cc1-b046-a6ec437ed47e",
+    "person_id": "6117387f-4fc6-44ca-844d-b80d18fd0747",
+    "organization_id": "8df34528-94d7-4db8-98f1-4ef4b72f9f9c",
+    "affiliation_role": "Research Affiliate",
+    "start_datestamp": "2023-05-20T06:21:25.711Z",
+    "end_date": null,
+    "created_at": "2023-05-20T06:21:25.711Z",
+    "updated_at": "2023-05-20T06:21:25.711Z"
+  },
+  {
+    "id": "fd358847-6070-4ef8-ae41-aa8791318f73",
+    "person_id": "9c1ea971-e716-4b4f-938a-1bbecd5b2787",
+    "organization_id": "d82f0108-c7ad-43ed-8ba7-195f10800cc0",
+    "affiliation_role": "Research Affiliate",
+    "start_datestamp": "2023-05-20T06:21:25.712Z",
+    "end_date": null,
+    "created_at": "2023-05-20T06:21:25.712Z",
+    "updated_at": "2023-05-20T06:21:25.712Z"
+  },
+  {
+    "id": "13c86855-1de9-42aa-afaa-2369e3c4d733",
+    "person_id": "37fcc9e6-31e6-41d6-a96d-54e046903d28",
+    "organization_id": "712529e4-0f3c-41f1-b51d-931d09d6e06c",
+    "affiliation_role": "Research Affiliate",
+    "start_datestamp": "2023-05-20T06:21:25.718Z",
+    "end_date": null,
+    "created_at": "2023-05-20T06:21:25.718Z",
+    "updated_at": "2023-05-20T06:21:25.718Z"
+  },
+  {
+    "id": "51d5905b-1f0f-47bd-a6e0-96a3f34a7936",
+    "person_id": "ff6876fd-deaa-4595-a726-0167717f9cc1",
+    "organization_id": "f8e36101-7049-486a-9546-66fce1282cbd",
+    "affiliation_role": "Research Affiliate",
+    "start_datestamp": "2023-05-20T06:21:25.721Z",
+    "end_date": null,
+    "created_at": "2023-05-20T06:21:25.721Z",
+    "updated_at": "2023-05-20T06:21:25.721Z"
+  },
+  {
+    "id": "cc7183cb-3300-4754-b2f4-f2dc09f144d6",
+    "person_id": "eed4a9cf-4930-4fa8-bb14-0f2a85ce638b",
+    "organization_id": "16f7f189-d469-4091-aadc-9ea91eab9269",
+    "affiliation_role": "Research Affiliate",
+    "start_datestamp": "2023-05-20T06:21:25.751Z",
+    "end_date": null,
+    "created_at": "2023-05-20T06:21:25.751Z",
+    "updated_at": "2023-05-20T06:21:25.751Z"
+  },
+  {
+    "id": "d9d43b43-1fb0-4520-9c56-43339ce93168",
+    "person_id": "1f5bc78a-4a9c-48b0-9088-2cc8b2df4f62",
+    "organization_id": "d82f0108-c7ad-43ed-8ba7-195f10800cc0",
+    "affiliation_role": "Research Affiliate",
+    "start_datestamp": "2023-05-20T06:21:25.756Z",
+    "end_date": null,
+    "created_at": "2023-05-20T06:21:25.756Z",
+    "updated_at": "2023-05-20T06:21:25.756Z"
+  },
+  {
+    "id": "2c773375-0882-4bac-892c-64fb22d169d0",
+    "person_id": "ede206f1-c38a-4a18-9f4d-ddef5e4ec395",
+    "organization_id": "8df34528-94d7-4db8-98f1-4ef4b72f9f9c",
+    "affiliation_role": "Research Affiliate",
+    "start_datestamp": "2023-05-20T06:21:25.774Z",
+    "end_date": null,
+    "created_at": "2023-05-20T06:21:25.774Z",
+    "updated_at": "2023-05-20T06:21:25.774Z"
+  },
+  {
+    "id": "0bd47f36-25c6-4b22-ab88-b57725cd61e3",
+    "person_id": "82dbc97d-0aa5-4e45-b32a-9f28d449fa66",
+    "organization_id": "16f7f189-d469-4091-aadc-9ea91eab9269",
+    "affiliation_role": "Research Affiliate",
+    "start_datestamp": "2023-05-20T06:21:25.775Z",
+    "end_date": null,
+    "created_at": "2023-05-20T06:21:25.775Z",
+    "updated_at": "2023-05-20T06:21:25.775Z"
+  },
+  {
+    "id": "8b035322-7def-44a2-a337-0601e7817774",
+    "person_id": "3b6415bb-92d3-4588-b525-80b1d57debb7",
+    "organization_id": "f8e36101-7049-486a-9546-66fce1282cbd",
+    "affiliation_role": "Research Affiliate",
+    "start_datestamp": "2023-05-20T06:21:25.779Z",
+    "end_date": null,
+    "created_at": "2023-05-20T06:21:25.779Z",
+    "updated_at": "2023-05-20T06:21:25.779Z"
+  },
+  {
+    "id": "83ff8334-268a-4a5b-a93f-aba8d9ec0054",
+    "person_id": "f12c8633-7ba7-49b1-bc40-f1fc6cbd5d50",
+    "organization_id": "7b969060-f5bf-4dd8-b2e1-0d8bed065ce5",
+    "affiliation_role": "Research Affiliate",
+    "start_datestamp": "2023-05-20T06:21:25.780Z",
+    "end_date": null,
+    "created_at": "2023-05-20T06:21:25.780Z",
+    "updated_at": "2023-05-20T06:21:25.780Z"
+  },
+  {
+    "id": "6ea26cda-afce-4798-bbc0-87bac6c2ed42",
+    "person_id": "a73f9998-44fa-429a-a6b9-68424ae7d55d",
+    "organization_id": "62452d77-be85-4720-b720-ebcef2f0bf51",
+    "affiliation_role": "Research Affiliate",
+    "start_datestamp": "2023-05-20T06:21:25.786Z",
+    "end_date": null,
+    "created_at": "2023-05-20T06:21:25.786Z",
+    "updated_at": "2023-05-20T06:21:25.786Z"
+  },
+  {
+    "id": "b87434ed-4694-4f15-bcd4-ef7a948bd429",
+    "person_id": "304bc8a9-64ef-4699-80dc-2ff8dde82179",
+    "organization_id": "d82f0108-c7ad-43ed-8ba7-195f10800cc0",
+    "affiliation_role": "Research Affiliate",
+    "start_datestamp": "2023-05-20T06:21:25.787Z",
+    "end_date": null,
+    "created_at": "2023-05-20T06:21:25.787Z",
+    "updated_at": "2023-05-20T06:21:25.787Z"
+  },
+  {
+    "id": "8c836fca-5f1f-4275-8cc0-526f4229002a",
+    "person_id": "3ee7743e-573c-4c1a-b462-bff1763f84da",
+    "organization_id": "8a585313-b1eb-425d-a649-950a0209292a",
+    "affiliation_role": "Research Affiliate",
+    "start_datestamp": "2023-05-20T06:21:25.804Z",
+    "end_date": null,
+    "created_at": "2023-05-20T06:21:25.804Z",
+    "updated_at": "2023-05-20T06:21:25.804Z"
+  },
+  {
+    "id": "a68024d6-de77-4cae-b9b5-f1184714a63f",
+    "person_id": "db87bd47-511e-4686-89f7-18bbe9149319",
+    "organization_id": "d82f0108-c7ad-43ed-8ba7-195f10800cc0",
+    "affiliation_role": "Research Affiliate",
+    "start_datestamp": "2023-05-20T06:21:25.818Z",
+    "end_date": null,
+    "created_at": "2023-05-20T06:21:25.818Z",
+    "updated_at": "2023-05-20T06:21:25.818Z"
+  },
+  {
+    "id": "af44c226-c475-4ae2-94cd-66b831da0e0e",
+    "person_id": "c1040965-2215-4f7b-86d9-c85f0fb9688f",
+    "organization_id": "16f7f189-d469-4091-aadc-9ea91eab9269",
+    "affiliation_role": "Research Affiliate",
+    "start_datestamp": "2023-05-20T06:21:25.823Z",
+    "end_date": null,
+    "created_at": "2023-05-20T06:21:25.823Z",
+    "updated_at": "2023-05-20T06:21:25.823Z"
+  },
+  {
+    "id": "421e7b62-1bba-4aa4-945b-a57a581c6cc2",
+    "person_id": "2c424c87-fa7b-4777-b07b-a4cb40cb59b5",
+    "organization_id": "f8e36101-7049-486a-9546-66fce1282cbd",
+    "affiliation_role": "Research Affiliate",
+    "start_datestamp": "2023-05-20T06:21:25.824Z",
+    "end_date": null,
+    "created_at": "2023-05-20T06:21:25.824Z",
+    "updated_at": "2023-05-20T06:21:25.824Z"
+  },
+  {
+    "id": "ef15b4a9-0daf-4714-9f41-2574e95ab70d",
+    "person_id": "67ff3f18-1851-474e-8d25-740c71d4223d",
+    "organization_id": "8df34528-94d7-4db8-98f1-4ef4b72f9f9c",
+    "affiliation_role": "Research Affiliate",
+    "start_datestamp": "2023-05-20T06:21:25.833Z",
+    "end_date": null,
+    "created_at": "2023-05-20T06:21:25.833Z",
+    "updated_at": "2023-05-20T06:21:25.833Z"
+  },
+  {
+    "id": "fa778d94-0d87-45ed-8130-f1b6f8b3d8da",
+    "person_id": "72e5e358-ee16-4322-9d64-2c491963cc63",
+    "organization_id": "d82f0108-c7ad-43ed-8ba7-195f10800cc0",
+    "affiliation_role": "Research Affiliate",
+    "start_datestamp": "2023-05-20T06:21:25.860Z",
+    "end_date": null,
+    "created_at": "2023-05-20T06:21:25.860Z",
+    "updated_at": "2023-05-20T06:21:25.860Z"
+  },
+  {
+    "id": "b79d5455-0254-4284-91d0-82f643cda59e",
+    "person_id": "f5790f25-da9d-4cb5-a54a-1aa77076e22b",
+    "organization_id": "8a585313-b1eb-425d-a649-950a0209292a",
+    "affiliation_role": "Research Affiliate",
+    "start_datestamp": "2023-05-20T06:21:25.904Z",
+    "end_date": null,
+    "created_at": "2023-05-20T06:21:25.904Z",
+    "updated_at": "2023-05-20T06:21:25.904Z"
+  },
+  {
+    "id": "b84e5736-2d21-4221-b4d7-3a55eece1b75",
+    "person_id": "1c65c24a-a82c-478d-9b13-7126320787c0",
+    "organization_id": "d82f0108-c7ad-43ed-8ba7-195f10800cc0",
+    "affiliation_role": "Research Affiliate",
+    "start_datestamp": "2023-05-20T06:21:25.952Z",
+    "end_date": null,
+    "created_at": "2023-05-20T06:21:25.952Z",
+    "updated_at": "2023-05-20T06:21:25.952Z"
+  },
+  {
+    "id": "32dbfe16-3d79-4a43-95fe-57aafd179158",
+    "person_id": "bab69c4e-d0ed-4d80-b62b-1a667493d219",
+    "organization_id": "8a585313-b1eb-425d-a649-950a0209292a",
+    "affiliation_role": "Research Affiliate",
+    "start_datestamp": "2023-05-20T06:21:25.954Z",
+    "end_date": null,
+    "created_at": "2023-05-20T06:21:25.954Z",
+    "updated_at": "2023-05-20T06:21:25.954Z"
+  },
+  {
+    "id": "eabfcdc1-771f-4ec4-8e6d-226cdf5e7c67",
+    "person_id": "6dafdd24-29f9-43bb-bfd7-93656d41ae23",
+    "organization_id": "62452d77-be85-4720-b720-ebcef2f0bf51",
+    "affiliation_role": "Research Affiliate",
+    "start_datestamp": "2023-05-20T06:21:25.959Z",
+    "end_date": null,
+    "created_at": "2023-05-20T06:21:25.959Z",
+    "updated_at": "2023-05-20T06:21:25.959Z"
+  },
+  {
+    "id": "34b6a329-f615-4e26-a077-6291587dad8a",
+    "person_id": "7456887b-b5b6-40c0-a45a-a62b99818c08",
+    "organization_id": "62452d77-be85-4720-b720-ebcef2f0bf51",
+    "affiliation_role": "Research Affiliate",
+    "start_datestamp": "2023-05-20T06:21:25.961Z",
+    "end_date": null,
+    "created_at": "2023-05-20T06:21:25.961Z",
+    "updated_at": "2023-05-20T06:21:25.961Z"
+  },
+  {
+    "id": "8d0053a2-bf6d-49c5-8fc0-50fa6f981048",
+    "person_id": "3838577d-33c8-4ba5-8fe6-cdd97cbd1345",
+    "organization_id": "8df34528-94d7-4db8-98f1-4ef4b72f9f9c",
+    "affiliation_role": "Research Affiliate",
+    "start_datestamp": "2023-05-20T06:21:25.963Z",
+    "end_date": null,
+    "created_at": "2023-05-20T06:21:25.963Z",
+    "updated_at": "2023-05-20T06:21:25.963Z"
+  },
+  {
+    "id": "a158905c-fc7a-4965-90e4-1114a000210f",
+    "person_id": "86fdd52b-a7b6-4512-9ba5-2fdffdf85753",
+    "organization_id": "d82f0108-c7ad-43ed-8ba7-195f10800cc0",
+    "affiliation_role": "Research Affiliate",
+    "start_datestamp": "2023-05-20T06:21:25.979Z",
+    "end_date": null,
+    "created_at": "2023-05-20T06:21:25.979Z",
+    "updated_at": "2023-05-20T06:21:25.979Z"
+  },
+  {
+    "id": "eb8306f7-b1aa-4105-abbf-ef5e035ba885",
+    "person_id": "df764868-8c3c-4be7-845f-5f866626afb3",
+    "organization_id": "7b969060-f5bf-4dd8-b2e1-0d8bed065ce5",
+    "affiliation_role": "Research Affiliate",
+    "start_datestamp": "2023-05-20T06:21:25.998Z",
+    "end_date": null,
+    "created_at": "2023-05-20T06:21:25.998Z",
+    "updated_at": "2023-05-20T06:21:25.998Z"
+  },
+  {
+    "id": "e7e29060-010f-4789-ba5d-a7a6c25d0f90",
+    "person_id": "645028ba-534d-4aa8-ba96-c339afa4e837",
+    "organization_id": "8a585313-b1eb-425d-a649-950a0209292a",
+    "affiliation_role": "Research Affiliate",
+    "start_datestamp": "2023-05-20T06:21:26.000Z",
+    "end_date": null,
+    "created_at": "2023-05-20T06:21:26.000Z",
+    "updated_at": "2023-05-20T06:21:26.000Z"
+  },
+  {
+    "id": "efc79bbc-b37e-43dd-9c5f-a592949580d3",
+    "person_id": "ce3cd583-fe5b-43d4-9afd-824647d134c3",
+    "organization_id": "a7bfbc87-d99a-44cb-aa31-ba2e98a8174d",
+    "affiliation_role": "Research Affiliate",
+    "start_datestamp": "2023-05-20T06:21:26.056Z",
+    "end_date": null,
+    "created_at": "2023-05-20T06:21:26.056Z",
+    "updated_at": "2023-05-20T06:21:26.056Z"
+  },
+  {
+    "id": "ebf93714-1a6e-464e-9083-6ae03ccde957",
+    "person_id": "21b5ad4a-9255-4425-b966-8d2cf1be3249",
+    "organization_id": "a7bfbc87-d99a-44cb-aa31-ba2e98a8174d",
+    "affiliation_role": "Research Affiliate",
+    "start_datestamp": "2023-05-20T06:21:26.084Z",
+    "end_date": null,
+    "created_at": "2023-05-20T06:21:26.084Z",
+    "updated_at": "2023-05-20T06:21:26.084Z"
+  },
+  {
+    "id": "12bd0c26-38f1-4c34-a418-e2f5c71fec98",
+    "person_id": "39998312-5922-470f-a0a8-08c4b5597c2a",
+    "organization_id": "7b969060-f5bf-4dd8-b2e1-0d8bed065ce5",
+    "affiliation_role": "Research Affiliate",
+    "start_datestamp": "2023-05-20T06:21:26.088Z",
+    "end_date": null,
+    "created_at": "2023-05-20T06:21:26.088Z",
+    "updated_at": "2023-05-20T06:21:26.088Z"
+  },
+  {
+    "id": "6287f179-bb9f-4bc0-83fc-7b0ab619b492",
+    "person_id": "60d65beb-bbf2-47cb-a295-6170e35e9886",
+    "organization_id": "a7bfbc87-d99a-44cb-aa31-ba2e98a8174d",
+    "affiliation_role": "Research Affiliate",
+    "start_datestamp": "2023-05-20T06:21:26.093Z",
+    "end_date": null,
+    "created_at": "2023-05-20T06:21:26.093Z",
+    "updated_at": "2023-05-20T06:21:26.093Z"
+  },
+  {
+    "id": "a4a602e4-83de-4fb8-92d3-f50ba8512b5c",
+    "person_id": "ec386747-3585-45f6-8e13-4c333e2f7570",
+    "organization_id": "8df34528-94d7-4db8-98f1-4ef4b72f9f9c",
+    "affiliation_role": "Research Affiliate",
+    "start_datestamp": "2023-05-20T06:21:26.096Z",
+    "end_date": null,
+    "created_at": "2023-05-20T06:21:26.096Z",
+    "updated_at": "2023-05-20T06:21:26.096Z"
+  },
+  {
+    "id": "96454b4a-4e6a-4a1b-823e-0fb6d9977925",
+    "person_id": "5a1afd0e-2420-47a5-b2e0-adc67272e1f4",
+    "organization_id": "f8e36101-7049-486a-9546-66fce1282cbd",
+    "affiliation_role": "Research Affiliate",
+    "start_datestamp": "2023-05-20T06:21:26.129Z",
+    "end_date": null,
+    "created_at": "2023-05-20T06:21:26.129Z",
+    "updated_at": "2023-05-20T06:21:26.129Z"
+  },
+  {
+    "id": "31416acf-ce2d-4505-bc13-a03cced71658",
+    "person_id": "08381084-922d-473d-9d4c-24e026952c9f",
+    "organization_id": "f8e36101-7049-486a-9546-66fce1282cbd",
+    "affiliation_role": "Research Affiliate",
+    "start_datestamp": "2023-05-20T06:21:26.143Z",
+    "end_date": null,
+    "created_at": "2023-05-20T06:21:26.143Z",
+    "updated_at": "2023-05-20T06:21:26.143Z"
+  },
+  {
+    "id": "3a97e613-8741-432a-9648-cc255509a1c4",
+    "person_id": "356c909e-1af0-4e66-9e44-fb70d80d4808",
+    "organization_id": "8df34528-94d7-4db8-98f1-4ef4b72f9f9c",
+    "affiliation_role": "Research Affiliate",
+    "start_datestamp": "2023-05-20T06:21:26.180Z",
+    "end_date": null,
+    "created_at": "2023-05-20T06:21:26.180Z",
+    "updated_at": "2023-05-20T06:21:26.180Z"
+  },
+  {
+    "id": "02a15c55-9443-40de-a2f3-dd844bb7e7dc",
+    "person_id": "299cb6d2-6117-4b95-8b5a-33727213be38",
+    "organization_id": "d82f0108-c7ad-43ed-8ba7-195f10800cc0",
+    "affiliation_role": "Research Affiliate",
+    "start_datestamp": "2023-05-20T06:21:26.184Z",
+    "end_date": null,
+    "created_at": "2023-05-20T06:21:26.184Z",
+    "updated_at": "2023-05-20T06:21:26.184Z"
+  },
+  {
+    "id": "625a71a4-3bd5-45ee-ae1c-03b6517acf55",
+    "person_id": "e5f2590b-69f0-4b5e-b6f2-9e1d5e5e8abb",
+    "organization_id": "a7bfbc87-d99a-44cb-aa31-ba2e98a8174d",
+    "affiliation_role": "Research Affiliate",
+    "start_datestamp": "2023-05-20T06:21:26.185Z",
+    "end_date": null,
+    "created_at": "2023-05-20T06:21:26.185Z",
+    "updated_at": "2023-05-20T06:21:26.185Z"
+  },
+  {
+    "id": "66055f38-c888-476b-ad2c-19bebf364bdc",
+    "person_id": "69683553-bbef-4627-bd2a-fcee5a355202",
+    "organization_id": "7b969060-f5bf-4dd8-b2e1-0d8bed065ce5",
+    "affiliation_role": "Research Affiliate",
+    "start_datestamp": "2023-05-20T06:21:26.189Z",
+    "end_date": null,
+    "created_at": "2023-05-20T06:21:26.189Z",
+    "updated_at": "2023-05-20T06:21:26.189Z"
+  },
+  {
+    "id": "14cd6f99-4a06-4de3-81ae-ce38942cff26",
+    "person_id": "d208a212-c5dd-4823-9ebd-7b8add696286",
+    "organization_id": "d82f0108-c7ad-43ed-8ba7-195f10800cc0",
+    "affiliation_role": "Research Affiliate",
+    "start_datestamp": "2023-05-20T06:21:26.192Z",
+    "end_date": null,
+    "created_at": "2023-05-20T06:21:26.192Z",
+    "updated_at": "2023-05-20T06:21:26.192Z"
+  },
+  {
+    "id": "9f9f02fa-ad5e-4bd1-9490-91e6ce2d1097",
+    "person_id": "2045ddeb-8bb2-47af-a798-96d30774ce45",
+    "organization_id": "712529e4-0f3c-41f1-b51d-931d09d6e06c",
+    "affiliation_role": "Research Affiliate",
+    "start_datestamp": "2023-05-20T06:21:26.193Z",
+    "end_date": null,
+    "created_at": "2023-05-20T06:21:26.193Z",
+    "updated_at": "2023-05-20T06:21:26.193Z"
+  },
+  {
+    "id": "4a1d1304-3a69-4bde-87fa-aecc2370ca35",
+    "person_id": "fa6a6928-952a-4e3b-a55c-44004fe485eb",
+    "organization_id": "d82f0108-c7ad-43ed-8ba7-195f10800cc0",
+    "affiliation_role": "Research Affiliate",
+    "start_datestamp": "2023-05-20T06:21:26.194Z",
+    "end_date": null,
+    "created_at": "2023-05-20T06:21:26.194Z",
+    "updated_at": "2023-05-20T06:21:26.194Z"
+  },
+  {
+    "id": "ddcdd106-df13-422b-840c-d864d0ae19bb",
+    "person_id": "d97639bd-3111-40ca-b9be-ac72fb6cb2b8",
+    "organization_id": "f8e36101-7049-486a-9546-66fce1282cbd",
+    "affiliation_role": "Research Affiliate",
+    "start_datestamp": "2023-05-20T06:21:26.203Z",
+    "end_date": null,
+    "created_at": "2023-05-20T06:21:26.203Z",
+    "updated_at": "2023-05-20T06:21:26.203Z"
+  },
+  {
+    "id": "8f9eed8f-8963-4ead-b387-b299544b2370",
+    "person_id": "6d0204a8-414d-4b1c-9348-cb897e1ac51a",
+    "organization_id": "d82f0108-c7ad-43ed-8ba7-195f10800cc0",
+    "affiliation_role": "Research Affiliate",
+    "start_datestamp": "2023-05-20T06:21:26.205Z",
+    "end_date": null,
+    "created_at": "2023-05-20T06:21:26.205Z",
+    "updated_at": "2023-05-20T06:21:26.205Z"
+  },
+  {
+    "id": "561faf92-f913-4d1a-9663-7a9351fcd088",
+    "person_id": "cf1f86d4-873b-429d-8d31-b739ae099b62",
+    "organization_id": "16f7f189-d469-4091-aadc-9ea91eab9269",
+    "affiliation_role": "Research Affiliate",
+    "start_datestamp": "2023-05-20T06:21:26.207Z",
+    "end_date": null,
+    "created_at": "2023-05-20T06:21:26.207Z",
+    "updated_at": "2023-05-20T06:21:26.207Z"
+  },
+  {
+    "id": "4e218fa5-e85f-4eb4-8174-3e938bba0483",
+    "person_id": "2235e98e-dfd6-4089-bf56-3e594b3542b4",
+    "organization_id": "8a585313-b1eb-425d-a649-950a0209292a",
+    "affiliation_role": "Research Affiliate",
+    "start_datestamp": "2023-05-20T06:21:26.227Z",
+    "end_date": null,
+    "created_at": "2023-05-20T06:21:26.227Z",
+    "updated_at": "2023-05-20T06:21:26.227Z"
+  },
+  {
+    "id": "b827c3bf-059f-4eaa-b89f-b625bd9be97d",
+    "person_id": "bcba4e94-db5b-4832-927f-d226661e0faf",
+    "organization_id": "d82f0108-c7ad-43ed-8ba7-195f10800cc0",
+    "affiliation_role": "Research Affiliate",
+    "start_datestamp": "2023-05-20T06:21:26.229Z",
+    "end_date": null,
+    "created_at": "2023-05-20T06:21:26.229Z",
+    "updated_at": "2023-05-20T06:21:26.229Z"
+  },
+  {
+    "id": "01ce6cc6-d950-440a-bd5e-01f6aaff6fe7",
+    "person_id": "ee47414c-ae7d-42e1-9b12-7fbc8f59fba6",
+    "organization_id": "62452d77-be85-4720-b720-ebcef2f0bf51",
+    "affiliation_role": "Research Affiliate",
+    "start_datestamp": "2023-05-20T06:21:26.232Z",
+    "end_date": null,
+    "created_at": "2023-05-20T06:21:26.232Z",
+    "updated_at": "2023-05-20T06:21:26.232Z"
+  },
+  {
+    "id": "a5d79bfb-41a8-472b-b91a-fc532edc5787",
+    "person_id": "06893179-ffb4-41eb-b3e9-8a6c3230c7e7",
+    "organization_id": "f8e36101-7049-486a-9546-66fce1282cbd",
+    "affiliation_role": "Research Affiliate",
+    "start_datestamp": "2023-05-20T06:21:26.242Z",
+    "end_date": null,
+    "created_at": "2023-05-20T06:21:26.242Z",
+    "updated_at": "2023-05-20T06:21:26.242Z"
+  },
+  {
+    "id": "18f4d745-439a-469b-ada0-d1718fa5206a",
+    "person_id": "33bd97ec-c8c4-4deb-92a1-444c51b5d068",
+    "organization_id": "f8e36101-7049-486a-9546-66fce1282cbd",
+    "affiliation_role": "Research Affiliate",
+    "start_datestamp": "2023-05-20T06:21:26.249Z",
+    "end_date": null,
+    "created_at": "2023-05-20T06:21:26.249Z",
+    "updated_at": "2023-05-20T06:21:26.249Z"
+  },
+  {
+    "id": "e6c83ae6-d138-4951-85dd-f8e1fdfcb0d0",
+    "person_id": "7f96598c-acad-4fef-9bbd-8514ed79bfc4",
+    "organization_id": "d82f0108-c7ad-43ed-8ba7-195f10800cc0",
+    "affiliation_role": "Research Affiliate",
+    "start_datestamp": "2023-05-20T06:21:26.257Z",
+    "end_date": null,
+    "created_at": "2023-05-20T06:21:26.257Z",
+    "updated_at": "2023-05-20T06:21:26.257Z"
+  },
+  {
+    "id": "d00e318a-5408-4000-bc6b-377612c60eef",
+    "person_id": "cc786cd5-cc97-46d4-8d24-15282ed094cb",
+    "organization_id": "f8e36101-7049-486a-9546-66fce1282cbd",
+    "affiliation_role": "Research Affiliate",
+    "start_datestamp": "2023-05-20T06:21:26.261Z",
+    "end_date": null,
+    "created_at": "2023-05-20T06:21:26.261Z",
+    "updated_at": "2023-05-20T06:21:26.261Z"
+  },
+  {
+    "id": "e218cb9c-1735-4ba5-8907-d4f500adaea1",
+    "person_id": "a613f759-6263-441f-97b2-cdc4b6d85c53",
+    "organization_id": "712529e4-0f3c-41f1-b51d-931d09d6e06c",
+    "affiliation_role": "Research Affiliate",
+    "start_datestamp": "2023-05-20T06:21:26.265Z",
+    "end_date": null,
+    "created_at": "2023-05-20T06:21:26.265Z",
+    "updated_at": "2023-05-20T06:21:26.265Z"
+  },
+  {
+    "id": "84161931-77fc-4e4a-a7bf-77ad8bcc9ed7",
+    "person_id": "32b26f1e-f86e-4160-bd22-89fe52374c3b",
+    "organization_id": "d82f0108-c7ad-43ed-8ba7-195f10800cc0",
+    "affiliation_role": "Research Affiliate",
+    "start_datestamp": "2023-05-20T06:21:26.296Z",
+    "end_date": null,
+    "created_at": "2023-05-20T06:21:26.296Z",
+    "updated_at": "2023-05-20T06:21:26.296Z"
+  },
+  {
+    "id": "da67a529-7a6e-400c-a5cc-ce6f42531c5c",
+    "person_id": "44a79f13-d813-4718-823e-644f0562c61a",
+    "organization_id": "712529e4-0f3c-41f1-b51d-931d09d6e06c",
+    "affiliation_role": "Research Affiliate",
+    "start_datestamp": "2023-05-20T06:21:26.301Z",
+    "end_date": null,
+    "created_at": "2023-05-20T06:21:26.301Z",
+    "updated_at": "2023-05-20T06:21:26.301Z"
+  },
+  {
+    "id": "a6d56b34-dd78-4973-a4aa-cd652da5a19f",
+    "person_id": "2071ef67-4170-4f72-b1d3-7136abe26d53",
+    "organization_id": "8df34528-94d7-4db8-98f1-4ef4b72f9f9c",
+    "affiliation_role": "Research Affiliate",
+    "start_datestamp": "2023-05-20T06:21:26.310Z",
+    "end_date": null,
+    "created_at": "2023-05-20T06:21:26.310Z",
+    "updated_at": "2023-05-20T06:21:26.310Z"
+  },
+  {
+    "id": "4377077d-cf4f-4b5f-8978-d42a9f918da8",
+    "person_id": "894a60db-c0ec-4b88-8806-a7d59c54ddc6",
+    "organization_id": "712529e4-0f3c-41f1-b51d-931d09d6e06c",
+    "affiliation_role": "Research Affiliate",
+    "start_datestamp": "2023-05-20T06:21:26.311Z",
+    "end_date": null,
+    "created_at": "2023-05-20T06:21:26.311Z",
+    "updated_at": "2023-05-20T06:21:26.311Z"
+  },
+  {
+    "id": "8ec24746-39ec-46e8-98d1-5584559792e4",
+    "person_id": "21e74029-88ae-4c5d-9ae2-b64d72d9b4ef",
+    "organization_id": "f8e36101-7049-486a-9546-66fce1282cbd",
+    "affiliation_role": "Research Affiliate",
+    "start_datestamp": "2023-05-20T06:21:26.314Z",
+    "end_date": null,
+    "created_at": "2023-05-20T06:21:26.314Z",
+    "updated_at": "2023-05-20T06:21:26.314Z"
+  },
+  {
+    "id": "a7191f5e-e712-4f2c-a5c6-d62fc5f37087",
+    "person_id": "f7e5ae7a-8333-489a-9c4d-81aec277f6e3",
+    "organization_id": "7b969060-f5bf-4dd8-b2e1-0d8bed065ce5",
+    "affiliation_role": "Research Affiliate",
+    "start_datestamp": "2023-05-20T06:21:26.316Z",
+    "end_date": null,
+    "created_at": "2023-05-20T06:21:26.316Z",
+    "updated_at": "2023-05-20T06:21:26.316Z"
+  },
+  {
+    "id": "bccf4269-58da-4f7e-a88b-9e85eb323717",
+    "person_id": "95148313-edaf-4eb7-a340-4f0506b40ef7",
+    "organization_id": "7b969060-f5bf-4dd8-b2e1-0d8bed065ce5",
+    "affiliation_role": "Research Affiliate",
+    "start_datestamp": "2023-05-20T06:21:26.329Z",
+    "end_date": null,
+    "created_at": "2023-05-20T06:21:26.329Z",
+    "updated_at": "2023-05-20T06:21:26.329Z"
+  },
+  {
+    "id": "3b181fd4-2ca1-4987-adfc-aa0ca6767387",
+    "person_id": "8a1e54c4-7e91-4b68-a6d4-23e69401f502",
+    "organization_id": "712529e4-0f3c-41f1-b51d-931d09d6e06c",
+    "affiliation_role": "Research Affiliate",
+    "start_datestamp": "2023-05-20T06:21:26.332Z",
+    "end_date": null,
+    "created_at": "2023-05-20T06:21:26.332Z",
+    "updated_at": "2023-05-20T06:21:26.332Z"
+  },
+  {
+    "id": "5ff84777-18d1-400e-9945-df2dd587a989",
+    "person_id": "807f990e-069b-4b5f-a54a-22e022bc57d4",
+    "organization_id": "7b969060-f5bf-4dd8-b2e1-0d8bed065ce5",
+    "affiliation_role": "Research Affiliate",
+    "start_datestamp": "2023-05-20T06:21:26.334Z",
+    "end_date": null,
+    "created_at": "2023-05-20T06:21:26.334Z",
+    "updated_at": "2023-05-20T06:21:26.334Z"
+  },
+  {
+    "id": "7ec56b97-b701-40b6-8ab0-85d16908369f",
+    "person_id": "1a5c7aee-351b-46f7-9bb9-05cda69e799f",
+    "organization_id": "8a585313-b1eb-425d-a649-950a0209292a",
+    "affiliation_role": "Research Affiliate",
+    "start_datestamp": "2023-05-20T06:21:26.377Z",
+    "end_date": null,
+    "created_at": "2023-05-20T06:21:26.377Z",
+    "updated_at": "2023-05-20T06:21:26.377Z"
+  },
+  {
+    "id": "01c56a1e-cb41-4add-ae79-492cd2ad6d4a",
+    "person_id": "739ea3dc-d265-4aca-8831-eda0683a6a36",
+    "organization_id": "62452d77-be85-4720-b720-ebcef2f0bf51",
+    "affiliation_role": "Research Affiliate",
+    "start_datestamp": "2023-05-20T06:21:26.387Z",
+    "end_date": null,
+    "created_at": "2023-05-20T06:21:26.387Z",
+    "updated_at": "2023-05-20T06:21:26.387Z"
+  },
+  {
+    "id": "98a51f5a-8a35-4483-9a2c-b46aaa1d69ef",
+    "person_id": "1fe8c599-3542-47da-b00e-9f4f50b0478f",
+    "organization_id": "a7bfbc87-d99a-44cb-aa31-ba2e98a8174d",
+    "affiliation_role": "Research Affiliate",
+    "start_datestamp": "2023-05-20T06:21:26.388Z",
+    "end_date": null,
+    "created_at": "2023-05-20T06:21:26.388Z",
+    "updated_at": "2023-05-20T06:21:26.388Z"
+  },
+  {
+    "id": "0e58f6e2-c284-4e7f-8903-0949b232e36d",
+    "person_id": "8716a410-e0e9-4db5-b11f-a62e60bed615",
+    "organization_id": "f8e36101-7049-486a-9546-66fce1282cbd",
+    "affiliation_role": "Research Affiliate",
+    "start_datestamp": "2023-05-20T06:21:26.446Z",
+    "end_date": null,
+    "created_at": "2023-05-20T06:21:26.446Z",
+    "updated_at": "2023-05-20T06:21:26.446Z"
+  },
+  {
+    "id": "7912dc83-9219-4025-b303-b4fd19585a79",
+    "person_id": "f5b573da-27e7-4f73-98df-dc4dc730b48e",
+    "organization_id": "d82f0108-c7ad-43ed-8ba7-195f10800cc0",
+    "affiliation_role": "Research Affiliate",
+    "start_datestamp": "2023-05-20T06:21:26.450Z",
+    "end_date": null,
+    "created_at": "2023-05-20T06:21:26.450Z",
+    "updated_at": "2023-05-20T06:21:26.450Z"
+  },
+  {
+    "id": "3c4f617d-bbbf-45ee-a1ec-f2edd36277ec",
+    "person_id": "f819b097-a58a-4ca5-babc-3dcc37132b42",
+    "organization_id": "8df34528-94d7-4db8-98f1-4ef4b72f9f9c",
+    "affiliation_role": "Research Affiliate",
+    "start_datestamp": "2023-05-20T06:21:26.456Z",
+    "end_date": null,
+    "created_at": "2023-05-20T06:21:26.456Z",
+    "updated_at": "2023-05-20T06:21:26.456Z"
+  },
+  {
+    "id": "bb5f1755-bc0b-4f15-a3aa-47d9784d503f",
+    "person_id": "510e36fb-7722-4ec6-bf38-35f4322cd129",
+    "organization_id": "8a585313-b1eb-425d-a649-950a0209292a",
+    "affiliation_role": "Research Affiliate",
+    "start_datestamp": "2023-05-20T06:21:26.460Z",
+    "end_date": null,
+    "created_at": "2023-05-20T06:21:26.460Z",
+    "updated_at": "2023-05-20T06:21:26.460Z"
+  },
+  {
+    "id": "0ee3110b-7335-4ba0-981e-ac89313c2238",
+    "person_id": "25e907ea-d7e0-4d45-acba-3d2024ec36a1",
+    "organization_id": "8df34528-94d7-4db8-98f1-4ef4b72f9f9c",
+    "affiliation_role": "Research Affiliate",
+    "start_datestamp": "2023-05-20T06:21:26.471Z",
+    "end_date": null,
+    "created_at": "2023-05-20T06:21:26.471Z",
+    "updated_at": "2023-05-20T06:21:26.471Z"
+  },
+  {
+    "id": "3f678303-717c-4c16-8410-f1522f4ede83",
+    "person_id": "177b70c8-9ae0-41d4-aad4-7f0ba6a4da3c",
+    "organization_id": "712529e4-0f3c-41f1-b51d-931d09d6e06c",
+    "affiliation_role": "Research Affiliate",
+    "start_datestamp": "2023-05-20T06:21:26.491Z",
+    "end_date": null,
+    "created_at": "2023-05-20T06:21:26.491Z",
+    "updated_at": "2023-05-20T06:21:26.491Z"
+  },
+  {
+    "id": "fd42d7aa-cad3-49a3-af6e-4e7de818d53e",
+    "person_id": "d5c5208f-c373-4d37-a5ab-0c65a2c3b20d",
+    "organization_id": "62452d77-be85-4720-b720-ebcef2f0bf51",
+    "affiliation_role": "Research Affiliate",
+    "start_datestamp": "2023-05-20T06:21:26.495Z",
+    "end_date": null,
+    "created_at": "2023-05-20T06:21:26.495Z",
+    "updated_at": "2023-05-20T06:21:26.495Z"
+  },
+  {
+    "id": "27ce0136-5b4a-4049-a3d1-44795943c20a",
+    "person_id": "042c062e-9c3e-402b-9ab6-87e8d082deaa",
+    "organization_id": "62452d77-be85-4720-b720-ebcef2f0bf51",
+    "affiliation_role": "Research Affiliate",
+    "start_datestamp": "2023-05-20T06:21:26.505Z",
+    "end_date": null,
+    "created_at": "2023-05-20T06:21:26.505Z",
+    "updated_at": "2023-05-20T06:21:26.505Z"
+  },
+  {
+    "id": "f48c2055-9944-40ba-b3bc-65b802a63b4d",
+    "person_id": "c4bb7fee-173f-4f63-aa05-f2705bc3da5a",
+    "organization_id": "16f7f189-d469-4091-aadc-9ea91eab9269",
+    "affiliation_role": "Research Affiliate",
+    "start_datestamp": "2023-05-20T06:21:26.511Z",
+    "end_date": null,
+    "created_at": "2023-05-20T06:21:26.511Z",
+    "updated_at": "2023-05-20T06:21:26.511Z"
+  },
+  {
+    "id": "a3398ea8-d5ab-4cc6-af2d-26ab520d89d2",
+    "person_id": "48eb4462-6d73-4716-852d-9ace0ca7e711",
+    "organization_id": "8a585313-b1eb-425d-a649-950a0209292a",
+    "affiliation_role": "Research Affiliate",
+    "start_datestamp": "2023-05-20T06:21:26.514Z",
+    "end_date": null,
+    "created_at": "2023-05-20T06:21:26.514Z",
+    "updated_at": "2023-05-20T06:21:26.514Z"
+  },
+  {
+    "id": "768734a5-dfc4-443d-8032-5a95af78b84d",
+    "person_id": "737d31af-2aec-4687-ab00-38bdd478afc9",
+    "organization_id": "7b969060-f5bf-4dd8-b2e1-0d8bed065ce5",
+    "affiliation_role": "Research Affiliate",
+    "start_datestamp": "2023-05-20T06:21:26.522Z",
+    "end_date": null,
+    "created_at": "2023-05-20T06:21:26.522Z",
+    "updated_at": "2023-05-20T06:21:26.522Z"
+  },
+  {
+    "id": "b520f523-995c-4d03-8c03-6d3503a4364e",
+    "person_id": "7235b973-514d-4ad1-9e08-c524b4c1da2e",
+    "organization_id": "62452d77-be85-4720-b720-ebcef2f0bf51",
+    "affiliation_role": "Research Affiliate",
+    "start_datestamp": "2023-05-20T06:21:26.530Z",
+    "end_date": null,
+    "created_at": "2023-05-20T06:21:26.530Z",
+    "updated_at": "2023-05-20T06:21:26.530Z"
+  },
+  {
+    "id": "32730d53-f819-4721-b562-758d52fa0886",
+    "person_id": "22dfaa57-ad6a-4b26-ab37-242135e49148",
+    "organization_id": "7b969060-f5bf-4dd8-b2e1-0d8bed065ce5",
+    "affiliation_role": "Research Affiliate",
+    "start_datestamp": "2023-05-20T06:21:26.552Z",
+    "end_date": null,
+    "created_at": "2023-05-20T06:21:26.552Z",
+    "updated_at": "2023-05-20T06:21:26.552Z"
+  },
+  {
+    "id": "085ad510-20ec-45cd-a739-1ea2d11c5369",
+    "person_id": "04b7d3dc-b3bc-42c4-b392-fed37bf4d986",
+    "organization_id": "d82f0108-c7ad-43ed-8ba7-195f10800cc0",
+    "affiliation_role": "Research Affiliate",
+    "start_datestamp": "2023-05-20T06:21:26.563Z",
+    "end_date": null,
+    "created_at": "2023-05-20T06:21:26.563Z",
+    "updated_at": "2023-05-20T06:21:26.563Z"
+  },
+  {
+    "id": "56921a21-ae2c-48f5-9f55-97eb0deb4cfe",
+    "person_id": "afebc81c-7987-4ecb-8b59-77f267e302a6",
+    "organization_id": "712529e4-0f3c-41f1-b51d-931d09d6e06c",
+    "affiliation_role": "Research Affiliate",
+    "start_datestamp": "2023-05-20T06:21:26.569Z",
+    "end_date": null,
+    "created_at": "2023-05-20T06:21:26.569Z",
+    "updated_at": "2023-05-20T06:21:26.569Z"
+  },
+  {
+    "id": "f40d4a80-7714-410f-b553-8c3dc79c222f",
+    "person_id": "fc86cc10-4eed-40d4-a2fb-58ad9d7c265e",
+    "organization_id": "712529e4-0f3c-41f1-b51d-931d09d6e06c",
+    "affiliation_role": "Research Affiliate",
+    "start_datestamp": "2023-05-20T06:21:26.570Z",
+    "end_date": null,
+    "created_at": "2023-05-20T06:21:26.570Z",
+    "updated_at": "2023-05-20T06:21:26.570Z"
+  },
+  {
+    "id": "800195cb-0eb0-4537-8629-93366f66457d",
+    "person_id": "a28d5174-3dd6-46c7-8ca3-3d91d7fbe214",
+    "organization_id": "d82f0108-c7ad-43ed-8ba7-195f10800cc0",
+    "affiliation_role": "Research Affiliate",
+    "start_datestamp": "2023-05-20T06:21:26.584Z",
+    "end_date": null,
+    "created_at": "2023-05-20T06:21:26.584Z",
+    "updated_at": "2023-05-20T06:21:26.584Z"
+  },
+  {
+    "id": "51729e58-70f7-4048-9102-32f298f1df98",
+    "person_id": "6d2e8d86-098d-45b4-b59a-fec7b47d4978",
+    "organization_id": "8a585313-b1eb-425d-a649-950a0209292a",
+    "affiliation_role": "Research Affiliate",
+    "start_datestamp": "2023-05-20T06:21:26.644Z",
+    "end_date": null,
+    "created_at": "2023-05-20T06:21:26.644Z",
+    "updated_at": "2023-05-20T06:21:26.644Z"
+  },
+  {
+    "id": "99a5801f-82e7-471d-8b83-5689c549bd71",
+    "person_id": "2c8c64e2-751f-4906-841e-7b0daf38d33f",
+    "organization_id": "8df34528-94d7-4db8-98f1-4ef4b72f9f9c",
+    "affiliation_role": "Research Affiliate",
+    "start_datestamp": "2023-05-20T06:21:26.653Z",
+    "end_date": null,
+    "created_at": "2023-05-20T06:21:26.653Z",
+    "updated_at": "2023-05-20T06:21:26.653Z"
+  },
+  {
+    "id": "ab5a22d5-5b21-44f9-b1b6-c1b5e15dcc67",
+    "person_id": "6ce1243f-c16f-465c-a84f-23ae7df51e4a",
+    "organization_id": "712529e4-0f3c-41f1-b51d-931d09d6e06c",
+    "affiliation_role": "Research Affiliate",
+    "start_datestamp": "2023-05-20T06:21:26.656Z",
+    "end_date": null,
+    "created_at": "2023-05-20T06:21:26.656Z",
+    "updated_at": "2023-05-20T06:21:26.656Z"
+  },
+  {
+    "id": "3bbe9fbb-27eb-448c-a094-45123ed5efcd",
+    "person_id": "7661215e-6c6c-42ef-a80b-2d588f9c205a",
+    "organization_id": "7b969060-f5bf-4dd8-b2e1-0d8bed065ce5",
+    "affiliation_role": "Research Affiliate",
+    "start_datestamp": "2023-05-20T06:21:26.666Z",
+    "end_date": null,
+    "created_at": "2023-05-20T06:21:26.666Z",
+    "updated_at": "2023-05-20T06:21:26.666Z"
+  },
+  {
+    "id": "88d4b159-6567-4368-82d5-d176f4a33528",
+    "person_id": "bdb69a7f-1530-4e07-baeb-03829392d710",
+    "organization_id": "f8e36101-7049-486a-9546-66fce1282cbd",
+    "affiliation_role": "Research Affiliate",
+    "start_datestamp": "2023-05-20T06:21:26.693Z",
+    "end_date": null,
+    "created_at": "2023-05-20T06:21:26.693Z",
+    "updated_at": "2023-05-20T06:21:26.693Z"
+  },
+  {
+    "id": "8f1ea879-56ba-4efd-b98b-daa37c30b4f7",
+    "person_id": "17c7c746-9e74-4c65-9d9f-f4414cce8ced",
+    "organization_id": "d82f0108-c7ad-43ed-8ba7-195f10800cc0",
+    "affiliation_role": "Research Affiliate",
+    "start_datestamp": "2023-05-20T06:21:26.694Z",
+    "end_date": null,
+    "created_at": "2023-05-20T06:21:26.694Z",
+    "updated_at": "2023-05-20T06:21:26.694Z"
+  },
+  {
+    "id": "33a27e08-216e-46ce-8f99-e1f9ef681105",
+    "person_id": "d9cbcd67-6b25-4bd3-8423-f0dff907b1c1",
+    "organization_id": "7b969060-f5bf-4dd8-b2e1-0d8bed065ce5",
+    "affiliation_role": "Research Affiliate",
+    "start_datestamp": "2023-05-20T06:21:26.704Z",
+    "end_date": null,
+    "created_at": "2023-05-20T06:21:26.704Z",
+    "updated_at": "2023-05-20T06:21:26.704Z"
+  },
+  {
+    "id": "891073fe-fb77-4d5d-9d29-46c8383b5f20",
+    "person_id": "b9735f52-527e-41c2-80b9-26c985ea8bbd",
+    "organization_id": "f8e36101-7049-486a-9546-66fce1282cbd",
+    "affiliation_role": "Research Affiliate",
+    "start_datestamp": "2023-05-20T06:21:26.706Z",
+    "end_date": null,
+    "created_at": "2023-05-20T06:21:26.706Z",
+    "updated_at": "2023-05-20T06:21:26.706Z"
+  },
+  {
+    "id": "686dc00a-58e1-41db-b93c-1382c6c69bfa",
+    "person_id": "a10296e0-0162-4529-af31-940261b935fc",
+    "organization_id": "62452d77-be85-4720-b720-ebcef2f0bf51",
+    "affiliation_role": "Research Affiliate",
+    "start_datestamp": "2023-05-20T06:21:26.712Z",
+    "end_date": null,
+    "created_at": "2023-05-20T06:21:26.712Z",
+    "updated_at": "2023-05-20T06:21:26.712Z"
+  },
+  {
+    "id": "2f96c8e3-99eb-45a8-8bcb-7aec68c8f035",
+    "person_id": "91dc1e50-e07e-43cd-8e73-2407f1905d8c",
+    "organization_id": "d82f0108-c7ad-43ed-8ba7-195f10800cc0",
+    "affiliation_role": "Research Affiliate",
+    "start_datestamp": "2023-05-20T06:21:26.717Z",
+    "end_date": null,
+    "created_at": "2023-05-20T06:21:26.717Z",
+    "updated_at": "2023-05-20T06:21:26.717Z"
+  },
+  {
+    "id": "36913940-bfb2-4cc0-93c2-ac85404ca4c4",
+    "person_id": "1141164c-c88e-4837-8b08-6fe06b83295e",
+    "organization_id": "16f7f189-d469-4091-aadc-9ea91eab9269",
+    "affiliation_role": "Research Affiliate",
+    "start_datestamp": "2023-05-20T06:21:26.721Z",
+    "end_date": null,
+    "created_at": "2023-05-20T06:21:26.721Z",
+    "updated_at": "2023-05-20T06:21:26.721Z"
+  },
+  {
+    "id": "934cc37d-505b-4c20-93fc-89fca2d85f1f",
+    "person_id": "24f145d3-ccd7-43e9-9283-5fcb70c1dcab",
+    "organization_id": "f8e36101-7049-486a-9546-66fce1282cbd",
+    "affiliation_role": "Research Affiliate",
+    "start_datestamp": "2023-05-20T06:21:26.738Z",
+    "end_date": null,
+    "created_at": "2023-05-20T06:21:26.738Z",
+    "updated_at": "2023-05-20T06:21:26.738Z"
+  },
+  {
+    "id": "fe6382b3-380e-4aa1-89ca-68e915d32801",
+    "person_id": "9173ffda-7165-4bbe-a607-353222642c02",
+    "organization_id": "8a585313-b1eb-425d-a649-950a0209292a",
+    "affiliation_role": "Research Affiliate",
+    "start_datestamp": "2023-05-20T06:21:26.769Z",
+    "end_date": null,
+    "created_at": "2023-05-20T06:21:26.769Z",
+    "updated_at": "2023-05-20T06:21:26.769Z"
+  },
+  {
+    "id": "fdb9d351-1eed-4a44-9979-c020c3228480",
+    "person_id": "7a63d79b-410c-4e80-9c5b-bb346976dcbe",
+    "organization_id": "a7bfbc87-d99a-44cb-aa31-ba2e98a8174d",
+    "affiliation_role": "Research Affiliate",
+    "start_datestamp": "2023-05-20T06:21:26.777Z",
+    "end_date": null,
+    "created_at": "2023-05-20T06:21:26.777Z",
+    "updated_at": "2023-05-20T06:21:26.777Z"
+  },
+  {
+    "id": "0082c3c6-e2b8-4543-a91c-88a4dcf4fecd",
+    "person_id": "8f1adf9b-c38c-4920-aa43-0c945b508d43",
+    "organization_id": "16f7f189-d469-4091-aadc-9ea91eab9269",
+    "affiliation_role": "Research Affiliate",
+    "start_datestamp": "2023-05-20T06:21:26.778Z",
+    "end_date": null,
+    "created_at": "2023-05-20T06:21:26.778Z",
+    "updated_at": "2023-05-20T06:21:26.778Z"
+  },
+  {
+    "id": "1e0b16c3-e061-4489-a4cb-28676862214f",
+    "person_id": "1a96dddd-00ac-4b35-b16b-a6e23a62738e",
+    "organization_id": "712529e4-0f3c-41f1-b51d-931d09d6e06c",
+    "affiliation_role": "Research Affiliate",
+    "start_datestamp": "2023-05-20T06:21:26.794Z",
+    "end_date": null,
+    "created_at": "2023-05-20T06:21:26.794Z",
+    "updated_at": "2023-05-20T06:21:26.794Z"
+  },
+  {
+    "id": "1a212af1-3221-4435-be35-fbc8c431154a",
+    "person_id": "25e17759-be0d-4c00-ac63-5fc3469b7a17",
+    "organization_id": "d82f0108-c7ad-43ed-8ba7-195f10800cc0",
+    "affiliation_role": "Research Affiliate",
+    "start_datestamp": "2023-05-20T06:21:26.797Z",
+    "end_date": null,
+    "created_at": "2023-05-20T06:21:26.797Z",
+    "updated_at": "2023-05-20T06:21:26.797Z"
+  },
+  {
+    "id": "44a226c4-bf26-487c-9226-78e2192e5843",
+    "person_id": "6ee9c713-4443-4321-b761-e877a3b649c7",
+    "organization_id": "a7bfbc87-d99a-44cb-aa31-ba2e98a8174d",
+    "affiliation_role": "Research Affiliate",
+    "start_datestamp": "2023-05-20T06:21:26.829Z",
+    "end_date": null,
+    "created_at": "2023-05-20T06:21:26.829Z",
+    "updated_at": "2023-05-20T06:21:26.829Z"
+  },
+  {
+    "id": "710910e3-61f4-4a25-b0ed-c806e8660e11",
+    "person_id": "5680e3ab-a610-4916-9501-faff1910ab28",
+    "organization_id": "d82f0108-c7ad-43ed-8ba7-195f10800cc0",
+    "affiliation_role": "Research Affiliate",
+    "start_datestamp": "2023-05-20T06:21:26.836Z",
+    "end_date": null,
+    "created_at": "2023-05-20T06:21:26.836Z",
+    "updated_at": "2023-05-20T06:21:26.836Z"
+  },
+  {
+    "id": "8b5d9d4e-a9e1-46ab-b95f-592898a09eea",
+    "person_id": "3578f022-9009-4ff5-a03e-1631171cd9d7",
+    "organization_id": "a7bfbc87-d99a-44cb-aa31-ba2e98a8174d",
+    "affiliation_role": "Research Affiliate",
+    "start_datestamp": "2023-05-20T06:21:26.866Z",
+    "end_date": null,
+    "created_at": "2023-05-20T06:21:26.866Z",
+    "updated_at": "2023-05-20T06:21:26.866Z"
+  },
+  {
+    "id": "6fe089a7-6d23-48d6-85f9-d4e35cfc7735",
+    "person_id": "32c29225-35bf-44a2-9c78-f00f4e174269",
+    "organization_id": "712529e4-0f3c-41f1-b51d-931d09d6e06c",
+    "affiliation_role": "Research Affiliate",
+    "start_datestamp": "2023-05-20T06:21:26.899Z",
+    "end_date": null,
+    "created_at": "2023-05-20T06:21:26.899Z",
+    "updated_at": "2023-05-20T06:21:26.899Z"
+  },
+  {
+    "id": "7417830e-da5f-4a69-86e1-83fb35a49352",
+    "person_id": "137ed73a-e363-4ef6-b44b-f404eb50bcf4",
+    "organization_id": "8a585313-b1eb-425d-a649-950a0209292a",
+    "affiliation_role": "Research Affiliate",
+    "start_datestamp": "2023-05-20T06:21:26.936Z",
+    "end_date": null,
+    "created_at": "2023-05-20T06:21:26.936Z",
+    "updated_at": "2023-05-20T06:21:26.936Z"
+  },
+  {
+    "id": "854ca11a-bfe6-44d0-9f66-33e34061e5e2",
+    "person_id": "c4e64530-dc65-416d-bf82-2df5294a3e8e",
+    "organization_id": "712529e4-0f3c-41f1-b51d-931d09d6e06c",
+    "affiliation_role": "Research Affiliate",
+    "start_datestamp": "2023-05-20T06:21:26.946Z",
+    "end_date": null,
+    "created_at": "2023-05-20T06:21:26.946Z",
+    "updated_at": "2023-05-20T06:21:26.946Z"
+  },
+  {
+    "id": "5e75863e-af41-46c7-8743-92385add1081",
+    "person_id": "675d383e-4ebb-43b9-b803-b2b7f6ddda1e",
+    "organization_id": "62452d77-be85-4720-b720-ebcef2f0bf51",
+    "affiliation_role": "Research Affiliate",
+    "start_datestamp": "2023-05-20T06:21:26.971Z",
+    "end_date": null,
+    "created_at": "2023-05-20T06:21:26.971Z",
+    "updated_at": "2023-05-20T06:21:26.971Z"
+  },
+  {
+    "id": "c4ebb24a-52bb-4028-8491-9172d514ac23",
+    "person_id": "b453c99c-5833-43ef-9ad0-48abbdc9c27b",
+    "organization_id": "f8e36101-7049-486a-9546-66fce1282cbd",
+    "affiliation_role": "Research Affiliate",
+    "start_datestamp": "2023-05-20T06:21:26.975Z",
+    "end_date": null,
+    "created_at": "2023-05-20T06:21:26.975Z",
+    "updated_at": "2023-05-20T06:21:26.975Z"
+  },
+  {
+    "id": "6bd8e102-c3fd-408b-a32c-0564886e51e5",
+    "person_id": "88695ad5-ca04-4499-938c-d6ed61ef06e6",
+    "organization_id": "62452d77-be85-4720-b720-ebcef2f0bf51",
+    "affiliation_role": "Research Affiliate",
+    "start_datestamp": "2023-05-20T06:21:26.978Z",
+    "end_date": null,
+    "created_at": "2023-05-20T06:21:26.978Z",
+    "updated_at": "2023-05-20T06:21:26.978Z"
+  },
+  {
+    "id": "f1163054-4ffc-4c10-94f4-e8d198328446",
+    "person_id": "f0255fb2-7c45-4f51-94f1-b20b33c575cf",
+    "organization_id": "712529e4-0f3c-41f1-b51d-931d09d6e06c",
+    "affiliation_role": "Research Affiliate",
+    "start_datestamp": "2023-05-20T06:21:26.980Z",
+    "end_date": null,
+    "created_at": "2023-05-20T06:21:26.980Z",
+    "updated_at": "2023-05-20T06:21:26.980Z"
+  },
+  {
+    "id": "64db167d-446b-4d80-9c8f-a4f2900c9928",
+    "person_id": "652dccd2-efd2-4f1a-9a7c-26367c06e0be",
+    "organization_id": "f8e36101-7049-486a-9546-66fce1282cbd",
+    "affiliation_role": "Research Affiliate",
+    "start_datestamp": "2023-05-20T06:21:26.983Z",
+    "end_date": null,
+    "created_at": "2023-05-20T06:21:26.983Z",
+    "updated_at": "2023-05-20T06:21:26.983Z"
+  },
+  {
+    "id": "8937e910-34e6-4c0b-9d1d-4d1806538718",
+    "person_id": "b227cfb1-728a-4810-bbe0-6f453d903c5a",
+    "organization_id": "f8e36101-7049-486a-9546-66fce1282cbd",
+    "affiliation_role": "Research Affiliate",
+    "start_datestamp": "2023-05-20T06:21:26.988Z",
+    "end_date": null,
+    "created_at": "2023-05-20T06:21:26.988Z",
+    "updated_at": "2023-05-20T06:21:26.988Z"
+  },
+  {
+    "id": "6b967b81-1b40-459d-bd4b-a119beabfbd2",
+    "person_id": "40189093-e435-4083-be80-d866891d2b21",
+    "organization_id": "a7bfbc87-d99a-44cb-aa31-ba2e98a8174d",
+    "affiliation_role": "Research Affiliate",
+    "start_datestamp": "2023-05-20T06:21:27.014Z",
+    "end_date": null,
+    "created_at": "2023-05-20T06:21:27.014Z",
+    "updated_at": "2023-05-20T06:21:27.014Z"
+  },
+  {
+    "id": "5e63e2f9-3e55-417f-b966-f338aaffc8c1",
+    "person_id": "73da4075-b948-4329-abd2-dd819084cdda",
+    "organization_id": "62452d77-be85-4720-b720-ebcef2f0bf51",
+    "affiliation_role": "Research Affiliate",
+    "start_datestamp": "2023-05-20T06:21:27.059Z",
+    "end_date": null,
+    "created_at": "2023-05-20T06:21:27.059Z",
+    "updated_at": "2023-05-20T06:21:27.059Z"
+  },
+  {
+    "id": "4a3357bf-95d1-4bbd-81ab-a5c1b6bcae9c",
+    "person_id": "e5d21a34-192c-4fa3-b193-dc97f46f7e29",
+    "organization_id": "16f7f189-d469-4091-aadc-9ea91eab9269",
+    "affiliation_role": "Research Affiliate",
+    "start_datestamp": "2023-05-20T06:21:27.068Z",
+    "end_date": null,
+    "created_at": "2023-05-20T06:21:27.068Z",
+    "updated_at": "2023-05-20T06:21:27.068Z"
+  },
+  {
+    "id": "273d8d5f-834f-42fe-8702-25e13dfaa98a",
+    "person_id": "a524ebe5-7686-4f1f-b21d-6f51bbb8e71e",
+    "organization_id": "8df34528-94d7-4db8-98f1-4ef4b72f9f9c",
+    "affiliation_role": "Research Affiliate",
+    "start_datestamp": "2023-05-20T06:21:27.073Z",
+    "end_date": null,
+    "created_at": "2023-05-20T06:21:27.073Z",
+    "updated_at": "2023-05-20T06:21:27.073Z"
+  },
+  {
+    "id": "7ba4390f-0d39-4080-acd2-e3b2a4c73270",
+    "person_id": "3ff0ae2f-30e1-47ae-a77b-1a7d765115dc",
+    "organization_id": "7b969060-f5bf-4dd8-b2e1-0d8bed065ce5",
+    "affiliation_role": "Research Affiliate",
+    "start_datestamp": "2023-05-20T06:21:27.077Z",
+    "end_date": null,
+    "created_at": "2023-05-20T06:21:27.077Z",
+    "updated_at": "2023-05-20T06:21:27.077Z"
+  },
+  {
+    "id": "41f670a8-0028-40b3-8fee-29d1db632e15",
+    "person_id": "0ae7e995-acd6-46bf-bf0e-db1304ac5d04",
+    "organization_id": "d82f0108-c7ad-43ed-8ba7-195f10800cc0",
+    "affiliation_role": "Research Affiliate",
+    "start_datestamp": "2023-05-20T06:21:27.080Z",
+    "end_date": null,
+    "created_at": "2023-05-20T06:21:27.080Z",
+    "updated_at": "2023-05-20T06:21:27.080Z"
+  },
+  {
+    "id": "968b3a16-d93c-4d34-8ad3-e3416c36b2c3",
+    "person_id": "fdc6767f-6c92-4a09-a477-8c9e4f1987b0",
+    "organization_id": "62452d77-be85-4720-b720-ebcef2f0bf51",
+    "affiliation_role": "Research Affiliate",
+    "start_datestamp": "2023-05-20T06:21:27.080Z",
+    "end_date": null,
+    "created_at": "2023-05-20T06:21:27.080Z",
+    "updated_at": "2023-05-20T06:21:27.080Z"
+  },
+  {
+    "id": "2a6b5060-8fcf-49b5-9a70-cc184c4d6c5b",
+    "person_id": "0d9c2e8d-e2d7-464b-8779-d93ed6e5a69b",
+    "organization_id": "712529e4-0f3c-41f1-b51d-931d09d6e06c",
+    "affiliation_role": "Research Affiliate",
+    "start_datestamp": "2023-05-20T06:21:27.160Z",
+    "end_date": null,
+    "created_at": "2023-05-20T06:21:27.160Z",
+    "updated_at": "2023-05-20T06:21:27.160Z"
+  },
+  {
+    "id": "35b5436b-4aca-45e7-bee2-63fd169df9c9",
+    "person_id": "24330771-5eb9-4fa2-9264-1f50d3da45fc",
+    "organization_id": "d82f0108-c7ad-43ed-8ba7-195f10800cc0",
+    "affiliation_role": "Research Affiliate",
+    "start_datestamp": "2023-05-20T06:21:27.173Z",
+    "end_date": null,
+    "created_at": "2023-05-20T06:21:27.173Z",
+    "updated_at": "2023-05-20T06:21:27.173Z"
+  },
+  {
+    "id": "013d23f8-acbd-4a80-bb84-dde4931fa45e",
+    "person_id": "438b77d0-a431-44b2-afa7-e10555f60014",
+    "organization_id": "62452d77-be85-4720-b720-ebcef2f0bf51",
+    "affiliation_role": "Research Affiliate",
+    "start_datestamp": "2023-05-20T06:21:27.186Z",
+    "end_date": null,
+    "created_at": "2023-05-20T06:21:27.186Z",
+    "updated_at": "2023-05-20T06:21:27.186Z"
+  },
+  {
+    "id": "9a3a4b02-e75f-4dcc-8397-815b86ce351f",
+    "person_id": "41e08982-1803-4468-85c7-883cdfdb4762",
+    "organization_id": "8df34528-94d7-4db8-98f1-4ef4b72f9f9c",
+    "affiliation_role": "Research Affiliate",
+    "start_datestamp": "2023-05-20T06:21:27.193Z",
+    "end_date": null,
+    "created_at": "2023-05-20T06:21:27.193Z",
+    "updated_at": "2023-05-20T06:21:27.193Z"
+  },
+  {
+    "id": "ebdc0a95-36af-4388-8ca6-2aaf5bd69362",
+    "person_id": "641adf54-f584-439c-9d1b-ad36d29476b5",
+    "organization_id": "62452d77-be85-4720-b720-ebcef2f0bf51",
+    "affiliation_role": "Research Affiliate",
+    "start_datestamp": "2023-05-20T06:21:27.198Z",
+    "end_date": null,
+    "created_at": "2023-05-20T06:21:27.198Z",
+    "updated_at": "2023-05-20T06:21:27.198Z"
+  },
+  {
+    "id": "e01d9300-b10a-4e2e-9e2f-f3d23abf33fc",
+    "person_id": "e0865280-a083-48b6-a557-81d520f8a29e",
+    "organization_id": "62452d77-be85-4720-b720-ebcef2f0bf51",
+    "affiliation_role": "Research Affiliate",
+    "start_datestamp": "2023-05-20T06:21:27.200Z",
+    "end_date": null,
+    "created_at": "2023-05-20T06:21:27.200Z",
+    "updated_at": "2023-05-20T06:21:27.200Z"
+  },
+  {
+    "id": "5094c048-9c2b-4685-8b18-da284f2de0c2",
+    "person_id": "b08cd11c-9412-42d0-9a96-b45f4ced5f04",
+    "organization_id": "7b969060-f5bf-4dd8-b2e1-0d8bed065ce5",
+    "affiliation_role": "Research Affiliate",
+    "start_datestamp": "2023-05-20T06:21:27.210Z",
+    "end_date": null,
+    "created_at": "2023-05-20T06:21:27.210Z",
+    "updated_at": "2023-05-20T06:21:27.210Z"
+  },
+  {
+    "id": "a95230b5-d380-4a37-bdd7-362172bdf850",
+    "person_id": "b3a4a138-23e7-43a8-8156-b825524d5e33",
+    "organization_id": "712529e4-0f3c-41f1-b51d-931d09d6e06c",
+    "affiliation_role": "Research Affiliate",
+    "start_datestamp": "2023-05-20T06:21:27.213Z",
+    "end_date": null,
+    "created_at": "2023-05-20T06:21:27.213Z",
+    "updated_at": "2023-05-20T06:21:27.213Z"
+  },
+  {
+    "id": "cefa9db8-3fa5-4d3f-a256-71017adae9bb",
+    "person_id": "cc81aad8-6af2-4e28-b488-f4c295d6ea80",
+    "organization_id": "62452d77-be85-4720-b720-ebcef2f0bf51",
+    "affiliation_role": "Research Affiliate",
+    "start_datestamp": "2023-05-20T06:21:27.219Z",
+    "end_date": null,
+    "created_at": "2023-05-20T06:21:27.219Z",
+    "updated_at": "2023-05-20T06:21:27.219Z"
+  },
+  {
+    "id": "7e738e3e-6dae-414a-a395-5cbd6a065b3f",
+    "person_id": "8edab83f-da09-43a6-8aab-8cfc05808572",
+    "organization_id": "62452d77-be85-4720-b720-ebcef2f0bf51",
+    "affiliation_role": "Research Affiliate",
+    "start_datestamp": "2023-05-20T06:21:27.275Z",
+    "end_date": null,
+    "created_at": "2023-05-20T06:21:27.275Z",
+    "updated_at": "2023-05-20T06:21:27.275Z"
+  },
+  {
+    "id": "069a3983-72c7-4304-b010-03d9416eb023",
+    "person_id": "00fb5995-3ff8-47e8-933f-58752f5e0bd0",
+    "organization_id": "7b969060-f5bf-4dd8-b2e1-0d8bed065ce5",
+    "affiliation_role": "Research Affiliate",
+    "start_datestamp": "2023-05-20T06:21:27.276Z",
+    "end_date": null,
+    "created_at": "2023-05-20T06:21:27.276Z",
+    "updated_at": "2023-05-20T06:21:27.276Z"
+  },
+  {
+    "id": "f8344497-8165-4305-b324-d914ead1e236",
+    "person_id": "dd818f26-c47f-473f-97f8-aca13422fc5d",
+    "organization_id": "8df34528-94d7-4db8-98f1-4ef4b72f9f9c",
+    "affiliation_role": "Research Affiliate",
+    "start_datestamp": "2023-05-20T06:21:27.281Z",
+    "end_date": null,
+    "created_at": "2023-05-20T06:21:27.281Z",
+    "updated_at": "2023-05-20T06:21:27.281Z"
+  },
+  {
+    "id": "20441382-8bf6-4263-9f5e-30919ab7aebc",
+    "person_id": "89a80f3a-d62c-4b74-82cc-09509d145c15",
+    "organization_id": "8df34528-94d7-4db8-98f1-4ef4b72f9f9c",
+    "affiliation_role": "Research Affiliate",
+    "start_datestamp": "2023-05-20T06:21:27.285Z",
+    "end_date": null,
+    "created_at": "2023-05-20T06:21:27.285Z",
+    "updated_at": "2023-05-20T06:21:27.285Z"
+  },
+  {
+    "id": "06dc9622-4be2-489e-a3c7-1a9e42eacf36",
+    "person_id": "1486dadf-98c7-4972-9868-afe2ecd33597",
+    "organization_id": "d82f0108-c7ad-43ed-8ba7-195f10800cc0",
+    "affiliation_role": "Research Affiliate",
+    "start_datestamp": "2023-05-20T06:21:27.296Z",
+    "end_date": null,
+    "created_at": "2023-05-20T06:21:27.296Z",
+    "updated_at": "2023-05-20T06:21:27.296Z"
+  },
+  {
+    "id": "115eb765-f56a-40d9-a53a-19f8c29cf065",
+    "person_id": "e3e5c7c1-73f8-4b1e-b1ef-7dc22e4c1155",
+    "organization_id": "8df34528-94d7-4db8-98f1-4ef4b72f9f9c",
+    "affiliation_role": "Research Affiliate",
+    "start_datestamp": "2023-05-20T06:21:27.325Z",
+    "end_date": null,
+    "created_at": "2023-05-20T06:21:27.325Z",
+    "updated_at": "2023-05-20T06:21:27.325Z"
+  },
+  {
+    "id": "838b8628-4aad-44a2-a0e0-d9f63e44e4a8",
+    "person_id": "3951f4be-3a02-4b64-9acd-97f76c1277f2",
+    "organization_id": "a7bfbc87-d99a-44cb-aa31-ba2e98a8174d",
+    "affiliation_role": "Research Affiliate",
+    "start_datestamp": "2023-05-20T06:21:27.332Z",
+    "end_date": null,
+    "created_at": "2023-05-20T06:21:27.332Z",
+    "updated_at": "2023-05-20T06:21:27.332Z"
+  },
+  {
+    "id": "7232ec1a-adc0-48ce-872a-9375fff06675",
+    "person_id": "27ac1b4e-7dfc-425d-9544-18b3b15a97ca",
+    "organization_id": "d82f0108-c7ad-43ed-8ba7-195f10800cc0",
+    "affiliation_role": "Research Affiliate",
+    "start_datestamp": "2023-05-20T06:21:27.335Z",
+    "end_date": null,
+    "created_at": "2023-05-20T06:21:27.335Z",
+    "updated_at": "2023-05-20T06:21:27.335Z"
+  },
+  {
+    "id": "7599c639-3887-4ce0-b894-75622b7cc750",
+    "person_id": "3268a2f4-eb40-4e2b-8748-3c155afce4c6",
+    "organization_id": "8a585313-b1eb-425d-a649-950a0209292a",
+    "affiliation_role": "Research Affiliate",
+    "start_datestamp": "2023-05-20T06:21:27.374Z",
+    "end_date": null,
+    "created_at": "2023-05-20T06:21:27.374Z",
+    "updated_at": "2023-05-20T06:21:27.374Z"
+  },
+  {
+    "id": "bf7af0c6-d1c8-409d-8cca-5cf9d8ac5b9f",
+    "person_id": "619643cc-1e44-43dc-8268-b29b016cab46",
+    "organization_id": "d82f0108-c7ad-43ed-8ba7-195f10800cc0",
+    "affiliation_role": "Research Affiliate",
+    "start_datestamp": "2023-05-20T06:21:27.379Z",
+    "end_date": null,
+    "created_at": "2023-05-20T06:21:27.379Z",
+    "updated_at": "2023-05-20T06:21:27.379Z"
+  },
+  {
+    "id": "06d7e35d-3476-4d60-a596-106f96b0473d",
+    "person_id": "1b44804d-6dec-4de7-bdc2-8d56d0e81b6f",
+    "organization_id": "8a585313-b1eb-425d-a649-950a0209292a",
+    "affiliation_role": "Research Affiliate",
+    "start_datestamp": "2023-05-20T06:21:27.383Z",
+    "end_date": null,
+    "created_at": "2023-05-20T06:21:27.383Z",
+    "updated_at": "2023-05-20T06:21:27.383Z"
+  },
+  {
+    "id": "1704a207-0d17-40b0-b6b5-851480a1b66a",
+    "person_id": "e7fb364a-e372-45d7-863e-04cac91256d0",
+    "organization_id": "7b969060-f5bf-4dd8-b2e1-0d8bed065ce5",
+    "affiliation_role": "Research Affiliate",
+    "start_datestamp": "2023-05-20T06:21:27.392Z",
+    "end_date": null,
+    "created_at": "2023-05-20T06:21:27.392Z",
+    "updated_at": "2023-05-20T06:21:27.392Z"
+  },
+  {
+    "id": "19c91a39-b2da-4095-879a-681cb9f80328",
+    "person_id": "6b1db4e0-fc3b-46ed-8999-ce8447f6b3a9",
+    "organization_id": "8a585313-b1eb-425d-a649-950a0209292a",
+    "affiliation_role": "Research Affiliate",
+    "start_datestamp": "2023-05-20T06:21:27.408Z",
+    "end_date": null,
+    "created_at": "2023-05-20T06:21:27.408Z",
+    "updated_at": "2023-05-20T06:21:27.408Z"
+  },
+  {
+    "id": "d3981b75-5779-4536-a5ec-e7712df33652",
+    "person_id": "8254a8ac-0a86-4cf4-9af5-4acc5bcab384",
+    "organization_id": "d82f0108-c7ad-43ed-8ba7-195f10800cc0",
+    "affiliation_role": "Research Affiliate",
+    "start_datestamp": "2023-05-20T06:21:27.414Z",
+    "end_date": null,
+    "created_at": "2023-05-20T06:21:27.414Z",
+    "updated_at": "2023-05-20T06:21:27.414Z"
+  },
+  {
+    "id": "0f8cf845-af7e-4917-b3c9-2ca30eedf073",
+    "person_id": "4079b1ee-b4d9-4722-9e44-0b4ee3dd9b09",
+    "organization_id": "8a585313-b1eb-425d-a649-950a0209292a",
+    "affiliation_role": "Research Affiliate",
+    "start_datestamp": "2023-05-20T06:21:27.418Z",
+    "end_date": null,
+    "created_at": "2023-05-20T06:21:27.418Z",
+    "updated_at": "2023-05-20T06:21:27.418Z"
+  },
+  {
+    "id": "8491cc28-90c6-4867-8bdf-648a476732dd",
+    "person_id": "7312ff34-b6d0-4031-b16f-fafcdbe2def2",
+    "organization_id": "8df34528-94d7-4db8-98f1-4ef4b72f9f9c",
+    "affiliation_role": "Research Affiliate",
+    "start_datestamp": "2023-05-20T06:21:27.424Z",
+    "end_date": null,
+    "created_at": "2023-05-20T06:21:27.424Z",
+    "updated_at": "2023-05-20T06:21:27.424Z"
+  },
+  {
+    "id": "f9cc2de6-d34d-461a-8609-33e2b3675df7",
+    "person_id": "de1969ce-3ad5-49c9-a05c-5dd93254a692",
+    "organization_id": "62452d77-be85-4720-b720-ebcef2f0bf51",
+    "affiliation_role": "Research Affiliate",
+    "start_datestamp": "2023-05-20T06:21:27.430Z",
+    "end_date": null,
+    "created_at": "2023-05-20T06:21:27.430Z",
+    "updated_at": "2023-05-20T06:21:27.430Z"
+  },
+  {
+    "id": "90143080-51a1-4d0e-9c27-2dbfe0107226",
+    "person_id": "ce1f92d7-a6dd-4cbb-8fc3-765d0e295248",
+    "organization_id": "d82f0108-c7ad-43ed-8ba7-195f10800cc0",
+    "affiliation_role": "Research Affiliate",
+    "start_datestamp": "2023-05-20T06:21:27.444Z",
+    "end_date": null,
+    "created_at": "2023-05-20T06:21:27.444Z",
+    "updated_at": "2023-05-20T06:21:27.444Z"
+  },
+  {
+    "id": "e4af3ec1-85ee-4791-b9ce-63a5c9cee6b3",
+    "person_id": "88baa075-d416-496e-a26a-7bef02c43b25",
+    "organization_id": "8a585313-b1eb-425d-a649-950a0209292a",
+    "affiliation_role": "Research Affiliate",
+    "start_datestamp": "2023-05-20T06:21:27.451Z",
+    "end_date": null,
+    "created_at": "2023-05-20T06:21:27.451Z",
+    "updated_at": "2023-05-20T06:21:27.451Z"
+  },
+  {
+    "id": "5ac18006-015a-4725-b8a0-1b314b61a9d8",
+    "person_id": "20e2c2ed-59ae-4a99-9447-1c733cff1045",
+    "organization_id": "16f7f189-d469-4091-aadc-9ea91eab9269",
+    "affiliation_role": "Research Affiliate",
+    "start_datestamp": "2023-05-20T06:21:27.473Z",
+    "end_date": null,
+    "created_at": "2023-05-20T06:21:27.473Z",
+    "updated_at": "2023-05-20T06:21:27.473Z"
+  },
+  {
+    "id": "3672a8e0-5e1c-4dcb-8fa0-f51abcb121c9",
+    "person_id": "cd655b8c-bf8a-4825-80f0-97b0bf3a50e9",
+    "organization_id": "8df34528-94d7-4db8-98f1-4ef4b72f9f9c",
+    "affiliation_role": "Research Affiliate",
+    "start_datestamp": "2023-05-20T06:21:27.476Z",
+    "end_date": null,
+    "created_at": "2023-05-20T06:21:27.476Z",
+    "updated_at": "2023-05-20T06:21:27.476Z"
+  },
+  {
+    "id": "d57d5adc-2b1b-4250-8183-210b2035f31b",
+    "person_id": "34a03e61-98f6-430b-9ba6-0344dbc0dfd6",
+    "organization_id": "7b969060-f5bf-4dd8-b2e1-0d8bed065ce5",
+    "affiliation_role": "Research Affiliate",
+    "start_datestamp": "2023-05-20T06:21:27.480Z",
+    "end_date": null,
+    "created_at": "2023-05-20T06:21:27.480Z",
+    "updated_at": "2023-05-20T06:21:27.480Z"
+  },
+  {
+    "id": "53747276-7245-47cc-9259-6f7b9cea117d",
+    "person_id": "8110657f-13e6-437e-a481-78c396ba7683",
+    "organization_id": "a7bfbc87-d99a-44cb-aa31-ba2e98a8174d",
+    "affiliation_role": "Research Affiliate",
+    "start_datestamp": "2023-05-20T06:21:27.491Z",
+    "end_date": null,
+    "created_at": "2023-05-20T06:21:27.491Z",
+    "updated_at": "2023-05-20T06:21:27.491Z"
+  },
+  {
+    "id": "e002b6bb-1cfa-4cf0-873b-0635617ffa41",
+    "person_id": "cc7ba21f-8923-4e5f-9fad-0c49bf20c396",
+    "organization_id": "62452d77-be85-4720-b720-ebcef2f0bf51",
+    "affiliation_role": "Research Affiliate",
+    "start_datestamp": "2023-05-20T06:21:27.495Z",
+    "end_date": null,
+    "created_at": "2023-05-20T06:21:27.495Z",
+    "updated_at": "2023-05-20T06:21:27.495Z"
+  },
+  {
+    "id": "4cac4bfc-4a37-49f3-a633-f60d428a6ccd",
+    "person_id": "cf4a03cf-cc84-4eaa-b061-23b7155ebf0b",
+    "organization_id": "62452d77-be85-4720-b720-ebcef2f0bf51",
+    "affiliation_role": "Research Affiliate",
+    "start_datestamp": "2023-05-20T06:21:27.502Z",
+    "end_date": null,
+    "created_at": "2023-05-20T06:21:27.502Z",
+    "updated_at": "2023-05-20T06:21:27.502Z"
+  },
+  {
+    "id": "61d6bd46-2e65-48bb-8ee3-9733edd5819a",
+    "person_id": "1592b756-450c-4dc2-b99c-f44ff436b186",
+    "organization_id": "a7bfbc87-d99a-44cb-aa31-ba2e98a8174d",
+    "affiliation_role": "Research Affiliate",
+    "start_datestamp": "2023-05-20T06:21:27.503Z",
+    "end_date": null,
+    "created_at": "2023-05-20T06:21:27.503Z",
+    "updated_at": "2023-05-20T06:21:27.503Z"
+  },
+  {
+    "id": "c80eceae-799d-4ab3-9858-91dd37bdf74a",
+    "person_id": "f73e094a-d57d-4290-a559-289aa37bd478",
+    "organization_id": "62452d77-be85-4720-b720-ebcef2f0bf51",
+    "affiliation_role": "Research Affiliate",
+    "start_datestamp": "2023-05-20T06:21:27.517Z",
+    "end_date": null,
+    "created_at": "2023-05-20T06:21:27.517Z",
+    "updated_at": "2023-05-20T06:21:27.517Z"
+  },
+  {
+    "id": "5eee71ae-97b5-47ae-9604-930c00745648",
+    "person_id": "ae52fd49-4988-48b6-ad81-2771338dfb54",
+    "organization_id": "f8e36101-7049-486a-9546-66fce1282cbd",
+    "affiliation_role": "Research Affiliate",
+    "start_datestamp": "2023-05-20T06:21:27.524Z",
+    "end_date": null,
+    "created_at": "2023-05-20T06:21:27.524Z",
+    "updated_at": "2023-05-20T06:21:27.524Z"
+  },
+  {
+    "id": "fa21e7d5-76ac-4b14-902f-facf5be8401d",
+    "person_id": "72407d17-ec73-460b-8c00-00bf6884e10e",
+    "organization_id": "7b969060-f5bf-4dd8-b2e1-0d8bed065ce5",
+    "affiliation_role": "Research Affiliate",
+    "start_datestamp": "2023-05-20T06:21:27.527Z",
+    "end_date": null,
+    "created_at": "2023-05-20T06:21:27.527Z",
+    "updated_at": "2023-05-20T06:21:27.527Z"
+  },
+  {
+    "id": "f7456e3b-a126-4210-b1b9-faabbfee58d1",
+    "person_id": "da7a286e-6a85-4b28-a8c6-2d17c94c28a9",
+    "organization_id": "16f7f189-d469-4091-aadc-9ea91eab9269",
+    "affiliation_role": "Research Affiliate",
+    "start_datestamp": "2023-05-20T06:21:27.530Z",
+    "end_date": null,
+    "created_at": "2023-05-20T06:21:27.530Z",
+    "updated_at": "2023-05-20T06:21:27.530Z"
+  },
+  {
+    "id": "cb19256d-0437-40dc-8c6f-03cd60dc88ce",
+    "person_id": "16253c1c-e446-45e4-b229-1d64eee8d42f",
+    "organization_id": "7b969060-f5bf-4dd8-b2e1-0d8bed065ce5",
+    "affiliation_role": "Research Affiliate",
+    "start_datestamp": "2023-05-20T06:21:27.535Z",
+    "end_date": null,
+    "created_at": "2023-05-20T06:21:27.535Z",
+    "updated_at": "2023-05-20T06:21:27.535Z"
+  },
+  {
+    "id": "ed282b72-2fab-4bb2-9ab5-f76d379faf41",
+    "person_id": "9a497310-2cbd-4368-8112-12a4a71b15e6",
+    "organization_id": "a7bfbc87-d99a-44cb-aa31-ba2e98a8174d",
+    "affiliation_role": "Research Affiliate",
+    "start_datestamp": "2023-05-20T06:21:27.541Z",
+    "end_date": null,
+    "created_at": "2023-05-20T06:21:27.541Z",
+    "updated_at": "2023-05-20T06:21:27.541Z"
+  },
+  {
+    "id": "b199cd29-567a-4503-8b1b-98e8da4f3a39",
+    "person_id": "7ea3e2a1-c976-4970-9cff-3fc6e15bda4b",
+    "organization_id": "d82f0108-c7ad-43ed-8ba7-195f10800cc0",
+    "affiliation_role": "Research Affiliate",
+    "start_datestamp": "2023-05-20T06:21:27.542Z",
+    "end_date": null,
+    "created_at": "2023-05-20T06:21:27.542Z",
+    "updated_at": "2023-05-20T06:21:27.542Z"
+  },
+  {
+    "id": "837a4139-fc9d-4b58-90c7-a7be86ea1b62",
+    "person_id": "a4e9ccba-eba3-4b49-a107-784bc5447b11",
+    "organization_id": "16f7f189-d469-4091-aadc-9ea91eab9269",
+    "affiliation_role": "Research Affiliate",
+    "start_datestamp": "2023-05-20T06:21:27.549Z",
+    "end_date": null,
+    "created_at": "2023-05-20T06:21:27.549Z",
+    "updated_at": "2023-05-20T06:21:27.549Z"
+  },
+  {
+    "id": "fda70711-9cd4-4357-ad5d-31ff167358c0",
+    "person_id": "ee1c72a3-3d71-4aac-8e69-dd53f70639c7",
+    "organization_id": "62452d77-be85-4720-b720-ebcef2f0bf51",
+    "affiliation_role": "Research Affiliate",
+    "start_datestamp": "2023-05-20T06:21:27.556Z",
+    "end_date": null,
+    "created_at": "2023-05-20T06:21:27.556Z",
+    "updated_at": "2023-05-20T06:21:27.556Z"
+  },
+  {
+    "id": "6e80519a-b5b7-4169-a442-c8c0a80389a0",
+    "person_id": "ede876e9-2ab8-450c-a18b-46bc7dff67a1",
+    "organization_id": "8df34528-94d7-4db8-98f1-4ef4b72f9f9c",
+    "affiliation_role": "Research Affiliate",
+    "start_datestamp": "2023-05-20T06:21:27.559Z",
+    "end_date": null,
+    "created_at": "2023-05-20T06:21:27.559Z",
+    "updated_at": "2023-05-20T06:21:27.559Z"
+  },
+  {
+    "id": "dedcb23d-a33b-43aa-bf46-8afa20fda01b",
+    "person_id": "ca35e486-2832-4592-9ab8-54b4d59f31f0",
+    "organization_id": "8df34528-94d7-4db8-98f1-4ef4b72f9f9c",
+    "affiliation_role": "Research Affiliate",
+    "start_datestamp": "2023-05-20T06:21:27.639Z",
+    "end_date": null,
+    "created_at": "2023-05-20T06:21:27.639Z",
+    "updated_at": "2023-05-20T06:21:27.639Z"
+  },
+  {
+    "id": "5992cc87-c733-4790-8a1f-2d94b10290fc",
+    "person_id": "216cb279-0640-4deb-9c67-8c7e8843ee31",
+    "organization_id": "16f7f189-d469-4091-aadc-9ea91eab9269",
+    "affiliation_role": "Research Affiliate",
+    "start_datestamp": "2023-05-20T06:21:27.642Z",
+    "end_date": null,
+    "created_at": "2023-05-20T06:21:27.642Z",
+    "updated_at": "2023-05-20T06:21:27.642Z"
+  },
+  {
+    "id": "5a4c641f-bef9-429d-91e6-6b82bb7abe52",
+    "person_id": "3cb79d78-053c-465d-bd7a-99bc6558394a",
+    "organization_id": "8a585313-b1eb-425d-a649-950a0209292a",
+    "affiliation_role": "Research Affiliate",
+    "start_datestamp": "2023-05-20T06:21:27.645Z",
+    "end_date": null,
+    "created_at": "2023-05-20T06:21:27.645Z",
+    "updated_at": "2023-05-20T06:21:27.645Z"
+  },
+  {
+    "id": "4b266431-d2d8-4a12-8bfc-1bbce00cd710",
+    "person_id": "56c033e7-3790-4c7c-a280-04ce4e2646bf",
+    "organization_id": "8a585313-b1eb-425d-a649-950a0209292a",
+    "affiliation_role": "Research Affiliate",
+    "start_datestamp": "2023-05-20T06:21:27.649Z",
+    "end_date": null,
+    "created_at": "2023-05-20T06:21:27.649Z",
+    "updated_at": "2023-05-20T06:21:27.649Z"
+  },
+  {
+    "id": "03858d59-ef33-4c71-a2c2-d63c3f5d1349",
+    "person_id": "d0fc12e9-5bf1-4872-881d-7a11087e3499",
+    "organization_id": "a7bfbc87-d99a-44cb-aa31-ba2e98a8174d",
+    "affiliation_role": "Research Affiliate",
+    "start_datestamp": "2023-05-20T06:21:27.651Z",
+    "end_date": null,
+    "created_at": "2023-05-20T06:21:27.651Z",
+    "updated_at": "2023-05-20T06:21:27.651Z"
+  },
+  {
+    "id": "7cea95f6-4108-4177-9ceb-2aee45b032e0",
+    "person_id": "e9381fef-2ad6-4e35-9de3-712d1d592e84",
+    "organization_id": "8df34528-94d7-4db8-98f1-4ef4b72f9f9c",
+    "affiliation_role": "Research Affiliate",
+    "start_datestamp": "2023-05-20T06:21:27.656Z",
+    "end_date": null,
+    "created_at": "2023-05-20T06:21:27.656Z",
+    "updated_at": "2023-05-20T06:21:27.656Z"
+  },
+  {
+    "id": "fd553790-9e77-42d7-8563-352d9b155fdc",
+    "person_id": "4041463b-9ad9-4d34-9960-39e6282bc338",
+    "organization_id": "712529e4-0f3c-41f1-b51d-931d09d6e06c",
+    "affiliation_role": "Research Affiliate",
+    "start_datestamp": "2023-05-20T06:21:27.708Z",
+    "end_date": null,
+    "created_at": "2023-05-20T06:21:27.708Z",
+    "updated_at": "2023-05-20T06:21:27.708Z"
+  },
+  {
+    "id": "58c04296-9b93-4be2-a270-6c370704a1e4",
+    "person_id": "1a8db6ee-1e22-4ca7-8cab-0959807dea3a",
+    "organization_id": "712529e4-0f3c-41f1-b51d-931d09d6e06c",
+    "affiliation_role": "Research Affiliate",
+    "start_datestamp": "2023-05-20T06:21:27.714Z",
+    "end_date": null,
+    "created_at": "2023-05-20T06:21:27.714Z",
+    "updated_at": "2023-05-20T06:21:27.714Z"
+  },
+  {
+    "id": "e645ec0f-6d6b-4870-b493-2dc5a38225c7",
+    "person_id": "42099239-6a5d-4fd7-9559-20f2e5ce2f4d",
+    "organization_id": "62452d77-be85-4720-b720-ebcef2f0bf51",
+    "affiliation_role": "Research Affiliate",
+    "start_datestamp": "2023-05-20T06:21:27.734Z",
+    "end_date": null,
+    "created_at": "2023-05-20T06:21:27.734Z",
+    "updated_at": "2023-05-20T06:21:27.734Z"
+  },
+  {
+    "id": "fabc20bd-7ec0-4f36-a899-0f8ac19574ee",
+    "person_id": "10b71634-455d-4895-8185-05f87d63d44c",
+    "organization_id": "16f7f189-d469-4091-aadc-9ea91eab9269",
+    "affiliation_role": "Research Affiliate",
+    "start_datestamp": "2023-05-20T06:21:27.736Z",
+    "end_date": null,
+    "created_at": "2023-05-20T06:21:27.736Z",
+    "updated_at": "2023-05-20T06:21:27.736Z"
+  },
+  {
+    "id": "a0f44254-62c0-41fb-b12a-0e129f0cf84a",
+    "person_id": "3d3784a0-6a42-4ea2-8f5a-e69f80e7ce45",
+    "organization_id": "f8e36101-7049-486a-9546-66fce1282cbd",
+    "affiliation_role": "Research Affiliate",
+    "start_datestamp": "2023-05-20T06:21:27.740Z",
+    "end_date": null,
+    "created_at": "2023-05-20T06:21:27.740Z",
+    "updated_at": "2023-05-20T06:21:27.740Z"
+  },
+  {
+    "id": "25d21771-5d01-4284-8915-46f3fdd1099c",
+    "person_id": "ec8ee4e9-4aee-40dc-815f-208177e4eb5c",
+    "organization_id": "8df34528-94d7-4db8-98f1-4ef4b72f9f9c",
+    "affiliation_role": "Research Affiliate",
+    "start_datestamp": "2023-05-20T06:21:27.764Z",
+    "end_date": null,
+    "created_at": "2023-05-20T06:21:27.764Z",
+    "updated_at": "2023-05-20T06:21:27.764Z"
+  },
+  {
+    "id": "95d4b1cc-8686-4dfe-90ce-dc0702c5ec6a",
+    "person_id": "3e036bda-a0d4-495e-97fe-ff6fa3e19f66",
+    "organization_id": "62452d77-be85-4720-b720-ebcef2f0bf51",
+    "affiliation_role": "Research Affiliate",
+    "start_datestamp": "2023-05-20T06:21:27.771Z",
+    "end_date": null,
+    "created_at": "2023-05-20T06:21:27.771Z",
+    "updated_at": "2023-05-20T06:21:27.771Z"
+  },
+  {
+    "id": "8e540996-4c45-4a21-8001-010378abb1ad",
+    "person_id": "614b132c-c393-4801-b015-711940e12da4",
+    "organization_id": "16f7f189-d469-4091-aadc-9ea91eab9269",
+    "affiliation_role": "Research Affiliate",
+    "start_datestamp": "2023-05-20T06:21:27.774Z",
+    "end_date": null,
+    "created_at": "2023-05-20T06:21:27.774Z",
+    "updated_at": "2023-05-20T06:21:27.774Z"
+  },
+  {
+    "id": "6b11f6fb-15a0-487d-909b-5e51fe6bd7df",
+    "person_id": "f936c215-43fc-4b66-8675-7c88ed5c42a4",
+    "organization_id": "16f7f189-d469-4091-aadc-9ea91eab9269",
+    "affiliation_role": "Research Affiliate",
+    "start_datestamp": "2023-05-20T06:21:27.782Z",
+    "end_date": null,
+    "created_at": "2023-05-20T06:21:27.782Z",
+    "updated_at": "2023-05-20T06:21:27.782Z"
+  },
+  {
+    "id": "5c9ec760-47df-4fa7-ad81-c1cd40376018",
+    "person_id": "86e797a3-e2d9-4c90-b017-32f4b3ccdff8",
+    "organization_id": "62452d77-be85-4720-b720-ebcef2f0bf51",
+    "affiliation_role": "Research Affiliate",
+    "start_datestamp": "2023-05-20T06:21:27.788Z",
+    "end_date": null,
+    "created_at": "2023-05-20T06:21:27.788Z",
+    "updated_at": "2023-05-20T06:21:27.788Z"
+  },
+  {
+    "id": "cbcbf1ca-46d0-4846-b9a7-f2c8a8763c27",
+    "person_id": "2f44c2c0-50b1-4414-b598-6e02db278491",
+    "organization_id": "d82f0108-c7ad-43ed-8ba7-195f10800cc0",
+    "affiliation_role": "Research Affiliate",
+    "start_datestamp": "2023-05-20T06:21:27.801Z",
+    "end_date": null,
+    "created_at": "2023-05-20T06:21:27.801Z",
+    "updated_at": "2023-05-20T06:21:27.801Z"
+  },
+  {
+    "id": "6986d3e5-eb16-443c-9a1f-267317176e72",
+    "person_id": "7fdfdf2f-b59e-40f9-83dd-fa7b2dc4d7d2",
+    "organization_id": "a7bfbc87-d99a-44cb-aa31-ba2e98a8174d",
+    "affiliation_role": "Research Affiliate",
+    "start_datestamp": "2023-05-20T06:21:27.801Z",
+    "end_date": null,
+    "created_at": "2023-05-20T06:21:27.801Z",
+    "updated_at": "2023-05-20T06:21:27.801Z"
+  },
+  {
+    "id": "3819d1d7-0950-4d03-9b43-e8776333f676",
+    "person_id": "17e3644d-0b86-4af0-85ff-853647f7b76d",
+    "organization_id": "8a585313-b1eb-425d-a649-950a0209292a",
+    "affiliation_role": "Research Affiliate",
+    "start_datestamp": "2023-05-20T06:21:27.805Z",
+    "end_date": null,
+    "created_at": "2023-05-20T06:21:27.805Z",
+    "updated_at": "2023-05-20T06:21:27.805Z"
+  },
+  {
+    "id": "19c6d70e-c368-4cc9-8ba3-a4369602b924",
+    "person_id": "c59a3002-605f-47fa-bc0d-73598a738466",
+    "organization_id": "7b969060-f5bf-4dd8-b2e1-0d8bed065ce5",
+    "affiliation_role": "Research Affiliate",
+    "start_datestamp": "2023-05-20T06:21:27.811Z",
+    "end_date": null,
+    "created_at": "2023-05-20T06:21:27.811Z",
+    "updated_at": "2023-05-20T06:21:27.811Z"
+  },
+  {
+    "id": "ce06d7c8-fb74-4642-94e3-04ac1485ed43",
+    "person_id": "bfafa7b7-2069-4e50-8d24-a093513af251",
+    "organization_id": "a7bfbc87-d99a-44cb-aa31-ba2e98a8174d",
+    "affiliation_role": "Research Affiliate",
+    "start_datestamp": "2023-05-20T06:21:27.813Z",
+    "end_date": null,
+    "created_at": "2023-05-20T06:21:27.813Z",
+    "updated_at": "2023-05-20T06:21:27.813Z"
+  },
+  {
+    "id": "9e0b007e-624d-4c26-a3f2-84d1690a59d5",
+    "person_id": "cc03253d-e76e-4690-8181-9d028a82ae00",
+    "organization_id": "62452d77-be85-4720-b720-ebcef2f0bf51",
+    "affiliation_role": "Research Affiliate",
+    "start_datestamp": "2023-05-20T06:21:27.821Z",
+    "end_date": null,
+    "created_at": "2023-05-20T06:21:27.821Z",
+    "updated_at": "2023-05-20T06:21:27.821Z"
+  },
+  {
+    "id": "bb85447e-c5f1-4c88-8fc1-a05835942948",
+    "person_id": "00771fea-957a-4bbc-8453-d6063cbb9561",
+    "organization_id": "7b969060-f5bf-4dd8-b2e1-0d8bed065ce5",
+    "affiliation_role": "Research Affiliate",
+    "start_datestamp": "2023-05-20T06:21:27.826Z",
+    "end_date": null,
+    "created_at": "2023-05-20T06:21:27.826Z",
+    "updated_at": "2023-05-20T06:21:27.826Z"
+  },
+  {
+    "id": "6b5c444d-039d-49c2-a995-5589db7f21a4",
+    "person_id": "6bf0c75a-acf5-4c0c-8873-51d65b046311",
+    "organization_id": "f8e36101-7049-486a-9546-66fce1282cbd",
+    "affiliation_role": "Research Affiliate",
+    "start_datestamp": "2023-05-20T06:21:27.846Z",
+    "end_date": null,
+    "created_at": "2023-05-20T06:21:27.846Z",
+    "updated_at": "2023-05-20T06:21:27.846Z"
+  },
+  {
+    "id": "681af297-cef4-4a27-8469-a10cc660be65",
+    "person_id": "74c13870-7b5a-46cf-b78c-931a521965f5",
+    "organization_id": "712529e4-0f3c-41f1-b51d-931d09d6e06c",
+    "affiliation_role": "Research Affiliate",
+    "start_datestamp": "2023-05-20T06:21:27.849Z",
+    "end_date": null,
+    "created_at": "2023-05-20T06:21:27.849Z",
+    "updated_at": "2023-05-20T06:21:27.849Z"
+  },
+  {
+    "id": "9b752c5d-2aa7-41db-aa8c-990a547e6536",
+    "person_id": "8d6dbde2-fc3d-48c5-b06a-5193446aa967",
+    "organization_id": "d82f0108-c7ad-43ed-8ba7-195f10800cc0",
+    "affiliation_role": "Research Affiliate",
+    "start_datestamp": "2023-05-20T06:21:27.861Z",
+    "end_date": null,
+    "created_at": "2023-05-20T06:21:27.861Z",
+    "updated_at": "2023-05-20T06:21:27.861Z"
+  },
+  {
+    "id": "657808e0-6f3a-4db7-987c-94f6940982c1",
+    "person_id": "c6f6fc33-58ae-4f1a-8898-8f56165ce636",
+    "organization_id": "16f7f189-d469-4091-aadc-9ea91eab9269",
+    "affiliation_role": "Research Affiliate",
+    "start_datestamp": "2023-05-20T06:21:27.868Z",
+    "end_date": null,
+    "created_at": "2023-05-20T06:21:27.868Z",
+    "updated_at": "2023-05-20T06:21:27.868Z"
+  },
+  {
+    "id": "d2264ca9-b5ce-4363-905e-bcf676cf4593",
+    "person_id": "a5accf73-11d8-4e4e-85b5-79cd38f88179",
+    "organization_id": "8a585313-b1eb-425d-a649-950a0209292a",
+    "affiliation_role": "Research Affiliate",
+    "start_datestamp": "2023-05-20T06:21:27.870Z",
+    "end_date": null,
+    "created_at": "2023-05-20T06:21:27.870Z",
+    "updated_at": "2023-05-20T06:21:27.870Z"
+  },
+  {
+    "id": "ddb1dfa8-412e-4bdd-aab9-a7e92f209670",
+    "person_id": "6e1b1baf-b1b6-4185-8039-84f7126b33ba",
+    "organization_id": "f8e36101-7049-486a-9546-66fce1282cbd",
+    "affiliation_role": "Research Affiliate",
+    "start_datestamp": "2023-05-20T06:21:27.881Z",
+    "end_date": null,
+    "created_at": "2023-05-20T06:21:27.881Z",
+    "updated_at": "2023-05-20T06:21:27.881Z"
+  },
+  {
+    "id": "f7558bb4-8f9f-4422-acfb-a60998462e3b",
+    "person_id": "ae1ff943-9162-4a1d-8d2f-330ce95681b2",
+    "organization_id": "8df34528-94d7-4db8-98f1-4ef4b72f9f9c",
+    "affiliation_role": "Research Affiliate",
+    "start_datestamp": "2023-05-20T06:21:27.887Z",
+    "end_date": null,
+    "created_at": "2023-05-20T06:21:27.887Z",
+    "updated_at": "2023-05-20T06:21:27.887Z"
+  },
+  {
+    "id": "34b2991f-9b1d-4e7a-9d62-3d539443d27b",
+    "person_id": "9e79532c-ab06-4b9c-b7d9-f5b6b6282ac7",
+    "organization_id": "16f7f189-d469-4091-aadc-9ea91eab9269",
+    "affiliation_role": "Research Affiliate",
+    "start_datestamp": "2023-05-20T06:21:27.890Z",
+    "end_date": null,
+    "created_at": "2023-05-20T06:21:27.890Z",
+    "updated_at": "2023-05-20T06:21:27.890Z"
+  },
+  {
+    "id": "6d8fe8e1-03f2-4fc4-8b91-6f3105c66623",
+    "person_id": "d32a3fd8-69c8-48b0-990f-1d0527d487db",
+    "organization_id": "16f7f189-d469-4091-aadc-9ea91eab9269",
+    "affiliation_role": "Research Affiliate",
+    "start_datestamp": "2023-05-20T06:21:27.891Z",
+    "end_date": null,
+    "created_at": "2023-05-20T06:21:27.891Z",
+    "updated_at": "2023-05-20T06:21:27.891Z"
+  },
+  {
+    "id": "83b119e1-8074-4b3f-8992-5080c33ea32d",
+    "person_id": "e7e8da6b-c575-4e51-9c9c-9267aa890d0f",
+    "organization_id": "712529e4-0f3c-41f1-b51d-931d09d6e06c",
+    "affiliation_role": "Research Affiliate",
+    "start_datestamp": "2023-05-20T06:21:27.897Z",
+    "end_date": null,
+    "created_at": "2023-05-20T06:21:27.897Z",
+    "updated_at": "2023-05-20T06:21:27.897Z"
+  },
+  {
+    "id": "bd24a095-6781-4527-824f-049c0f5f576e",
+    "person_id": "9b067236-2bef-42ba-aff6-d42aeeef3ffc",
+    "organization_id": "62452d77-be85-4720-b720-ebcef2f0bf51",
+    "affiliation_role": "Research Affiliate",
+    "start_datestamp": "2023-05-20T06:21:27.910Z",
+    "end_date": null,
+    "created_at": "2023-05-20T06:21:27.910Z",
+    "updated_at": "2023-05-20T06:21:27.910Z"
+  },
+  {
+    "id": "3b752456-b430-48ab-a829-e363d6ca0578",
+    "person_id": "53648944-66a4-4426-aafd-a9950498f534",
+    "organization_id": "7b969060-f5bf-4dd8-b2e1-0d8bed065ce5",
+    "affiliation_role": "Research Affiliate",
+    "start_datestamp": "2023-05-20T06:21:27.914Z",
+    "end_date": null,
+    "created_at": "2023-05-20T06:21:27.914Z",
+    "updated_at": "2023-05-20T06:21:27.914Z"
+  },
+  {
+    "id": "37238672-7c1a-4477-bd1a-3f47b1ab03c3",
+    "person_id": "ad1e697d-b855-4298-87c9-ae8bc01a7978",
+    "organization_id": "16f7f189-d469-4091-aadc-9ea91eab9269",
+    "affiliation_role": "Research Affiliate",
+    "start_datestamp": "2023-05-20T06:21:27.924Z",
+    "end_date": null,
+    "created_at": "2023-05-20T06:21:27.924Z",
+    "updated_at": "2023-05-20T06:21:27.924Z"
+  },
+  {
+    "id": "7b3c5c33-fe1a-4b2a-90cf-87b989bab583",
+    "person_id": "ad51d973-c13e-4a57-96bb-c1edcc8782a8",
+    "organization_id": "a7bfbc87-d99a-44cb-aa31-ba2e98a8174d",
+    "affiliation_role": "Research Affiliate",
+    "start_datestamp": "2023-05-20T06:21:27.926Z",
+    "end_date": null,
+    "created_at": "2023-05-20T06:21:27.926Z",
+    "updated_at": "2023-05-20T06:21:27.926Z"
+  },
+  {
+    "id": "ad557530-4db6-4815-94fc-39f71fc5ba52",
+    "person_id": "b40c823b-2645-443c-bf0b-3a203bd859fc",
+    "organization_id": "8a585313-b1eb-425d-a649-950a0209292a",
+    "affiliation_role": "Research Affiliate",
+    "start_datestamp": "2023-05-20T06:21:27.929Z",
+    "end_date": null,
+    "created_at": "2023-05-20T06:21:27.929Z",
+    "updated_at": "2023-05-20T06:21:27.929Z"
+  },
+  {
+    "id": "a93d572b-cd48-4812-8e09-1aafea9a0084",
+    "person_id": "2fabc476-ec41-408f-93fd-391e4082714c",
+    "organization_id": "62452d77-be85-4720-b720-ebcef2f0bf51",
+    "affiliation_role": "Research Affiliate",
+    "start_datestamp": "2023-05-20T06:21:27.931Z",
+    "end_date": null,
+    "created_at": "2023-05-20T06:21:27.931Z",
+    "updated_at": "2023-05-20T06:21:27.931Z"
+  },
+  {
+    "id": "c68095f0-e2f3-47e7-86e3-5e93c56c912b",
+    "person_id": "205c3b3e-ffc5-4d46-aa5b-30a4f265c2b0",
+    "organization_id": "712529e4-0f3c-41f1-b51d-931d09d6e06c",
+    "affiliation_role": "Research Affiliate",
+    "start_datestamp": "2023-05-20T06:21:27.933Z",
+    "end_date": null,
+    "created_at": "2023-05-20T06:21:27.933Z",
+    "updated_at": "2023-05-20T06:21:27.933Z"
+  },
+  {
+    "id": "6cbff59e-b017-41a9-8763-ffed5d55d57b",
+    "person_id": "c7a4d843-8389-4183-b7b1-00c6282091ca",
+    "organization_id": "712529e4-0f3c-41f1-b51d-931d09d6e06c",
+    "affiliation_role": "Research Affiliate",
+    "start_datestamp": "2023-05-20T06:21:27.935Z",
+    "end_date": null,
+    "created_at": "2023-05-20T06:21:27.935Z",
+    "updated_at": "2023-05-20T06:21:27.935Z"
+  },
+  {
+    "id": "c2de0764-5f9a-49b0-9a16-69ba6501c10a",
+    "person_id": "043ebcef-11eb-41be-be38-d69eb08ade51",
+    "organization_id": "8df34528-94d7-4db8-98f1-4ef4b72f9f9c",
+    "affiliation_role": "Research Affiliate",
+    "start_datestamp": "2023-05-20T06:21:27.956Z",
+    "end_date": null,
+    "created_at": "2023-05-20T06:21:27.956Z",
+    "updated_at": "2023-05-20T06:21:27.956Z"
+  },
+  {
+    "id": "7f6aa439-fa3c-4116-8d43-1efa7a070b44",
+    "person_id": "756d1860-264e-421f-a440-ef8d49447e6c",
+    "organization_id": "a7bfbc87-d99a-44cb-aa31-ba2e98a8174d",
+    "affiliation_role": "Research Affiliate",
+    "start_datestamp": "2023-05-20T06:21:27.961Z",
+    "end_date": null,
+    "created_at": "2023-05-20T06:21:27.961Z",
+    "updated_at": "2023-05-20T06:21:27.961Z"
+  },
+  {
+    "id": "4a2cc9b3-6cb4-4a35-aab0-f2dc7814abf0",
+    "person_id": "0f4b49cc-1b8c-4a58-b8e6-4f5d437b5d47",
+    "organization_id": "712529e4-0f3c-41f1-b51d-931d09d6e06c",
+    "affiliation_role": "Research Affiliate",
+    "start_datestamp": "2023-05-20T06:21:28.017Z",
+    "end_date": null,
+    "created_at": "2023-05-20T06:21:28.017Z",
+    "updated_at": "2023-05-20T06:21:28.017Z"
+  },
+  {
+    "id": "c7c5e5fe-08b1-4093-a3f6-4b10716c6a06",
+    "person_id": "394bfa6e-d464-4325-8583-5390abec494f",
+    "organization_id": "a7bfbc87-d99a-44cb-aa31-ba2e98a8174d",
+    "affiliation_role": "Research Affiliate",
+    "start_datestamp": "2023-05-20T06:21:28.020Z",
+    "end_date": null,
+    "created_at": "2023-05-20T06:21:28.020Z",
+    "updated_at": "2023-05-20T06:21:28.020Z"
+  },
+  {
+    "id": "12c49f5f-b226-43dc-afb4-5de2d28d3f48",
+    "person_id": "62d740b1-10d9-4fa2-8aec-f2ad2ab39722",
+    "organization_id": "f8e36101-7049-486a-9546-66fce1282cbd",
+    "affiliation_role": "Research Affiliate",
+    "start_datestamp": "2023-05-20T06:21:28.023Z",
+    "end_date": null,
+    "created_at": "2023-05-20T06:21:28.023Z",
+    "updated_at": "2023-05-20T06:21:28.023Z"
+  },
+  {
+    "id": "325549d0-d606-4a3b-8fa8-d72c106d2520",
+    "person_id": "990e35a0-a6f0-4990-8ffa-9f49947dbfe3",
+    "organization_id": "16f7f189-d469-4091-aadc-9ea91eab9269",
+    "affiliation_role": "Research Affiliate",
+    "start_datestamp": "2023-05-20T06:21:28.027Z",
+    "end_date": null,
+    "created_at": "2023-05-20T06:21:28.027Z",
+    "updated_at": "2023-05-20T06:21:28.027Z"
+  },
+  {
+    "id": "d1882cf7-7b9a-47e4-b04a-7ec133c8b70c",
+    "person_id": "4c4af100-aeb9-4503-89c7-5ce4d29415c5",
+    "organization_id": "f8e36101-7049-486a-9546-66fce1282cbd",
+    "affiliation_role": "Research Affiliate",
+    "start_datestamp": "2023-05-20T06:21:28.030Z",
+    "end_date": null,
+    "created_at": "2023-05-20T06:21:28.030Z",
+    "updated_at": "2023-05-20T06:21:28.030Z"
+  },
+  {
+    "id": "68f72bd6-8adb-46fd-93f0-211aa6d02eb5",
+    "person_id": "47484bcf-f46b-4b00-88d1-c3138506899c",
+    "organization_id": "62452d77-be85-4720-b720-ebcef2f0bf51",
+    "affiliation_role": "Research Affiliate",
+    "start_datestamp": "2023-05-20T06:21:28.036Z",
+    "end_date": null,
+    "created_at": "2023-05-20T06:21:28.036Z",
+    "updated_at": "2023-05-20T06:21:28.036Z"
+  },
+  {
+    "id": "9086efcc-5548-4d47-bbc9-46a3d8931c60",
+    "person_id": "cbaed2fe-e927-47e8-8058-700758601302",
+    "organization_id": "8df34528-94d7-4db8-98f1-4ef4b72f9f9c",
+    "affiliation_role": "Research Affiliate",
+    "start_datestamp": "2023-05-20T06:21:28.041Z",
+    "end_date": null,
+    "created_at": "2023-05-20T06:21:28.041Z",
+    "updated_at": "2023-05-20T06:21:28.041Z"
+  }
+]

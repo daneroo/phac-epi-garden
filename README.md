@@ -4,8 +4,6 @@ Monorepo based on [create-t3-turbo](https://github.com/t3-oss/create-t3-turbo)
 
 ## TODO
 
-- [x] recreate phac-epi_center db to prisma pull
-  - [ ] get and connect a neon db for production
 - [ ] rename @acme to @phac
 - [ ] deploy to vercel
 - [ ] rename `apps/nextjs -> apps/epi-t3` (adjust vercel build)
@@ -13,8 +11,10 @@ Monorepo based on [create-t3-turbo](https://github.com/t3-oss/create-t3-turbo)
 - Other services from t3 tutorial: <https://www.youtube.com/watch?v=YkOSUVzOAA4>
   - Changing stack: <https://www.youtube.com/watch?v=hgglCqAXHuE>
 - `----- DONE (for now) -----`
-- [x] seed database based on epi_center
-  - [ ] docs (here) to recreate (diesel seed, then pull generate push)
+- [x] recreate phac-epi_center db to prisma pull
+  - [x] get and connect a neon db for production
+  - [x] dump (from `packages/db`)
+  - [x] seed (from `packages/db`)
 - [x] build and run locally
   - [x] setup turbo token for ci and locally
 - [x] create git repo
@@ -58,6 +58,17 @@ pnpm db:generate
 pnpm db:push
 ```
 
+### Re-seed the database
+
+```bash
+cd packages/db
+# bring up an ampty database (phac-epi_center)
+# docker compose down; sleep 2; docker compose up -d db
+pnpm db:generate
+pnpm db:push
+pnpm db:restore
+```
+
 ### Next Auth
 
 - <https://next-auth.js.org/providers/discord>
@@ -82,8 +93,9 @@ Deploying to domain: <https://t3.epi.phac.v.imetrical.com/>
 
 Added Vars:
 
-- DATABASE_URL=postgres://daneroo:..
-- DIRECT_URL=postgres://daneroo:...
+- Added with neon integration in vercel DATABASE_URL=postgres://daneroo:..
+  - removed other env vars (DIRECT_URL, PG_HOST,...)
+- REMOVED: DIRECT_URL=postgres://daneroo:...
 - DISCORD_CLIENT_ID=... (same as local)
 - DISCORD_CLIENT_SECRET=... (same as local)
 - NEXTAUTH_URL=https://t3.epi.phac.v.imetrical.com/

@@ -1,0 +1,14 @@
+[
+  {
+    "role": "ADMIN"
+  },
+  {
+    "role": "USER"
+  },
+  {
+    "role": "ANALYST"
+  },
+  {
+    "role": "OPERATOR"
+  }
+]

@@ -1,0 +1,110 @@
+[
+  {
+    "id": "f8e36101-7049-486a-9546-66fce1282cbd",
+    "name_en": "Public Health Agency of Canada",
+    "name_fr": "Agence de Sante Public de Canada",
+    "acronym_en": "PHAC",
+    "acronym_fr": "ASPC",
+    "org_type": "Government",
+    "url": "some_url",
+    "created_at": "2023-05-20T06:21:24.955Z",
+    "updated_at": "2023-05-20T06:21:24.955Z",
+    "retired_at": null
+  },
+  {
+    "id": "16f7f189-d469-4091-aadc-9ea91eab9269",
+    "name_en": "University of British Columbia",
+    "name_fr": "Universitaire de British Columbia",
+    "acronym_en": "UBC",
+    "acronym_fr": "UBC",
+    "org_type": "Academic",
+    "url": "some_url",
+    "created_at": "2023-05-20T06:21:24.955Z",
+    "updated_at": "2023-05-20T06:21:24.955Z",
+    "retired_at": null
+  },
+  {
+    "id": "d82f0108-c7ad-43ed-8ba7-195f10800cc0",
+    "name_en": "University of Manitoba",
+    "name_fr": "Universitaire de Manitoba",
+    "acronym_en": "UM",
+    "acronym_fr": "UM",
+    "org_type": "Academic",
+    "url": "some_url",
+    "created_at": "2023-05-20T06:21:24.956Z",
+    "updated_at": "2023-05-20T06:21:24.956Z",
+    "retired_at": null
+  },
+  {
+    "id": "8a585313-b1eb-425d-a649-950a0209292a",
+    "name_en": "University of Toronto",
+    "name_fr": "Universitaire de Toronto",
+    "acronym_en": "UofT",
+    "acronym_fr": "UofT",
+    "org_type": "Academic",
+    "url": "some_url",
+    "created_at": "2023-05-20T06:21:24.956Z",
+    "updated_at": "2023-05-20T06:21:24.956Z",
+    "retired_at": null
+  },
+  {
+    "id": "712529e4-0f3c-41f1-b51d-931d09d6e06c",
+    "name_en": "University of Quebec",
+    "name_fr": "Universitaire de Quebec",
+    "acronym_en": "UQAM",
+    "acronym_fr": "UQAM",
+    "org_type": "Academic",
+    "url": "some_url",
+    "created_at": "2023-05-20T06:21:24.956Z",
+    "updated_at": "2023-05-20T06:21:24.956Z",
+    "retired_at": null
+  },
+  {
+    "id": "62452d77-be85-4720-b720-ebcef2f0bf51",
+    "name_en": "University of Alberta",
+    "name_fr": "Universitaire de Alberta",
+    "acronym_en": "UofA",
+    "acronym_fr": "UofA",
+    "org_type": "Academic",
+    "url": "some_url",
+    "created_at": "2023-05-20T06:21:24.956Z",
+    "updated_at": "2023-05-20T06:21:24.956Z",
+    "retired_at": null
+  },
+  {
+    "id": "7b969060-f5bf-4dd8-b2e1-0d8bed065ce5",
+    "name_en": "University of Saskatchewan",
+    "name_fr": "Universitaire de Saskatchewan",
+    "acronym_en": "USask",
+    "acronym_fr": "USask",
+    "org_type": "Academic",
+    "url": "some_url",
+    "created_at": "2023-05-20T06:21:24.956Z",
+    "updated_at": "2023-05-20T06:21:24.956Z",
+    "retired_at": null
+  },
+  {
+    "id": "a7bfbc87-d99a-44cb-aa31-ba2e98a8174d",
+    "name_en": "University of New Brunswick",
+    "name_fr": "Universitaire de New Brunswick",
+    "acronym_en": "UNB",
+    "acronym_fr": "UNB",
+    "org_type": "Academic",
+    "url": "some_url",
+    "created_at": "2023-05-20T06:21:24.957Z",
+    "updated_at": "2023-05-20T06:21:24.957Z",
+    "retired_at": null
+  },
+  {
+    "id": "8df34528-94d7-4db8-98f1-4ef4b72f9f9c",
+    "name_en": "University of Nova Scotia",
+    "name_fr": "Universitaire de Nova Scotia",
+    "acronym_en": "NSCAD",
+    "acronym_fr": "NSCAD",
+    "org_type": "Academic",
+    "url": "some_url",
+    "created_at": "2023-05-20T06:21:24.957Z",
+    "updated_at": "2023-05-20T06:21:24.957Z",
+    "retired_at": null
+  }
+]
