@@ -4,6 +4,7 @@ Monorepo based on [create-t3-turbo](https://github.com/t3-oss/create-t3-turbo)
 
 ## TODO
 
+- [ ] pull latest from <https://github.com/ToferC/epi_center>
 - [ ] rename @acme to @phac
 - [x] deploy to vercel
 - [ ] rename `apps/nextjs -> apps/epi-t3` (adjust vercel build)
