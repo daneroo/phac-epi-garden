@@ -60,6 +60,8 @@ pnpm db:push
 
 ### Re-seed the database
 
+See [docs on `pg_dump` on neon](https://neon.tech/docs/import/import-from-postgres)
+
 ```bash
 cd packages/db
 # bring up an ampty database (phac-epi_center)

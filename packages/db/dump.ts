@@ -87,7 +87,16 @@ async function restoreTable(modelName: string): Promise<number> {
   const records = JSON.parse(
     await fs.readFile(`seed-data/${modelName}.json`, "utf8"),
   );
+  let count = 0;
+  const start = +new Date();
+
   for (const record of records) {
+    // if (modelName == "capabilities") {
+    //   if (count < 3570) {
+    //     count += 1;
+    //     continue;
+    //   }
+    // }
     const where =
       modelName === "valid_roles" ? { role: record.role } : { id: record.id }; // Replace `id` with the unique identifier for your model
     await prisma[modelName.toLowerCase()].upsert({
@@ -95,6 +104,17 @@ async function restoreTable(modelName: string): Promise<number> {
       update: record,
       create: record,
     });
+    count += 1;
+    // progress
+    if (count % 10 == 0) {
+      const elapsed = (+new Date() - start) / 1000;
+      const rate = count / elapsed;
+      console.log(
+        `restored ${count} of ${
+          records.length
+        } ${modelName} in ${elapsed.toFixed(1)}s (rate:${rate.toFixed(1)}/s)`,
+      );
+    }
   }
   return records.length;
 }
