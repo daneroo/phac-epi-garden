@@ -5,9 +5,10 @@ Monorepo based on [create-t3-turbo](https://github.com/t3-oss/create-t3-turbo)
 ## TODO
 
 - [ ] rename @acme to @phac
-- [ ] deploy to vercel
+- [x] deploy to vercel
 - [ ] rename `apps/nextjs -> apps/epi-t3` (adjust vercel build)
-  - [ ] deploy with neon (for prod)
+  - [x] deploy with neon (for prod)
+- Refactor database dump/usernames, etc
 - Other services from t3 tutorial: <https://www.youtube.com/watch?v=YkOSUVzOAA4>
   - Changing stack: <https://www.youtube.com/watch?v=hgglCqAXHuE>
 - `----- DONE (for now) -----`
@@ -68,7 +69,29 @@ cd packages/db
 # docker compose down; sleep 2; docker compose up -d db
 pnpm db:generate
 pnpm db:push
-pnpm db:restore
+pnpm db:restore # too slow for remote
+```
+
+`pg_dump && pg_restore`: to install these on MacOS, `brew install libpq`
+
+```bash
+#  single sql file
+pg_dump "postgresql://christopherallison:12345@localhost:5432/people_data_api" --no-owner --no-acl > db_backup-noacl.sql
+
+# wipe the database and restore
+psql "postgresql://christopherallison:12345@localhost:5432/people_data_api" < db_backup-noacl.sql
+psql $DIRECT_URL < db_backup-noacl.sql
+
+# neon suggested format: --file=dumpfile.bak -Fc -Z 6 -v
+pg_dump "postgresql://christopherallison:12345@localhost:5432/people_data_api" --file=dumpfile.bak -Fc -Z 6 -v
+
+# tar format:
+pg_dump -F t "postgresql://christopherallison:12345@localhost:5432/people_data_api" > db_backup.tar
+
+# Drop all on neon target
+psql $DIRECT_URL -c "
+    DROP SCHEMA public CASCADE;
+    CREATE SCHEMA public;"
 ```
 
 ### Next Auth

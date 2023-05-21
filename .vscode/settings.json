@@ -12,5 +12,5 @@
   "typescript.tsdk": "node_modules/typescript/lib",
   "typescript.enablePromptUseWorkspaceTsdk": true,
   "tailwindCSS.experimental.configFile": "./packages/config/tailwind/index.ts",
-  "cSpell.words": ["manypkg", "NEXTAUTH", "superjson"]
+  "cSpell.words": ["libpq", "manypkg", "NEXTAUTH", "superjson"]
 }
