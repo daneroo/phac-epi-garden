@@ -4,15 +4,15 @@ importers:
 
   .:
     dependencies:
-      '@acme/eslint-config':
-        specifier: ^0.1.0
-        version: link:packages/config/eslint
       '@ianvs/prettier-plugin-sort-imports':
         specifier: ^3.7.2
         version: 3.7.2(prettier@2.8.8)
       '@manypkg/cli':
         specifier: ^0.20.0
         version: 0.20.0
+      '@phac/eslint-config':
+        specifier: ^0.1.0
+        version: link:packages/config/eslint
       '@types/prettier':
         specifier: ^2.7.2
         version: 2.7.2
@@ -34,13 +34,13 @@ importers:
 
   apps/nextjs:
     dependencies:
-      '@acme/api':
+      '@phac/api':
         specifier: ^0.1.0
         version: link:../../packages/api
-      '@acme/auth':
+      '@phac/auth':
         specifier: ^0.1.0
         version: link:../../packages/auth
-      '@acme/db':
+      '@phac/db':
         specifier: ^0.1.0
         version: link:../../packages/db
       '@t3-oss/env-nextjs':
@@ -80,10 +80,10 @@ importers:
         specifier: ^3.21.4
         version: 3.21.4
     devDependencies:
-      '@acme/eslint-config':
+      '@phac/eslint-config':
         specifier: ^0.1.0
         version: link:../../packages/config/eslint
-      '@acme/tailwind-config':
+      '@phac/tailwind-config':
         specifier: ^0.1.0
         version: link:../../packages/config/tailwind
       '@types/node':
@@ -116,10 +116,10 @@ importers:
 
   packages/api:
     dependencies:
-      '@acme/auth':
+      '@phac/auth':
         specifier: ^0.1.0
         version: link:../auth
-      '@acme/db':
+      '@phac/db':
         specifier: ^0.1.0
         version: link:../db
       '@trpc/client':
@@ -135,7 +135,7 @@ importers:
         specifier: ^3.21.4
         version: 3.21.4
     devDependencies:
-      '@acme/eslint-config':
+      '@phac/eslint-config':
         specifier: ^0.1.0
         version: link:../config/eslint
       eslint:
@@ -147,12 +147,12 @@ importers:
 
   packages/auth:
     dependencies:
-      '@acme/db':
-        specifier: ^0.1.0
-        version: link:../db
       '@next-auth/prisma-adapter':
         specifier: ^1.0.6
         version: 1.0.6(@prisma/client@4.14.0)(next-auth@4.22.1)
+      '@phac/db':
+        specifier: ^0.1.0
+        version: link:../db
       '@t3-oss/env-nextjs':
         specifier: ^0.3.1
         version: 0.3.1(typescript@5.0.4)(zod@3.21.4)
@@ -172,7 +172,7 @@ importers:
         specifier: ^3.21.4
         version: 3.21.4
     devDependencies:
-      '@acme/eslint-config':
+      '@phac/eslint-config':
         specifier: ^0.1.0
         version: link:../config/eslint
       eslint:
