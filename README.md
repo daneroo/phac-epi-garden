@@ -4,14 +4,14 @@ Monorepo based on [create-t3-turbo](https://github.com/t3-oss/create-t3-turbo)
 
 ## TODO
 
-- [x] clone `apps/nextjs -> apps/epi-t3` (adjust vercel build)
-  - [ ] deploy with neon (for prod)
-  - [ ] remove nextjs and its deployment
+- [ ] remove nextjs and its deployment
 - [ ] feature branches/pr's not deployed correctly (neon branch?)
 - Refactor database dump/usernames, etc
 - Other services from t3 tutorial: <https://www.youtube.com/watch?v=YkOSUVzOAA4>
   - Changing stack: <https://www.youtube.com/watch?v=hgglCqAXHuE>
 - `----- DONE (for now) -----`
+- [x] clone `apps/nextjs -> apps/epi-t3` (adjust vercel build)
+  - [x] deploy with neon (for prod)
 - [x] rename @acme to @phac
   - [x] lint and test
 - [x] deploy to vercel
