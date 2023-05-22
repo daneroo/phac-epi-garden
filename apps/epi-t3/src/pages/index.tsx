@@ -1,92 +1,34 @@
-import { useState } from "react";
 import type { NextPage } from "next";
 import Head from "next/head";
 import { signIn, signOut } from "next-auth/react";
 
 import { api, type RouterOutputs } from "~/utils/api";
 
-const PostCard: React.FC<{
-  post: RouterOutputs["post"]["all"][number];
-  onPostDelete?: () => void;
-}> = ({ post, onPostDelete }) => {
+const StatCard: React.FC<{
+  // stat: RouterOutputs["stat"]["all"][number];
+  stat: RouterOutputs["stat"]["all"][number];
+}> = ({ stat }) => {
+  // Hmm thinks my keys are string or number, but they are all strings
+  function formatKey(key: string | number): string {
+    if (typeof key === 'number') return key.toString();
+    // Convert snake_case to space separated words and capitalize each word
+    return key.split('_').map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(' ');
+  }
   return (
-    <div className="flex flex-row rounded-lg bg-white/10 p-4 transition-all hover:scale-[101%]">
-      <div className="flex-grow">
-        <h2 className="text-2xl font-bold text-red-400">{post.title}</h2>
-        <p className="mt-2 text-sm">{post.content}</p>
-      </div>
-      <div>
-        <span
-          className="cursor-pointer text-sm font-bold uppercase text-red-400"
-          onClick={onPostDelete}
-        >
-          Delete
-        </span>
-      </div>
-    </div>
-  );
-};
-
-const CreatePostForm: React.FC = () => {
-  const utils = api.useContext();
-
-  const [title, setTitle] = useState("");
-  const [content, setContent] = useState("");
-
-  const { mutate, error } = api.post.create.useMutation({
-    async onSuccess() {
-      setTitle("");
-      setContent("");
-      await utils.post.all.invalidate();
-    },
-  });
-
-  return (
-    <div className="flex w-full max-w-2xl flex-col p-4">
-      <input
-        className="mb-2 rounded bg-white/10 p-2 text-white"
-        value={title}
-        onChange={(e) => setTitle(e.target.value)}
-        placeholder="Title"
-      />
-      {error?.data?.zodError?.fieldErrors.title && (
-        <span className="mb-2 text-red-500">
-          {error.data.zodError.fieldErrors.title}
-        </span>
-      )}
-      <input
-        className="mb-2 rounded bg-white/10 p-2 text-white"
-        value={content}
-        onChange={(e) => setContent(e.target.value)}
-        placeholder="Content"
-      />
-      {error?.data?.zodError?.fieldErrors.content && (
-        <span className="mb-2 text-red-500">
-          {error.data.zodError.fieldErrors.content}
-        </span>
-      )}
-      <button
-        className="rounded bg-red-400 p-2 font-bold"
-        onClick={() => {
-          mutate({
-            title,
-            content,
-          });
-        }}
-      >
-        Create
-      </button>
-    </div>
-  );
+    <div
+      className="block rounded-lg bg-white p-4 shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-neutral-700">
+      <h5
+        className="mb-2 text-xl font-medium leading-tight text-neutral-800 dark:text-neutral-50">
+        {formatKey(stat.name)}
+      </h5>
+      <p className="mb-1 text-base text-neutral-600 dark:text-neutral-200">
+        There are currently {stat.count} entries in the {stat.name} table.
+      </p>
+    </div>);
 };
 
 const Home: NextPage = () => {
-  const postQuery = api.post.all.useQuery();
-
-  const deletePostMutation = api.post.delete.useMutation({
-    onSettled: () => postQuery.refetch(),
-  });
-
+  const statQuery = api.stat.all.useQuery();
   return (
     <>
       <Head>
@@ -94,40 +36,30 @@ const Home: NextPage = () => {
         <meta name="description" content="Epicentre" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className="flex h-screen flex-col items-center bg-gradient-to-b from-slate-300 to-slate-700 text-white">
+      {/* h-screen */}
+      <main className="flex  flex-col items-center bg-gradient-to-b from-slate-300 to-slate-700 text-white">
         <div className="container mt-12 flex flex-col items-center justify-center gap-4 px-4 py-8">
           <h1 className="text-5xl font-extrabold tracking-tight sm:text-[5rem]">
             Epi<span className="text-red-500">Centre</span>
           </h1>
           <AuthShowcase />
 
-          <CreatePostForm />
-
-          {postQuery.data ? (
-            <div className="w-full max-w-2xl">
-              {postQuery.data?.length === 0 ? (
-                <span>There are no posts!</span>
-              ) : (
-                <div className="flex h-[40vh] justify-center overflow-y-scroll px-4 text-2xl">
-                  <div className="flex w-full flex-col gap-4">
-                    {postQuery.data?.map((p) => {
-                      return (
-                        <PostCard
-                          key={p.id}
-                          post={p}
-                          onPostDelete={() => deletePostMutation.mutate(p.id)}
-                        />
-                      );
-                    })}
-                  </div>
-                </div>
-              )}
-            </div>
+          <h2 className="text-xl font-extrabold tracking-tight">Table Stats</h2>
+          {statQuery.data ? (
+            statQuery.data?.length === 0 ? (
+              <span>There are no stats!</span>
+            ) : (
+              <div className="flex flex-col gap-2">
+                {/* {statQuery.data?.map((p) => <li key={p.name}>{p.name}: {p.count}</li>)} */}
+                {statQuery.data?.map((p) => <StatCard key={p.name} stat={p} ></StatCard>)}
+              </div>
+            )
           ) : (
-            <p>Loading...</p>
+            <p>Loading Stats...</p>
           )}
+
         </div>
-      </main>
+      </main >
     </>
   );
 };
