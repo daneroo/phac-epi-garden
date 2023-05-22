@@ -2,6 +2,7 @@ packages:
   # removing expo
   # - apps/expo
   - apps/nextjs
+  - apps/epi-t3
   - packages/api
   - packages/auth
   - packages/db
