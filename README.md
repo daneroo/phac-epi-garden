@@ -4,8 +4,8 @@ Monorepo based on [create-t3-turbo](https://github.com/t3-oss/create-t3-turbo)
 
 ## TODO
 
-- [ ] pull latest from <https://github.com/ToferC/epi_center>
-- [ ] rename @acme to @phac
+- [x] rename @acme to @phac
+  - [x] lint and test
 - [x] deploy to vercel
 - [ ] rename `apps/nextjs -> apps/epi-t3` (adjust vercel build)
   - [x] deploy with neon (for prod)
@@ -13,6 +13,10 @@ Monorepo based on [create-t3-turbo](https://github.com/t3-oss/create-t3-turbo)
 - Other services from t3 tutorial: <https://www.youtube.com/watch?v=YkOSUVzOAA4>
   - Changing stack: <https://www.youtube.com/watch?v=hgglCqAXHuE>
 - `----- DONE (for now) -----`
+- [x] pull latest from <https://github.com/ToferC/epi_center>
+  - [x] pull latest
+  - [x] run seed again
+    - migrate and compare
 - [x] recreate phac-epi_center db to prisma pull
   - [x] get and connect a neon db for production
   - [x] dump (from `packages/db`)
