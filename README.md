@@ -4,6 +4,7 @@ Monorepo based on [create-t3-turbo](https://github.com/t3-oss/create-t3-turbo)
 
 ## TODO
 
+- redeploy
 - [ ] remove nextjs and its deployment
 - [ ] feature branches/pr's not deployed correctly (neon branch?)
 - Refactor database dump/usernames, etc
