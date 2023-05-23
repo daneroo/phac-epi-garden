@@ -4,6 +4,50 @@ import { signIn, signOut } from "next-auth/react";
 
 import { api, type RouterOutputs } from "~/utils/api";
 
+// Just our regular CSV file as a component
+export function Logo() {
+  const strokeColor = "rgb(64,64,64)"
+  const strokeWidth = 6;
+  const dur = 2 // duration for animation
+  const loadingSpinner = false
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" width="150" height="150" viewBox="0 0 64,64">
+      <g transform="translate(32,32)scale(0.8,0.8)"
+        strokeWidth={strokeWidth}
+        stroke={strokeColor}
+        stroke-linejoin="round" stroke-linecap="round" fill="none">
+        {/* Both the inner e and the outer C have a 22.5 degree opening */}
+        {/* This is an e */}
+        <g transform="rotate(67.5)">
+          {loadingSpinner && <animateTransform attributeName="transform" attributeType="XML"
+            type="rotate" from="67.5" to="427.5" dur={dur} repeatCount="indefinite" />}
+
+          {/* A rx, ry x-axis-rotation large-arc-flag, sweep-flag x, y */}
+          <path d="M0,0 L0,-20 A20,20 0 1 0 14.14,-14.14" />
+        </g>
+
+        {/* This is a backwards C */}
+        <g transform="scale(-1,1)">
+          <g transform="rotate(67.5)">
+            {loadingSpinner && <animateTransform attributeName="transform" attributeType="XML"
+              type="rotate" from="67.5" to="427.5" dur={dur} repeatCount="indefinite" />}
+            <path d="M0,-30 A30,30 0 1 0 21.21,-21.21" />
+          </g>
+        </g>
+        <circle cx="0" cy="0" r="5" stroke="grey" stroke-width=".5">
+          <animate attributeName="r" values="5;30" dur={dur * 2} repeatCount="indefinite" />
+          <animate attributeName="opacity" values="0;1;0" dur={dur * 2} repeatCount="indefinite" />
+        </circle>
+        <circle cx="0" cy="0" r="5" stroke="none" fill="red" >
+          <animate attributeName="r" values="5;7;5;5;5" dur={dur} repeatCount="indefinite" />
+          <animate attributeName="opacity" values="0;.5;0;0;0" dur={dur} repeatCount="indefinite" />
+        </circle>
+        <circle cx="0" cy="0" r="5" stroke="none" fill="red" />
+      </g>
+    </svg>
+  )
+}
+
 const StatCard: React.FC<{
   // stat: RouterOutputs["stat"]["all"][number];
   stat: RouterOutputs["stat"]["all"][number];
@@ -43,6 +87,8 @@ const Home: NextPage = () => {
             Epi<span className="text-red-500">Centre</span>
           </h1>
           <AuthShowcase />
+
+          <Logo />
 
           <h2 className="text-xl font-extrabold tracking-tight">Table Stats</h2>
           {statQuery.data ? (
