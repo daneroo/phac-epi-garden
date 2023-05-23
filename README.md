@@ -4,8 +4,9 @@ Monorepo based on [create-t3-turbo](https://github.com/t3-oss/create-t3-turbo)
 
 ## TODO
 
-- [ ] create apps/docs
+- [ ] create `apps/docs`
 - [ ] [Flowbite](https://flowbite.com/)
+- [ ] [prisma+Yoga+graphQl](https://www.prisma.io/blog/fullstack-nextjs-graphql-prisma-oklidw1rhw)
 - [ ] remove nextjs and its deployment
 - [ ] feature branches/pr's not deployed correctly (neon branch?)
 - Refactor database dump/usernames, etc
