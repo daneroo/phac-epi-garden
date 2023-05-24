@@ -54,7 +54,7 @@ It is a static site authored in rust. The javascript is using `jquery, jquery-ui
 | Testing           |          | Jest/Storybook/Cypress/Playwright |
 | Deployment        | Vercel   | GCP Cloud Run                     |
 | Database (deploy) | Neon     | AlloyDB, CloudSQL Postgres        |
-| Obervability      |          |                                   |
+| Observability     |          |                                   |
 
 ## References
 

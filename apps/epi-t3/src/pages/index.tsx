@@ -1,10 +1,12 @@
 import type { NextPage } from "next";
 import Head from "next/head";
+import Link from 'next/link'
+
 import { signIn, signOut } from "next-auth/react";
 
 import { api, type RouterOutputs } from "~/utils/api";
 
-// Just our regular CSV file as a component
+// Just our regular SVG file as a component
 export function Logo() {
   const strokeColor = "rgb(64,64,64)"
   const strokeWidth = 6;
@@ -15,7 +17,7 @@ export function Logo() {
       <g transform="translate(32,32)scale(0.8,0.8)"
         strokeWidth={strokeWidth}
         stroke={strokeColor}
-        stroke-linejoin="round" stroke-linecap="round" fill="none">
+        strokeLinejoin="round" stroke-linecap="round" fill="none">
         {/* Both the inner e and the outer C have a 22.5 degree opening */}
         {/* This is an e */}
         <g transform="rotate(67.5)">
@@ -62,8 +64,14 @@ const StatCard: React.FC<{
     <div
       className="block rounded-lg bg-white p-4 shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-neutral-700">
       <h5
-        className="mb-2 text-xl font-medium leading-tight text-neutral-800 dark:text-neutral-50">
-        {formatKey(stat.name)}
+        className="text-xl font-medium leading-tight text-neutral-800 dark:text-neutral-50 mb-2">
+        {stat.name === 'organizations' ? (
+          <Link href={'/' + stat.name.toString()} className="hover:underline">
+            {formatKey(stat.name)}
+          </Link>
+        ) : (
+          <span>{formatKey(stat.name)}</span>
+        )}
       </h5>
       <p className="mb-1 text-base text-neutral-600 dark:text-neutral-200">
         There are currently {stat.count} entries in the {stat.name} table.
