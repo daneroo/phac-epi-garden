@@ -5,7 +5,7 @@ import Image from "next/image";
 const logo = (
   <span style={{ display: 'flex', alignItems: 'center' }}>
     <Image
-      style={{ marginRight: '0.4rem' }}
+      style={{ marginRight: '0.3rem' }}
       src="/images/epi-logo.svg"
       alt="Epi-Logo"
       width={32}
