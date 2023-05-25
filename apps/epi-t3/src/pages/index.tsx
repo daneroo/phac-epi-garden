@@ -13,7 +13,7 @@ export function Logo() {
   const dur = 2 // duration for animation
   const loadingSpinner = false
   return (
-    <svg xmlns="http://www.w3.org/2000/svg" width="150" height="150" viewBox="0 0 64,64">
+    <svg xmlns="http://www.w3.org/2000/svg" width="150" height="150" viewBox="0 0 64 64">
       <g transform="translate(32,32)scale(0.8,0.8)"
         strokeWidth={strokeWidth}
         stroke={strokeColor}
