@@ -6,12 +6,16 @@ Monorepo based on [create-t3-turbo](https://github.com/t3-oss/create-t3-turbo)
 
 - [ ] create `apps/docs`
 - [ ] [Flowbite](https://flowbite.com/)
+- [ ] [useInfiniteQuery](https://trpc.io/docs/reactjs/useinfinitequery)
 - [ ] [prisma+Yoga+graphQl](https://www.prisma.io/blog/fullstack-nextjs-graphql-prisma-oklidw1rhw)
 - [ ] remove nextjs from repo
 - [ ] feature branches/pr's not deployed correctly (neon branch?)
 - Refactor database dump/usernames, etc
 - Other services from t3 tutorial: <https://www.youtube.com/watch?v=YkOSUVzOAA4>
+  - [Clerk](https://clerk.com/) - for Auth + User Management
+  - Axiom
   - Changing stack: <https://www.youtube.com/watch?v=hgglCqAXHuE>
+    - [shadcdn/ui](https://ui.shadcn.com/)
 - `----- DONE (for now) -----`
 - [x] orgs a org-with-tiers
 - [x] clone `apps/nextjs -> apps/epi-t3` (adjust vercel build)
@@ -76,7 +80,7 @@ See [docs on `pg_dump` on neon](https://neon.tech/docs/import/import-from-postgr
 
 ```bash
 cd packages/db
-# bring up an ampty database (phac-epi_center)
+# bring up an empty database (phac-epi_center)
 # docker compose down; sleep 2; docker compose up -d db
 pnpm db:generate
 pnpm db:push
@@ -132,10 +136,13 @@ Added Vars:
 - Added with neon integration in vercel DATABASE_URL=postgres://daneroo:..
   - removed other env vars (DIRECT_URL, PG_HOST,...)
 - REMOVED: DIRECT_URL=postgres://daneroo:...
-- DISCORD_CLIENT_ID=... (same as local)
-- DISCORD_CLIENT_SECRET=... (same as local)
-- NEXTAUTH_URL=https://t3.epi.phac.v.imetrical.com/
-- NEXTAUTH_SECRET=`openssl rand -base64 32` : newly generated for prod
+
+```bash
+DISCORD_CLIENT_ID=... # (same as local)
+DISCORD_CLIENT_SECRET=... # (same as local)
+NEXTAUTH_URL=https://t3.epi.phac.v.imetrical.com/
+NEXTAUTH_SECRET=`openssl rand -base64 32` # newly generated for prod
+```
 
 ### turbo cache
 
@@ -148,10 +155,19 @@ Added Vars:
   - `rm -rf ./node_modules/.cache/turbo`
 - [ ] sign remote cache: <https://turbo.build/repo/docs/core-concepts/remote-caching#artifact-integrity-and-authenticity-verification>
 
----
+## Styling with Tailwind
+
+Also consider flowbite
+
+- [Tailwind Cheat Sheet](https://flowbite.com/tools/tailwind-cheat-sheet/)
+- [shadcdn/ui](https://ui.shadcn.com/)
+- [Radix UI](https://www.radix-ui.com/)
 
 ## References
 
 The stack originates from [create-t3-app](https://github.com/t3-oss/create-t3-app).
 
-A [blog post](https://jumr.dev/blog/t3-turbo) where I wrote how to migrate a T3 app into this.
+- [Tailwind Cheat Sheet](https://flowbite.com/tools/tailwind-cheat-sheet/)
+- [shadcdn/ui](https://ui.shadcn.com/)
+- [jumr.dev blog post on T3 in Turborepo](https://jumr.dev/blog/t3-turbo)
+- [Clerk](https://clerk.com/) - for Auth + User Management

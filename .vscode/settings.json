@@ -12,5 +12,15 @@
   "typescript.tsdk": "node_modules/typescript/lib",
   "typescript.enablePromptUseWorkspaceTsdk": true,
   "tailwindCSS.experimental.configFile": "./packages/config/tailwind/index.ts",
-  "cSpell.words": ["Epicentre", "libpq", "manypkg", "NEXTAUTH", "superjson"]
+  "cSpell.words": [
+    "Epicentre",
+    "flowbite",
+    "libpq",
+    "manypkg",
+    "NEXTAUTH",
+    "npmrc",
+    "psql",
+    "superjson",
+    "Turborepo"
+  ]
 }
