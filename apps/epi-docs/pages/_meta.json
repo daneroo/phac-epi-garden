@@ -1,5 +1,7 @@
 {
   "index": "Introduction",
+  "usage": "Usage Guide",
+  "develop": "Developer Guide",
   "about": {
     "title": "About",
     "type": "page"

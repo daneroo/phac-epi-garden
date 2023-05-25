@@ -1,0 +1,89 @@
+# Project Logo
+
+import Image from "next/image";
+
+<div
+  style={{ display: "flex", alignItems: "center", justifyContent: "center" }}
+>
+  <Image src="/images/epi-logo.svg" alt="Epi-Logo" width={200} height={200} />
+</div>
+
+There a many ways to use our logo, which was also meant to show flexible uses of SVG in the context of a React application.
+
+In this first instance we refer to the image in a file (`/images/epi-logo.svg`)
+and use the `next/image` component to render it.
+
+```jsx
+import Image from "next/image";
+
+<Image src="/images/epi-logo.svg" alt="Epi Logo" width={200} height={200} />;
+```
+
+---
+
+### Component
+
+import { Logo, LogoVariant } from "../../components/logo";
+
+<Logo />
+Here we invoke it from a react component, which has the same content as the svg file,
+but contained in a tsx fragment
+
+```jsx
+import { Logo } from "../../components/logo";
+
+<Logo />;
+```
+
+### Variants
+
+Finally, we see that having the logo in a component allows us to use it in different ways.
+Including variants, calculations based on props, and even animate the content:
+
+import { Tab, Tabs } from "nextra-theme-docs";
+
+<Tabs items={["Pulsing (Default)", "Simple", "Spinner"]}>
+  <Tab>
+    <LogoVariant />
+
+    ```jsx
+    import {LogoVariant} from "../../components/logo";
+
+    // default variant is "pulsing", so the property could be omitted
+    <LogoVariant />
+    // is equivalent to
+    <LogoVariant variant="pulsing"/>
+    ```
+
+  </Tab>
+  <Tab>
+    <LogoVariant variant="simple" />
+
+    ```jsx
+    import {LogoVariant} from "../../components/logo";
+
+    <LogoVariant variant="simple" />
+    ```
+
+  </Tab>
+  <Tab>
+    <LogoVariant variant="spinner" animate={true}/>
+
+    ```jsx
+    import {LogoVariant} from "../../components/logo";
+
+    <LogoVariant variant="spinner" animate={true}/>
+    ```
+
+  </Tab>
+  <Tab>
+    <LogoVariant />
+
+    ```jsx
+    import {LogoVariant} from "../../components/logo";
+    // default variant
+    <LogoVariant />
+    ```
+
+  </Tab>
+</Tabs>
