@@ -17,7 +17,7 @@ export function Logo() {
       <g transform="translate(32,32)scale(0.8,0.8)"
         strokeWidth={strokeWidth}
         stroke={strokeColor}
-        strokeLinejoin="round" stroke-linecap="round" fill="none">
+        strokeLinejoin="round" strokeLinecap="round" fill="none">
         {/* Both the inner e and the outer C have a 22.5 degree opening */}
         {/* This is an e */}
         <g transform="rotate(67.5)">
@@ -36,7 +36,7 @@ export function Logo() {
             <path d="M0,-30 A30,30 0 1 0 21.21,-21.21" />
           </g>
         </g>
-        <circle cx="0" cy="0" r="5" stroke="grey" stroke-width=".5">
+        <circle cx="0" cy="0" r="5" stroke="grey" strokeWidth=".5">
           <animate attributeName="r" values="5;30" dur={dur * 2} repeatCount="indefinite" />
           <animate attributeName="opacity" values="0;1;0" dur={dur * 2} repeatCount="indefinite" />
         </circle>

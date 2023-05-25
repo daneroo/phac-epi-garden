@@ -18,9 +18,11 @@
     "libpq",
     "manypkg",
     "NEXTAUTH",
+    "nextra",
     "npmrc",
     "psql",
     "superjson",
+    "tanstack",
     "Turborepo"
   ]
 }
