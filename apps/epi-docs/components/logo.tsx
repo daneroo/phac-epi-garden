@@ -1,7 +1,3 @@
-import { useState, useEffect } from "react";
-
-
-
 interface LogoVariantProps {
   variant?: "pulsing" | "simple" | "spinner" // 👈️ marked optional
 }
