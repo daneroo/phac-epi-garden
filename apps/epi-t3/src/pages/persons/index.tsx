@@ -4,21 +4,21 @@ import Link from 'next/link'
 
 import { api } from "~/utils/api";
 
-const OrganizationsPage: NextPage = () => {
-  const orgQuery = api.organization.all.useQuery()
+const PersonsPage: NextPage = () => {
+  const personQuery = api.person.all.useQuery()
   return (
     <>
       <Head>
-        <title>Epicentre</title>
+        <title>Epicentre - Persons</title>
         <meta name="description" content="Epicentre" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className="flex flex-col items-center">
 
-        <h2 className="text-2xl font-extrabold tracking-tight my-4">Organizations</h2>
-        {orgQuery.data ? (
-          orgQuery.data?.length === 0 ? (
-            <span>There are no organizations!</span>
+        <h2 className="text-2xl font-extrabold tracking-tight my-4">Persons</h2>
+        {personQuery.data ? (
+          personQuery.data?.length === 0 ? (
+            <span>There are no people!</span>
           ) : (
 
             <div className="relative overflow-x-auto">
@@ -26,39 +26,27 @@ const OrganizationsPage: NextPage = () => {
                 <thead className="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
                   <tr>
                     <th scope="col" className="px-6 py-3">
-                      Organization Name
+                      Name
                     </th>
                     <th scope="col" className="px-6 py-3">
-                      FR
+                      Email
                     </th>
                     <th scope="col" className="px-6 py-3">
-                      Acronym
-                    </th>
-                    <th scope="col" className="px-6 py-3">
-                      Type
-                    </th>
-                    <th scope="col" className="px-6 py-3">
-                      URL
+                      City
                     </th>
                   </tr>
                 </thead>
                 <tbody>
-                  {orgQuery.data?.map((o) => (
-                    <tr key={o.id} className="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+                  {personQuery.data?.map((p) => (
+                    <tr key={p.id} className="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
                       <th scope="row" className="px-6 py-4 ">
-                        <Link href={`/organizations/${o.id}`}>{o.name_en}</Link>
+                        <Link href={`/persons/${p.id}`}>{p.family_name}, {p.given_name}</Link>
                       </th>
                       <td className="px-6 py-4">
-                        {o.name_fr}
+                        {p.email}
                       </td>
                       <td className="px-6 py-4">
-                        {o.acronym_en} / {o.acronym_fr}
-                      </td>
-                      <td className="px-6 py-4">
-                        {o.org_type}
-                      </td>
-                      <td className="px-6 py-4">
-                        {o.url}
+                        {p.city},  {p.province} {p.country}
                       </td>
                     </tr>
                   ))}
@@ -75,6 +63,6 @@ const OrganizationsPage: NextPage = () => {
   );
 };
 
-export default OrganizationsPage;
+export default PersonsPage;
 
 

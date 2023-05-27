@@ -2,17 +2,13 @@ import { z } from "zod";
 
 import { createTRPCRouter, publicProcedure } from "../trpc";
 
-export const organizationRouter = createTRPCRouter({
+export const personRouter = createTRPCRouter({
   all: publicProcedure.query(({ ctx }) => {
-    return ctx.prisma.organizations.findMany({
+    return ctx.prisma.persons.findMany({
       orderBy: [
-        // sort by descending count of related org_tiers
-        {
-          org_tiers: {
-            _count: "desc",
-          },
-        },
-        // secondary sort criteria - for stability
+        // family_name,given_name,id
+        { family_name: "asc" },
+        { given_name: "asc" },
         { id: "asc" },
       ],
     });
@@ -20,10 +16,11 @@ export const organizationRouter = createTRPCRouter({
   byId: publicProcedure
     .input(z.object({ id: z.string() }))
     .query(({ ctx, input }) => {
-      return ctx.prisma.organizations.findFirst({
+      return ctx.prisma.persons.findFirst({
         where: { id: input.id },
         include: {
-          org_tiers: true,
+          roles: true,
+          capabilities: true,
         },
       });
     }),
