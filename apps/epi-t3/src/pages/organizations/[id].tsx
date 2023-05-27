@@ -15,21 +15,19 @@ const OrganizationPage: NextPage = () => {
         <meta name="description" content="Epicentre" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className="flex flex-col items-center">
-        <h2 className="my-4 text-2xl font-extrabold tracking-tight">
-          Organization
-        </h2>
+      <main className="max-w-3xl mx-auto px-4 pb-4 md:max-w-5xl">
+        <h2 className="text-2xl font-extrabold my-4">Organization</h2>
         {orgQuery.data ? (
           <>
-            <h3 className="my-4 text-xl font-bold tracking-tight">{orgQuery.data.name_en}</h3>
-            <p>Organizational Tiers ({orgQuery.data.org_tiers.length})</p>
+            <h3 className="my-4 text-xl font-bold">{orgQuery.data.name_en}</h3>
+            <h3 className="my-4 text-l font-bold">Organizational Tiers ({orgQuery.data.org_tiers.length})</h3>
             {orgQuery.data.org_tiers.length === 0 ? (
-              <span>There are no tiers</span>
+              <p>There are no tiers</p>
             ) : (
 
               <div className="relative overflow-x-auto">
-                <table className="w-full text-sm text-left text-gray-500 dark:text-gray-400">
-                  <thead className="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
+                <table className="w-full text-sm text-left text-slate-500 dark:text-slate-400">
+                  <thead className="text-xs uppercase bg-slate-50 dark:bg-slate-700 dark:text-slate-400">
                     <tr>
                       <th scope="col" className="px-6 py-3">
                         Tier Level
@@ -41,7 +39,7 @@ const OrganizationPage: NextPage = () => {
                   </thead>
                   <tbody>
                     {orgQuery.data.org_tiers.map((o) => (
-                      <tr key={o.id} className="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+                      <tr key={o.id} className="bg-white border-b dark:bg-slate-800 dark:border-slate-700">
                         <th scope="row" className="px-6 py-4 ">
                           {o.tier_level}
                         </th>

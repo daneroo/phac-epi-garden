@@ -16,7 +16,7 @@ export const Header: FC<Record<string, never>> = function () {
           <button
             aria-controls="sidebar"
             aria-expanded="true"
-            className="mr-2 cursor-pointer rounded p-2 text-gray-600 hover:bg-gray-100 hover:text-gray-900 focus:bg-gray-100 focus:ring-2 focus:ring-gray-100 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white dark:focus:bg-gray-700 dark:focus:ring-gray-700 lg:hidden"
+            className="mr-2 cursor-pointer rounded p-2 text-slate-600 hover:bg-slate-100 hover:text-slate-900 focus:bg-slate-100 focus:ring-2 focus:ring-slate-100 dark:text-slate-400 dark:hover:bg-slate-700 dark:hover:text-white dark:focus:bg-slate-700 dark:focus:ring-slate-700 lg:hidden"
             onClick={() => setOpenOnSmallScreens(!isOpenOnSmallScreens)}
           >
             {isOpenOnSmallScreens ? (
@@ -53,9 +53,9 @@ export const Header: FC<Record<string, never>> = function () {
             alt="Flowbite logo"
             height="24"
             src="/images/epi-logo.svg"
-            width="24"
+            width="32"
           />
-          <span className="self-center whitespace-nowrap px-3 text-xl font-semibold dark:text-white">
+          <span className="self-center whitespace-nowrap px-3 text-xl font-semibold dark:text-slate-100">
             epicenter
           </span>
         </Navbar.Brand>

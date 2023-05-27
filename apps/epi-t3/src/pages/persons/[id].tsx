@@ -14,23 +14,20 @@ const PersonPage: NextPage = () => {
   return (
     <>
       <Head>
-        <title>Epicentre - Person</title>
-        <meta name="description" content="Epicentre" />
-        <link rel="icon" href="/favicon.ico" />
+        <title>Person - Epicentre</title>
+        <meta name="description" content="Person - Epicentre" />
       </Head>
-      <main className="flex flex-col mx-20">
-        <h2 className="my-4 text-2xl font-extrabold tracking-tight">
-          Person
-        </h2>
+      <main className="max-w-3xl mx-auto px-4 pb-4 md:max-w-5xl">
+        <h2 className="text-2xl font-extrabold my-4">Person</h2>
         {personQuery.data ? (
           <>
-            <h3 className="my-4 text-xl font-bold tracking-tight">{personQuery.data.given_name} {personQuery.data.family_name}</h3>
+            <h3 className="my-4 text-xl font-bold">{personQuery.data.given_name} {personQuery.data.family_name}</h3>
             <ul>
               <li>{personQuery.data.city}, {personQuery.data.province} {personQuery.data.postal_code}, {personQuery.data.country}</li>
               <li>{personQuery.data.email}</li>
               <li>{personQuery.data.phone}</li>
             </ul>
-            <h3 className="my-4 text-l font-bold tracking-tight">Role</h3>
+            <h3 className="my-4 text-l font-bold">Role</h3>
             <ul className="list-disc mx-4">
 
               {(activeRoles.length > 0) ? (
@@ -49,7 +46,7 @@ const PersonPage: NextPage = () => {
                 </>
               )}
             </ul>
-            <h3 className="my-4 text-l font-bold tracking-tight">Capabilities</h3>
+            <h3 className="my-4 text-l font-bold">Capabilities</h3>
             <ul className="list-disc mx-4">
               {personQuery.data.capabilities.map((c) => (
                 <li key={c.id}>{c.name_en} ({c.domain.toUpperCase()}) {c.validated_level?.toUpperCase()}</li>

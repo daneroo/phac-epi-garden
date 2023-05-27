@@ -88,17 +88,16 @@ const Home: NextPage = () => {
         <meta name="description" content="Epicentre" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      {/* h-screen */}
       <main className="flex  flex-col items-center bg-gradient-to-b from-slate-300 to-slate-700 text-white">
         <div className="container mt-12 flex flex-col items-center justify-center gap-4 px-4 py-8">
-          <h1 className="text-5xl font-extrabold tracking-tight sm:text-[5rem]">
+          <h1 className="text-5xl font-extrabold sm:text-[5rem]">
             Epi<span className="text-red-500">Centre</span>
           </h1>
           <AuthShowcase />
 
           <Logo />
 
-          <h2 className="text-xl font-extrabold tracking-tight">Table Stats</h2>
+          <h2 className="text-xl font-extrabold">Table Stats</h2>
           {statQuery.data ? (
             statQuery.data?.length === 0 ? (
               <span>There are no stats!</span>
