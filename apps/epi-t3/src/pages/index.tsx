@@ -63,7 +63,7 @@ const StatCard: React.FC<{
   return (
     <div
       className="block rounded-lg bg-white p-4 shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-neutral-700">
-      <h5
+      <h3
         className="text-xl font-medium leading-tight text-neutral-800 dark:text-neutral-50 mb-2">
         {['organizations', 'persons'].includes(stat.name.toString()) ? (
           <Link href={'/' + stat.name.toString()} className="hover:underline">
@@ -72,7 +72,7 @@ const StatCard: React.FC<{
         ) : (
           <span>{formatKey(stat.name)}</span>
         )}
-      </h5>
+      </h3>
       <p className="mb-1 text-base text-neutral-600 dark:text-neutral-200">
         There are currently {stat.count} entries in the {stat.name} table.
       </p>

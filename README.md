@@ -8,7 +8,6 @@ Monorepo based on [create-t3-turbo](https://github.com/t3-oss/create-t3-turbo)
   - [useInfiniteQuery](https://trpc.io/docs/reactjs/useinfinitequery)
   - <https://dev.to/esponges/react-query-infinite-query-and-t3-stack-34nb>
 - [ ] people/id and role/id with details
-- [ ] [Flowbite](https://flowbite.com/)
 - [ ] [prisma+Yoga+graphQl](https://www.prisma.io/blog/fullstack-nextjs-graphql-prisma-oklidw1rhw)
 - [ ] remove nextjs from repo
 - [ ] feature branches/pr's not deployed correctly (neon branch?)
@@ -19,6 +18,7 @@ Monorepo based on [create-t3-turbo](https://github.com/t3-oss/create-t3-turbo)
   - Changing stack: <https://www.youtube.com/watch?v=hgglCqAXHuE>
     - [shadcdn/ui](https://ui.shadcn.com/)
 - `----- DONE (for now) -----`
+- [x] [Flowbite](https://flowbite.com/)
 - [x] create `apps/docs`
 - [x] orgs a org-with-tiers
 - [x] clone `apps/nextjs -> apps/epi-t3` (adjust vercel build)

@@ -1,3 +1,44 @@
 # Developer Guide
 
-How to develop this thing.
+## Current Prototype
+
+We have moved quickly to investigate alternative stacks.
+This is our progress so far
+
+- We have implemented a monorepo (turbo) - which gives us orchestration and operational caching
+- We have an initial CI (GitHub Actions)
+- We have an initial CD (Vercel) - with preview-deployments
+  - Serverless Database (with forks) - Neon
+- ORM model (Prisma) - synchronized on Chris' unmodified schema
+
+## Tech Stack
+
+| Component         | Current  | Planned or Alternatives           |
+| ----------------- | -------- | --------------------------------- |
+| Frontend          | React    |                                   |
+| Framework         | Next.js  |                                   |
+| Monorepo          | Turbo    | Nx (nrwl)                         |
+| ORM               | Prisma   |                                   |
+| RPC               | tRPC     | GraphQL                           |
+| Styling           | Tailwind |                                   |
+| Testing           |          | Jest/Storybook/Cypress/Playwright |
+| Deployment        | Vercel   | GCP Cloud Run                     |
+| Database (deploy) | Neon     | AlloyDB, CloudSQL Postgres        |
+| Observability     |          |                                   |
+
+## History
+
+Chris has been experimenting since at least Feb 2023.
+His [repo](https://github.com/ToferC/epi_center) is written in rust.
+It uses the `actix` framework, and `diesel for the orm`
+
+He has a burgeoning [frontend](https://github.com/ToferC/epifront) repo for the frontend.
+It uses
+It is a static site authored in rust. The javascript is using `jquery, jquery-ui, and bootstrap`
+
+## References
+
+- [Dan's monorepo (this one)](https://github.com/daneroo/phac-epi-garden)
+- [tRPC](https://trpc.io/)
+- [Chris' Rust based repo (GraphQL endpoint)](https://github.com/ToferC/epi_center)
+- [Chris' frontend](https://github.com/ToferC/epifront)
