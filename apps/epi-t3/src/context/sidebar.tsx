@@ -10,6 +10,7 @@ interface SidebarContextProps {
   setOpenOnSmallScreens: (isOpen: boolean) => void;
 }
 
+// eslint-disable-next-line @typescript-eslint/no-non-null-assertion
 const SidebarContext = createContext<SidebarContextProps>(undefined!);
 
 export function SidebarProvider({
