@@ -4,7 +4,7 @@ import { type FC } from "react";
 import { useSidebarContext } from "../context/sidebar";
 import { ArrowTopRightOnSquareIcon } from '@heroicons/react/24/outline'
 
-const Header: FC<Record<string, never>> = function () {
+export const Header: FC<Record<string, never>> = function () {
   const { isOpenOnSmallScreens, isPageWithSidebar, setOpenOnSmallScreens } =
     useSidebarContext();
 
@@ -66,7 +66,7 @@ const Header: FC<Record<string, never>> = function () {
         <Navbar.Collapse>
           {/* Links can be "Active" */}
           {/* <Navbar.Link href="/" active>Home</Navbar.Link> */}
-          <Navbar.Link href="https://docs.epi.phac.v.imetrical.com/">
+          <Navbar.Link href="https://docs.epi.phac.v.imetrical.com/" target="_blank">
             <span className="flex items-center stroke-current gap-1">
               <span>Documentation</span>
               <ArrowTopRightOnSquareIcon className="h-4 w-4" />
@@ -77,5 +77,3 @@ const Header: FC<Record<string, never>> = function () {
     </header>
   );
 };
-
-export default Header;

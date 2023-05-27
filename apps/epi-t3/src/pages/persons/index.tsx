@@ -62,7 +62,7 @@ const PersonsPage: NextPage = () => {
         <meta name="description" content="Epicentre" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <div className="flex dark:bg-gray-900">
+      <div className="flex ">
         <main className="order-2 mx-4 mt-4 mb-24 flex-[1_0_16rem]">
 
           <h2 className="text-2xl font-extrabold tracking-tight my-4">Persons</h2>
