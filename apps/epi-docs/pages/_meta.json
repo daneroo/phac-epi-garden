@@ -2,6 +2,12 @@
   "index": "Introduction",
   "usage": "Usage Guide",
   "develop": "Developer Guide",
+  "demo": {
+    "title": "Demo",
+    "type": "page",
+    "href": "https://t3.epi.phac.v.imetrical.com/",
+    "newWindow": true
+  },
   "about": {
     "title": "About",
     "type": "page"
