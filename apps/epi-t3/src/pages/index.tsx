@@ -33,38 +33,61 @@ function formatKey(key: string | number): string {
 }
 
 
-function iconForKey(key: string | number): React.ReactElement {
-
-  const icons = {
-    "organizations": UserGroupIcon,  // Multiple users representing an organization
-    "org_tiers": BuildingOffice2Icon, // Building icon to represent organizational tiers
-    "persons": UserIcon,             // Single user representing a person
-    "capabilities": BoltIcon, // Lightning bolt represents power or capability
-    "affiliations": LinkIcon,        // Link or chain icon representing affiliations
-    "publications": BookOpenIcon,    // Open book for publications
-    "publication_contributors": PencilIcon, // Pencil for contributors (who write or edit)
-    "requirements": DocumentCheckIcon, // Report document for requirements
-    "roles": CheckBadgeIcon,         // Badge for roles
-    "skills": LightBulbIcon,         // Lightbulb representing skills or ideas
-    "tasks": CheckCircleIcon,        // Check circle for tasks or to-dos
-    "teams": UsersIcon,              // Group of users for teams
-    "valid_roles": ShieldCheckIcon,  // Shield with checkmark for valid roles (security concept)
-    "validations": CheckIcon,        // Checkmark for validations
-    "works": BriefcaseIcon,          // Briefcase for work items
+function iconForKey(key: string | number) {
+  // Could not get the typing to work for
+  // const icons = { key: SVGComponentTransferFunctionElement, key2: OtherIcon }
+  if (key === "organizations") {
+    return UserGroupIcon;
   }
-  if (typeof key === 'string' && key in icons) {
-    // eslint-disable-next-line @typescript-eslint/no-unsafe-return
-    return icons[key]
+  if (key === "org_tiers") {
+    return BuildingOffice2Icon;
   }
-  return UserIcon
+  if (key === "persons") {
+    return UserIcon;
+  }
+  if (key === "capabilities") {
+    return BoltIcon;
+  }
+  if (key === "affiliations") {
+    return LinkIcon;
+  }
+  if (key === "publications") {
+    return BookOpenIcon;
+  }
+  if (key === "publication_contributors") {
+    return PencilIcon;
+  }
+  if (key === "requirements") {
+    return DocumentCheckIcon;
+  }
+  if (key === "roles") {
+    return CheckBadgeIcon;
+  }
+  if (key === "skills") {
+    return LightBulbIcon;
+  }
+  if (key === "tasks") {
+    return CheckCircleIcon;
+  }
+  if (key === "teams") {
+    return UsersIcon;
+  }
+  if (key === "valid_roles") {
+    return ShieldCheckIcon;
+  }
+  if (key === "validations") {
+    return CheckIcon;
+  }
+  if (key === "works") {
+    return BriefcaseIcon;
+  }
+  return UserIcon;
 }
-
 const GotoCard: React.FC<{
   stat: RouterOutputs["stat"]["all"][number];
 }> = ({ stat }) => {
   const hasLink = ['organizations', 'persons'].includes(stat.name.toString())
   const link = hasLink ? ('/' + stat.name.toString()) : '#'
-  // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
   const Icon = iconForKey(stat.name)
   return (
     <div className="max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
