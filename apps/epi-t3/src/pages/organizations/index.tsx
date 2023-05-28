@@ -22,7 +22,7 @@ const OrganizationsPage: NextPage = () => {
 
             <div className="relative overflow-x-auto">
               <table className="w-full text-sm text-left">
-                <thead className="text-xs uppercase bg-slate-50 dark:bg-slate-700 dark:text-slate-400">
+                <thead className="text-xs uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
                   <tr>
                     <th scope="col" className="px-6 py-3">
                       Organization Name
@@ -43,7 +43,7 @@ const OrganizationsPage: NextPage = () => {
                 </thead>
                 <tbody>
                   {orgQuery.data?.map((o) => (
-                    <tr key={o.id} className="bg-white border-b dark:bg-slate-800 dark:border-slate-700">
+                    <tr key={o.id} className="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
                       <th scope="row" className="px-6 py-4 ">
                         <Link href={`/organizations/${o.id}`}>{o.name_en}</Link>
                       </th>

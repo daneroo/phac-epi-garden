@@ -4,7 +4,8 @@ Monorepo based on [create-t3-turbo](https://github.com/t3-oss/create-t3-turbo)
 
 ## TODO
 
-- [ ] <https://realfavicongenerator.net/>
+- [ ] Github Auth
+  - <https://github.com/vercel/nextjs-planetscale-nextauth-tailwindcss-template>
 - [ ] people and role (search)
   - [useInfiniteQuery](https://trpc.io/docs/reactjs/useinfinitequery)
   - <https://dev.to/esponges/react-query-infinite-query-and-t3-stack-34nb>

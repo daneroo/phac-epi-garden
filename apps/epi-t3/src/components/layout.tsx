@@ -11,9 +11,9 @@ type LayoutProps = {
 
 // export default function DashboardLayout({ children }: DashboardLayoutProps) {
 const Layout = ({ children }: LayoutProps) => {
-  const router = useRouter();
+  // const router = useRouter();
   // omit header on home page
-  const hasHeader = router.pathname !== '/'
+  const hasHeader = true; //router.pathname !== '/'
   return (
     <>
       <FlowbiteContext>
