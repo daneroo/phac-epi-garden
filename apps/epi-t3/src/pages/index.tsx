@@ -89,8 +89,8 @@ const Home: NextPage = () => {
   return (
     <>
       <Head>
-        <title>Epicentre</title>
-        <meta name="description" content="Epicentre" />
+        <title>Epicenter</title>
+        <meta name="description" content="Epicenter" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className="max-w-3xl mx-auto px-4 pb-4 md:max-w-5xl">
@@ -98,7 +98,7 @@ const Home: NextPage = () => {
         <div className="flex flex-col items-center">
           <div className="container mt-12 flex flex-col items-center justify-center gap-4 px-4 py-8">
             <h1 className="text-5xl font-extrabold sm:text-[5rem]">
-              Epi<span className="text-red-500">Centre</span>
+              Epi<span className="text-red-500">center</span>
             </h1>
             <AuthShowcase />
 

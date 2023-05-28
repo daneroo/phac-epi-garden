@@ -9,8 +9,8 @@ const OrganizationsPage: NextPage = () => {
   return (
     <>
       <Head>
-        <title>Epicentre</title>
-        <meta name="description" content="Epicentre" />
+        <title>Epicenter</title>
+        <meta name="description" content="Epicenter" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className="max-w-3xl mx-auto px-4 pb-4 md:max-w-5xl">

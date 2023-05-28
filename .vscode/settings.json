@@ -13,7 +13,6 @@
   "typescript.enablePromptUseWorkspaceTsdk": true,
   "tailwindCSS.experimental.configFile": "./packages/config/tailwind/index.ts",
   "cSpell.words": [
-    "Epicentre",
     "flowbite",
     "heroicons",
     "libpq",

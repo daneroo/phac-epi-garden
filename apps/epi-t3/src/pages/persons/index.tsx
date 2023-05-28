@@ -58,8 +58,8 @@ const PersonsPage: NextPage = () => {
   return (
     <>
       <Head>
-        <title>Persons - Epicentre</title>
-        <meta name="description" content="Persons - Epicentre" />
+        <title>Persons - Epicenter</title>
+        <meta name="description" content="Persons - Epicenter" />
       </Head>
       <main className="max-w-3xl mx-auto px-4 pb-4 md:max-w-5xl">
         <h2 className="text-2xl font-extrabold my-4">Persons</h2>
