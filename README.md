@@ -96,22 +96,25 @@ pnpm db:restore # too slow for remote
 
 ```bash
 #  single sql file
-pg_dump "postgresql://christopherallison:12345@localhost:5432/people_data_api" --no-owner --no-acl > db_backup-noacl.sql
+pg_dump "postgresql://christopherallison:12345@localhost:5432/people_data_api" --no-owner --no-acl > backups/db_backup-noacl-$(date -u +"%Y-%m-%dT%H%MZ").sql
 
 # wipe the database and restore
-psql "postgresql://christopherallison:12345@localhost:5432/people_data_api" < db_backup-noacl.sql
+
+psql "postgresql://christopherallison:12345@localhost:5432/people_data_api" -c "DROP SCHEMA public CASCADE; CREATE SCHEMA public;"
+psql "postgresql://christopherallison:12345@localhost:5432/people_data_api" < backups/db_backup-noacl.sql
+
+# Drop all on neon target
+psql $DIRECT_URL -c "DROP SCHEMA public CASCADE; CREATE SCHEMA public;"
+# Restore to Neon
 psql $DIRECT_URL < db_backup-noacl.sql
 
+
+## Other formats
 # neon suggested format: --file=dumpfile.bak -Fc -Z 6 -v
 pg_dump "postgresql://christopherallison:12345@localhost:5432/people_data_api" --file=dumpfile.bak -Fc -Z 6 -v
 
 # tar format:
 pg_dump -F t "postgresql://christopherallison:12345@localhost:5432/people_data_api" > db_backup.tar
-
-# Drop all on neon target
-psql $DIRECT_URL -c "
-    DROP SCHEMA public CASCADE;
-    CREATE SCHEMA public;"
 ```
 
 ### Next Auth
