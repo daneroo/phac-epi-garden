@@ -1,0 +1,34 @@
+@tailwind components;
+
+@layer components {
+  #react-org-chart {
+    min-height: 650px;
+  }
+  .org-chart-person-name {
+    font-weight: 500;
+  }
+  .org-chart-person-link:hover g {
+    fill: #409cf9 !important;
+  }
+  .org-chart-node:hover .org-chart-person-reports {
+    fill: #409cf9 !important;
+  }
+  .org-chart-person-dept.engineering {
+    fill: #4caf50 !important;
+  }
+  .org-chart-person-dept.communications {
+    fill: #3f51b5 !important;
+  }
+  .org-chart-person-dept.product {
+    fill: #d500f9 !important;
+  }
+  .org-chart-person-dept.hr {
+    fill: #2196f3 !important;
+  }
+  .org-chart-person-dept.marketing {
+    fill: #f44336 !important;
+  }
+  .org-chart-person-dept.design {
+    fill: #26c6da !important;
+  }
+}

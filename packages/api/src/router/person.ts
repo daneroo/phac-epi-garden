@@ -14,6 +14,61 @@ export const personRouter = createTRPCRouter({
     });
   }),
 
+  getChart: publicProcedure
+    .input(
+      z.object({
+        id: z.string().optional(),
+      }),
+    )
+    .query(({ ctx, input }) => {
+      const { id } = input;
+      return ctx.prisma.org_tiers.findFirstOrThrow({
+        where: !id
+          ? {
+              tier_level: 1,
+            }
+          : {
+              id,
+            },
+        include: {
+          other_org_tiers: {
+            include: {
+              org_tier_ownerships: true,
+            },
+          },
+          org_tier_ownerships: {
+            include: {
+              persons: {
+                include: {
+                  roles: {
+                    include: {
+                      teams: true,
+                    },
+                  },
+                },
+              },
+            },
+          },
+        },
+      });
+    }),
+
+  getPersonsByOrgTier: publicProcedure.query(({ ctx }) => {
+    return ctx.prisma.org_tiers.findMany({
+      include: {
+        org_tier_ownerships: {
+          include: {
+            persons: {
+              include: {
+                roles: true,
+              },
+            },
+          },
+        },
+      },
+    });
+  }),
+
   getPagedSearch: publicProcedure
     .input(
       z.object({

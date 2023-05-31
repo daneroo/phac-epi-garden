@@ -23,6 +23,7 @@
     "@trpc/next": "^10.28.0",
     "@trpc/react-query": "^10.28.0",
     "@trpc/server": "^10.28.0",
+    "@unicef/react-org-chart": "^0.3.4",
     "flowbite": "^1.6.5",
     "flowbite-react": "^0.4.6",
     "graphql": "^16.6.0",
