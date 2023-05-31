@@ -1,8 +1,12 @@
 import type { NextPage } from "next";
 import { useRouter } from 'next/router';
 import Head from "next/head";
+import { Tabs } from 'flowbite-react';
 
 import { api } from "~/utils/api";
+import { OrgAsTree } from "~/components/orgTier/tree";
+import { OrgAsTable } from "~/components/orgTier/table";
+import { type org_tiers } from "@phac/db";
 
 const OrganizationPage: NextPage = () => {
   const id = useRouter().query.id as string;
@@ -20,37 +24,13 @@ const OrganizationPage: NextPage = () => {
         {orgQuery.data ? (
           <>
             <h3 className="my-4 text-xl font-bold">{orgQuery.data.name_en}</h3>
+
+
             <h3 className="my-4 text-l font-bold">Organizational Tiers ({orgQuery.data.org_tiers.length})</h3>
             {orgQuery.data.org_tiers.length === 0 ? (
               <p>There are no tiers</p>
             ) : (
-
-              <div className="relative overflow-x-auto">
-                <table className="w-full text-sm text-left text-gray-500 dark:text-gray-400">
-                  <thead className="text-xs uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
-                    <tr>
-                      <th scope="col" className="px-6 py-3">
-                        Tier Level
-                      </th>
-                      <th scope="col" className="px-6 py-3">
-                        Name
-                      </th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    {orgQuery.data.org_tiers.map((o) => (
-                      <tr key={o.id} className="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
-                        <th scope="row" className="px-6 py-4 ">
-                          {o.tier_level}
-                        </th>
-                        <td className="px-6 py-4">
-                          {o.name_en}
-                        </td>
-                      </tr>
-                    ))}
-                  </tbody>
-                </table>
-              </div>
+              <ViewTabs org_tiers={orgQuery.data.org_tiers} />
             )}
 
             {/* <pre>{JSON.stringify(orgQuery.data, null, 2)}</pre> */}
@@ -62,4 +42,23 @@ const OrganizationPage: NextPage = () => {
   );
 }
 
+function ViewTabs({ org_tiers }: { org_tiers: org_tiers[] }) {
+  return (
+    <Tabs.Group
+      aria-label="Tabs with underline"
+      style="underline"
+    >
+      <Tabs.Item
+        active
+        title="Tree"
+      >
+        <OrgAsTree org_tiers={org_tiers} />
+      </Tabs.Item>
+      <Tabs.Item title="Table">
+        <OrgAsTable org_tiers={org_tiers} />
+
+      </Tabs.Item>
+    </Tabs.Group>
+  )
+}
 export default OrganizationPage;
