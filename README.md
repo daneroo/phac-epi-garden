@@ -79,7 +79,7 @@ pnpm db:generate
 pnpm db:push
 ```
 
-### Re-seed the database
+### Database Operations
 
 See [docs on `pg_dump` on neon](https://neon.tech/docs/import/import-from-postgres)
 
@@ -89,8 +89,25 @@ cd packages/db
 # docker compose down; sleep 2; docker compose up -d db
 pnpm db:generate
 pnpm db:push
+pnpm db:seed # WIP
+
+# both od these are deprecated (json data dump)
+pnpm db:dump 
 pnpm db:restore # too slow for remote
+
 ```
+
+#### Re-seed the database
+
+This currently uses a snapshot to restore, but when seeding is completely ported, the process will be:
+
+```bash
+psql "postgresql://christopherallison:12345@localhost:5432/people_data_api" -c "DROP SCHEMA public CASCADE; CREATE SCHEMA public;"
+pnpm run db:push
+pnpm run db:seed
+```
+
+For now we do this
 
 `pg_dump && pg_restore`: to install these on MacOS, `brew install libpq`
 
@@ -179,3 +196,39 @@ The stack originates from [create-t3-app](https://github.com/t3-oss/create-t3-ap
 - [shadcdn/ui](https://ui.shadcn.com/)
 - [jumr.dev blog post on T3 in Turborepo](https://jumr.dev/blog/t3-turbo)
 - [Clerk](https://clerk.com/) - for Auth + User Management
+
+## org_tiers level anomaly
+
+some parent tiers have children who's tier_level is not paret.tier_level+1
+
+```sql
+SELECT 
+  child.id AS child_id, 
+  parent.id AS parent_id,
+  child.parent_tier, 
+  child.tier_level AS child_tier_level,
+  parent.tier_level AS parent_tier_level,
+  child.tier_level - parent.tier_level AS tier_level_difference
+FROM 
+  org_tiers AS child
+JOIN 
+  org_tiers AS parent ON child.parent_tier = parent.id
+WHERE
+  child.tier_level - parent.tier_level != 1;
+
+-- or with names
+SELECT 
+  child.name_en AS child_name, 
+  parent.name_en AS parent_name,
+  child.parent_tier, 
+  child.tier_level AS child_tier_level,
+  parent.tier_level AS parent_tier_level,
+  child.tier_level - parent.tier_level AS tier_level_difference
+FROM 
+  org_tiers AS child
+JOIN 
+  org_tiers AS parent ON child.parent_tier = parent.id
+WHERE
+  child.tier_level - parent.tier_level != 1;
+
+```
