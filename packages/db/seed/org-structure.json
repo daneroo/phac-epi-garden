@@ -1,0 +1,1148 @@
+[
+  {
+    "division": "Business Modernization Project Division",
+    "centre": "Corporate Management Directorate (CMD)",
+    "branch": "Chief Financial Officer & Corporate Management Branch (CFOCMB)",
+    "domain": "FIN"
+  },
+  {
+    "division": "Centre for Grants & Contributions Division",
+    "centre": "Deputy Chief Financial Officer (DCFO)",
+    "branch": "Chief Financial Officer & Corporate Management Branch (CFOCMB)",
+    "domain": "FIN"
+  },
+  {
+    "division": "Centre of Expertise",
+    "centre": "Corporate Management Directorate (CMD)",
+    "branch": "Chief Financial Officer & Corporate Management Branch (CFOCMB)",
+    "domain": "FIN"
+  },
+  {
+    "division": "Centre of Expertise Business Operations Division",
+    "centre": "Corporate Management Directorate (CMD)",
+    "branch": "Chief Financial Officer & Corporate Management Branch (CFOCMB)",
+    "domain": "FIN"
+  },
+  {
+    "division": "Centre of Expertise Business Support Services Division",
+    "centre": "Corporate Management Directorate (CMD)",
+    "branch": "Chief Financial Officer & Corporate Management Branch (CFOCMB)",
+    "domain": "FIN"
+  },
+  {
+    "division": "Corporate Management Directorate (CMD)",
+    "centre": "Corporate Management Directorate (CMD)",
+    "branch": "Chief Financial Officer & Corporate Management Branch (CFOCMB)",
+    "domain": "FIN"
+  },
+  {
+    "division": "Corporate Services Planning Division",
+    "centre": "Corporate Management Directorate (CMD)",
+    "branch": "Chief Financial Officer & Corporate Management Branch (CFOCMB)",
+    "domain": "FIN"
+  },
+  {
+    "division": "Deputy Chief Financial Officer (DCFO)",
+    "centre": "Deputy Chief Financial Officer (DCFO)",
+    "branch": "Chief Financial Officer & Corporate Management Branch (CFOCMB)",
+    "domain": "FIN"
+  },
+  {
+    "division": "Director General's Office",
+    "centre": "Corporate Management Directorate (CMD)",
+    "branch": "Chief Financial Officer & Corporate Management Branch (CFOCMB)",
+    "domain": "FIN"
+  },
+  {
+    "division": "Financial, Analytics, & Client Service Division",
+    "centre": "Deputy Chief Financial Officer (DCFO)",
+    "branch": "Chief Financial Officer & Corporate Management Branch (CFOCMB)",
+    "domain": "FIN"
+  },
+  {
+    "division": "Governance & Strategic Planning",
+    "centre": "Deputy Chief Financial Officer (DCFO)",
+    "branch": "Chief Financial Officer & Corporate Management Branch (CFOCMB)",
+    "domain": "FIN"
+  },
+  {
+    "division": "Realignment Project Division",
+    "centre": "Corporate Management Directorate (CMD)",
+    "branch": "Chief Financial Officer & Corporate Management Branch (CFOCMB)",
+    "domain": "FIN"
+  },
+  {
+    "division": "Resource Management",
+    "centre": "Deputy Chief Financial Officer (DCFO)",
+    "branch": "Chief Financial Officer & Corporate Management Branch (CFOCMB)",
+    "domain": "FIN"
+  },
+  {
+    "division": "Resource Management & Analytics",
+    "centre": "Deputy Chief Financial Officer (DCFO)",
+    "branch": "Chief Financial Officer & Corporate Management Branch (CFOCMB)",
+    "domain": "FIN"
+  },
+  {
+    "division": "Strategic IM/IT Planning",
+    "centre": "Corporate Management Directorate (CMD)",
+    "branch": "Chief Financial Officer & Corporate Management Branch (CFOCMB)",
+    "domain": "FIN"
+  },
+  {
+    "division": "Border Operations (BMO)",
+    "centre": "Border Measures Operations (BMO)",
+    "branch": "Border Measures Operations (BMO)",
+    "domain": "PH"
+  },
+  {
+    "division": "Behavioural Science Division",
+    "centre": "Centre for Strategic Data Partnerships & Insights (SDPI)",
+    "branch": "Data, Surveillance, and Intelligence Branch (DSIB)",
+    "domain": "SCI"
+  },
+  {
+    "division": "Centre for Corporate Surveillance Coordination (CSC)",
+    "centre": "Centre for Corporate Surveillance Coordination (CSC)",
+    "branch": "Data, Surveillance, and Intelligence Branch (DSIB)",
+    "domain": "PH"
+  },
+  {
+    "division": "Centre for Data Management Innovation & Analytics (DMIA)",
+    "centre": "Centre for Data Management Innovation & Analytics (DMIA)",
+    "branch": "Data, Surveillance, and Intelligence Branch (DSIB)",
+    "domain": "DATA"
+  },
+  {
+    "division": "Centre for Integrated Risk Assessment (CIRA)",
+    "centre": "Centre for Integrated Risk Assessment (CIRA)",
+    "branch": "Data, Surveillance, and Intelligence Branch (DSIB)",
+    "domain": "PH"
+  },
+  {
+    "division": "Centre for Strategic Data Partnerships & Insights (SDPI)",
+    "centre": "Centre for Strategic Data Partnerships & Insights (SDPI)",
+    "branch": "Data, Surveillance, and Intelligence Branch (DSIB)",
+    "domain": "POL"
+  },
+  {
+    "division": "Data Coordination & Access Program",
+    "centre": "Centre for Data Management Innovation & Analytics (DMIA)",
+    "branch": "Data, Surveillance, and Intelligence Branch (DSIB)",
+    "domain": "DATA"
+  },
+  {
+    "division": "Data Discovery, Acquisition, and Culture",
+    "centre": "Centre for Data Management Innovation & Analytics (DMIA)",
+    "branch": "Data, Surveillance, and Intelligence Branch (DSIB)",
+    "domain": "DATA"
+  },
+  {
+    "division": "Data Enablement Division",
+    "centre": "Centre for Data Management Innovation & Analytics (DMIA)",
+    "branch": "Data, Surveillance, and Intelligence Branch (DSIB)",
+    "domain": "IT"
+  },
+  {
+    "division": "Data Impact",
+    "centre": "Centre for Data Management Innovation & Analytics (DMIA)",
+    "branch": "Data, Surveillance, and Intelligence Branch (DSIB)",
+    "domain": "ADMIN"
+  },
+  {
+    "division": "Data Integration",
+    "centre": "Centre for Data Management Innovation & Analytics (DMIA)",
+    "branch": "Data, Surveillance, and Intelligence Branch (DSIB)",
+    "domain": "DATA"
+  },
+  {
+    "division": "Data Science",
+    "centre": "Centre for Data Management Innovation & Analytics (DMIA)",
+    "branch": "Data, Surveillance, and Intelligence Branch (DSIB)",
+    "domain": "DATA"
+  },
+  {
+    "division": "Data Strategy, Policy, & Governance Division",
+    "centre": "Centre for Data Management Innovation & Analytics (DMIA)",
+    "branch": "Data, Surveillance, and Intelligence Branch (DSIB)",
+    "domain": "POL"
+  },
+  {
+    "division": "Governance, Documentation & Continuous Improvement",
+    "centre": "Centre for Integrated Risk Assessment (CIRA)",
+    "branch": "Data, Surveillance, and Intelligence Branch (DSIB)",
+    "domain": "POL"
+  },
+  {
+    "division": "Horizontal Surveillance Projects",
+    "centre": "Centre for Corporate Surveillance Coordination (CSC)",
+    "branch": "Data, Surveillance, and Intelligence Branch (DSIB)",
+    "domain": "PH"
+  },
+  {
+    "division": "Methods, Approaches & Processes",
+    "centre": "Centre for Integrated Risk Assessment (CIRA)",
+    "branch": "Data, Surveillance, and Intelligence Branch (DSIB)",
+    "domain": "PH"
+  },
+  {
+    "division": "Office of the Chief Data Officer",
+    "centre": "Centre for Data Management Innovation & Analytics (DMIA)",
+    "branch": "Data, Surveillance, and Intelligence Branch (DSIB)",
+    "domain": "DATA"
+  },
+  {
+    "division": "Operations Team",
+    "centre": "Centre for Integrated Risk Assessment (CIRA)",
+    "branch": "Data, Surveillance, and Intelligence Branch (DSIB)",
+    "domain": "ADMIN"
+  },
+  {
+    "division": "Public Health External Partnerships & Coordination Division",
+    "centre": "Centre for Strategic Data Partnerships & Insights (SDPI)",
+    "branch": "Data, Surveillance, and Intelligence Branch (DSIB)",
+    "domain": "PART"
+  },
+  {
+    "division": "Public Health Intelligence & Knowledge Translation Division",
+    "centre": "Centre for Strategic Data Partnerships & Insights (SDPI)",
+    "branch": "Data, Surveillance, and Intelligence Branch (DSIB)",
+    "domain": "COMM"
+  },
+  {
+    "division": "Surveillance Capacity Building",
+    "centre": "Centre for Corporate Surveillance Coordination (CSC)",
+    "branch": "Data, Surveillance, and Intelligence Branch (DSIB)",
+    "domain": "MGT"
+  },
+  {
+    "division": "Surveillance Strategic Planning & Governance",
+    "centre": "Centre for Corporate Surveillance Coordination (CSC)",
+    "branch": "Data, Surveillance, and Intelligence Branch (DSIB)",
+    "domain": "POL"
+  },
+  {
+    "division": "COVID-19 Incident Management Structure",
+    "centre": "Centre for Emergency Response (CER)",
+    "branch": "Emergency Management Branch (EMB)",
+    "domain": "MGT"
+  },
+  {
+    "division": "Emergency Plans, Exercises, & Special Projects",
+    "centre": "Centre for Emergency Preparedness (CEP)",
+    "branch": "Emergency Management Branch (EMB)",
+    "domain": "MGT"
+  },
+  {
+    "division": "GPHIN Tiger Team",
+    "centre": "Centre for Emergency Preparedness (CEP)",
+    "branch": "Emergency Management Branch (EMB)",
+    "domain": "PH"
+  },
+  {
+    "division": "Horizontal Policy & Governance",
+    "centre": "Centre for Emergency Preparedness (CEP)",
+    "branch": "Emergency Management Branch (EMB)",
+    "domain": "POL"
+  },
+  {
+    "division": "Public Health Field Services & Training",
+    "centre": "Centre for Emergency Preparedness (CEP)",
+    "branch": "Emergency Management Branch (EMB)",
+    "domain": "PH"
+  },
+  {
+    "division": "Public Health Response Operations",
+    "centre": "Centre for Emergency Response (CER)",
+    "branch": "Emergency Management Branch (EMB)",
+    "domain": "PH"
+  },
+  {
+    "division": "Public Health Security & Intelligence Division",
+    "centre": "Centre for Emergency Preparedness (CEP)",
+    "branch": "Emergency Management Branch (EMB)",
+    "domain": "POL"
+  },
+  {
+    "division": "Response Coordination",
+    "centre": "Centre for Emergency Response (CER)",
+    "branch": "Emergency Management Branch (EMB)",
+    "domain": "MGT"
+  },
+  {
+    "division": "Response Support & Horizontal Integration",
+    "centre": "Centre for Emergency Response (CER)",
+    "branch": "Emergency Management Branch (EMB)",
+    "domain": "POL"
+  },
+  {
+    "division": "Applied Research Division",
+    "centre": "Centre for Surveillance & Applied Research (CSAR)",
+    "branch": "Health Promotion & Chronic Disease Prevention Branch (HPCDPB)",
+    "domain": "DATA"
+  },
+  {
+    "division": "Behaviours, Environments & Lifespan Division",
+    "centre": "Centre for Surveillance & Applied Research (CSAR)",
+    "branch": "Health Promotion & Chronic Disease Prevention Branch (HPCDPB)",
+    "domain": "PH"
+  },
+  {
+    "division": "Centre for Chronic Disease Prevention & Health Equity (CCDPHE)",
+    "centre": "Centre for Chronic Disease Prevention & Health Equity (CCDPHE)",
+    "branch": "Health Promotion & Chronic Disease Prevention Branch (HPCDPB)",
+    "domain": "PH"
+  },
+  {
+    "division": "Centre for Health Promotion (CHP)",
+    "centre": "Centre for Health Promotion (CHP)",
+    "branch": "Health Promotion & Chronic Disease Prevention Branch (HPCDPB)",
+    "domain": "PH"
+  },
+  {
+    "division": "Centre for Surveillance & Applied Research (CSAR)",
+    "centre": "Centre for Surveillance & Applied Research (CSAR)",
+    "branch": "Health Promotion & Chronic Disease Prevention Branch (HPCDPB)",
+    "domain": "PH"
+  },
+  {
+    "division": "Division of Aging, Seniors & Dementia",
+    "centre": "Centre for Health Promotion (CHP)",
+    "branch": "Health Promotion & Chronic Disease Prevention Branch (HPCDPB)",
+    "domain": "PH"
+  },
+  {
+    "division": "Division of Children & Youth",
+    "centre": "Centre for Health Promotion (CHP)",
+    "branch": "Health Promotion & Chronic Disease Prevention Branch (HPCDPB)",
+    "domain": "PH"
+  },
+  {
+    "division": "Divison of Aging, Seniors & Dementia",
+    "centre": "Centre for Health Promotion (CHP)",
+    "branch": "Health Promotion & Chronic Disease Prevention Branch (HPCDPB)",
+    "domain": "PH"
+  },
+  {
+    "division": "Executive Director Office",
+    "centre": "Centre for Chronic Disease Prevention & Health Equity (CCDPHE)",
+    "branch": "Health Promotion & Chronic Disease Prevention Branch (HPCDPB)",
+    "domain": "LEAD"
+  },
+  {
+    "division": "Global Health & Guidelines Division",
+    "centre": "Centre for Chronic Disease Prevention & Health Equity (CCDPHE)",
+    "branch": "Health Promotion & Chronic Disease Prevention Branch (HPCDPB)",
+    "domain": "PH"
+  },
+  {
+    "division": "Lifespan Chronic Diseases & Conditions Division",
+    "centre": "Centre for Surveillance & Applied Research (CSAR)",
+    "branch": "Health Promotion & Chronic Disease Prevention Branch (HPCDPB)",
+    "domain": "PH"
+  },
+  {
+    "division": "Mental Health & Well-being Division",
+    "centre": "Centre for Health Promotion (CHP)",
+    "branch": "Health Promotion & Chronic Disease Prevention Branch (HPCDPB)",
+    "domain": "PH"
+  },
+  {
+    "division": "Parnership & Strategies Division",
+    "centre": "Centre for Chronic Disease Prevention & Health Equity (CCDPHE)",
+    "branch": "Health Promotion & Chronic Disease Prevention Branch (HPCDPB)",
+    "domain": "PART"
+  },
+  {
+    "division": "Social Determinants of Health Division",
+    "centre": "Centre for Chronic Disease Prevention & Health Equity (CCDPHE)",
+    "branch": "Health Promotion & Chronic Disease Prevention Branch (HPCDPB)",
+    "domain": "POL"
+  },
+  {
+    "division": "Substance-Related Harms Division",
+    "centre": "Centre for Surveillance & Applied Research (CSAR)",
+    "branch": "Health Promotion & Chronic Disease Prevention Branch (HPCDPB)",
+    "domain": "PH"
+  },
+  {
+    "division": "Surveillance Systems & Data Management Division",
+    "centre": "Centre for Surveillance & Applied Research (CSAR)",
+    "branch": "Health Promotion & Chronic Disease Prevention Branch (HPCDPB)",
+    "domain": "DATA"
+  },
+  {
+    "division": "Atlantic Region",
+    "centre": "Regional Operations (RO)",
+    "branch": "Health Security & Regional Operations Branch  (HSROB)",
+    "domain": "PH"
+  },
+  {
+    "division": "Border Implementation Task Force",
+    "centre": "Special Projects (SP)",
+    "branch": "Health Security & Regional Operations Branch  (HSROB)",
+    "domain": "MGT"
+  },
+  {
+    "division": "Border Operations (HSROB)",
+    "centre": "Regional Operations (RO)",
+    "branch": "Health Security & Regional Operations Branch  (HSROB)",
+    "domain": "MGT"
+  },
+  {
+    "division": "Border Program and Planning",
+    "centre": "Regional Operations (RO)",
+    "branch": "Health Security & Regional Operations Branch  (HSROB)",
+    "domain": "POL"
+  },
+  {
+    "division": "Border Program Policy",
+    "centre": "Centre for Border & Travel Health (CBTH)",
+    "branch": "Health Security & Regional Operations Branch  (HSROB)",
+    "domain": "POL"
+  },
+  {
+    "division": "Business Operations Human Resource and Finance Administration",
+    "centre": "Centre for Biosecurity (CB)",
+    "branch": "Health Security & Regional Operations Branch  (HSROB)",
+    "domain": "HR"
+  },
+  {
+    "division": "Central Notification System",
+    "centre": "Regional Operations (RO)",
+    "branch": "Health Security & Regional Operations Branch  (HSROB)",
+    "domain": "MGT"
+  },
+  {
+    "division": "Centre for Biosecurity (CB)",
+    "centre": "Centre for Biosecurity (CB)",
+    "branch": "Health Security & Regional Operations Branch  (HSROB)",
+    "domain": "SCI"
+  },
+  {
+    "division": "Centre for Border & Travel Health (CBTH)",
+    "centre": "Centre for Border & Travel Health (CBTH)",
+    "branch": "Health Security & Regional Operations Branch  (HSROB)",
+    "domain": "PH"
+  },
+  {
+    "division": "Centre for Compliance, Enforcement, & Exemptions (CCEE)",
+    "centre": "Centre for Compliance, Enforcement, & Exemptions (CCEE)",
+    "branch": "Health Security & Regional Operations Branch  (HSROB)",
+    "domain": "MGT"
+  },
+  {
+    "division": "Compliance & Enforcement Operations Division",
+    "centre": "Centre for Compliance, Enforcement, & Exemptions (CCEE)",
+    "branch": "Health Security & Regional Operations Branch  (HSROB)",
+    "domain": "MGT"
+  },
+  {
+    "division": "Compliance & Enforcement Policy",
+    "centre": "Centre for Compliance, Enforcement, & Exemptions (CCEE)",
+    "branch": "Health Security & Regional Operations Branch  (HSROB)",
+    "domain": "POL"
+  },
+  {
+    "division": "Conveyances",
+    "centre": "Centre for Border & Travel Health (CBTH)",
+    "branch": "Health Security & Regional Operations Branch  (HSROB)",
+    "domain": "POL"
+  },
+  {
+    "division": "Emergency Orders & Exemption Review",
+    "centre": "Special Projects (SP)",
+    "branch": "Health Security & Regional Operations Branch  (HSROB)",
+    "domain": "MGT"
+  },
+  {
+    "division": "Exemptions & Compassionate",
+    "centre": "Centre for Compliance, Enforcement, & Exemptions (CCEE)",
+    "branch": "Health Security & Regional Operations Branch  (HSROB)",
+    "domain": "POL"
+  },
+  {
+    "division": "Litigation Team",
+    "centre": "Centre for Biosecurity (CB)",
+    "branch": "Health Security & Regional Operations Branch  (HSROB)",
+    "domain": "POL"
+  },
+  {
+    "division": "Manitoba Saskatchewan Region",
+    "centre": "Regional Operations (RO)",
+    "branch": "Health Security & Regional Operations Branch  (HSROB)",
+    "domain": "PH"
+  },
+  {
+    "division": "Northern Unit",
+    "centre": "Regional Operations (RO)",
+    "branch": "Health Security & Regional Operations Branch  (HSROB)",
+    "domain": "PH"
+  },
+  {
+    "division": "Office of Biosafety Programs & Planning",
+    "centre": "Centre for Biosecurity (CB)",
+    "branch": "Health Security & Regional Operations Branch  (HSROB)",
+    "domain": "POL"
+  },
+  {
+    "division": "Office of Bipsafety & Biocontainment Operations",
+    "centre": "Centre for Biosecurity (CB)",
+    "branch": "Health Security & Regional Operations Branch  (HSROB)",
+    "domain": "POL"
+  },
+  {
+    "division": "Office of Pathogen Security",
+    "centre": "Centre for Biosecurity (CB)",
+    "branch": "Health Security & Regional Operations Branch  (HSROB)",
+    "domain": "POL"
+  },
+  {
+    "division": "Office of Regulatory Affairs",
+    "centre": "Centre for Biosecurity (CB)",
+    "branch": "Health Security & Regional Operations Branch  (HSROB)",
+    "domain": "POL"
+  },
+  {
+    "division": "Office of Stakeholder Affairs",
+    "centre": "Centre for Biosecurity (CB)",
+    "branch": "Health Security & Regional Operations Branch  (HSROB)",
+    "domain": "PART"
+  },
+  {
+    "division": "Office of Travel Health",
+    "centre": "Centre for Border & Travel Health (CBTH)",
+    "branch": "Health Security & Regional Operations Branch  (HSROB)",
+    "domain": "PH"
+  },
+  {
+    "division": "Ontario Region",
+    "centre": "Regional Operations (RO)",
+    "branch": "Health Security & Regional Operations Branch  (HSROB)",
+    "domain": "PH"
+  },
+  {
+    "division": "Planning & Reporting",
+    "centre": "Regional Operations (RO)",
+    "branch": "Health Security & Regional Operations Branch  (HSROB)",
+    "domain": "POL"
+  },
+  {
+    "division": "Planning, Performance & Reporting",
+    "centre": "Centre for Biosecurity (CB)",
+    "branch": "Health Security & Regional Operations Branch  (HSROB)",
+    "domain": "POL"
+  },
+  {
+    "division": "Quarantine Case Management System",
+    "centre": "Centre for Compliance, Enforcement, & Exemptions (CCEE)",
+    "branch": "Health Security & Regional Operations Branch  (HSROB)",
+    "domain": "IT"
+  },
+  {
+    "division": "Quebec Region",
+    "centre": "Regional Operations (RO)",
+    "branch": "Health Security & Regional Operations Branch  (HSROB)",
+    "domain": "PH"
+  },
+  {
+    "division": "Regional Operations (deprecated)",
+    "centre": "Regional Operations (RO)",
+    "branch": "Health Security & Regional Operations Branch  (HSROB)",
+    "domain": "PH"
+  },
+  {
+    "division": "Special Projects (SP)",
+    "centre": "Special Projects (SP)",
+    "branch": "Health Security & Regional Operations Branch  (HSROB)",
+    "domain": "PH"
+  },
+  {
+    "division": "Strategic Border Policy & Planning",
+    "centre": "Centre for Border & Travel Health (CBTH)",
+    "branch": "Health Security & Regional Operations Branch  (HSROB)",
+    "domain": "POL"
+  },
+  {
+    "division": "Testing Directorate (TD)",
+    "centre": "Testing Directorate (TD)",
+    "branch": "Health Security & Regional Operations Branch  (HSROB)",
+    "domain": "PH"
+  },
+  {
+    "division": "Testing Operations Directorate (TOD) (Deprecated)",
+    "centre": "Testing Operation Directorate (TOD) (Deprecated)",
+    "branch": "Health Security & Regional Operations Branch  (HSROB)",
+    "domain": "PH"
+  },
+  {
+    "division": "Western Region",
+    "centre": "Regional Operations (RO)",
+    "branch": "Health Security & Regional Operations Branch  (HSROB)",
+    "domain": "PH"
+  },
+  {
+    "division": "Antimicrobial Resistance Division",
+    "centre": "Centre for Communicable Diseases & Infection Control (CCDIC)",
+    "branch": "Infectious Diseases Programs Branch (IDPB)",
+    "domain": "MED"
+  },
+  {
+    "division": "Antimicrobial Resistance Task Force (AMR-TF)",
+    "centre": "Antimicrobial Resistance Task Force (AMR-TF)",
+    "branch": "Infectious Diseases Programs Branch (IDPB)",
+    "domain": "MED"
+  },
+  {
+    "division": "Audit, Evaluation & Performance Measurement",
+    "centre": "Antimicrobial Resistance Task Force (AMR-TF)",
+    "branch": "Infectious Diseases Programs Branch (IDPB)",
+    "domain": "MGT"
+  },
+  {
+    "division": "Centre for Communicable Diseases & Infection Control (CCDIC)",
+    "centre": "Centre for Communicable Diseases & Infection Control (CCDIC)",
+    "branch": "Infectious Diseases Programs Branch (IDPB)",
+    "domain": "SCI"
+  },
+  {
+    "division": "Centre for Food-Borne Environmental & Zoonotic Infectious Diseases (CFEZID)",
+    "centre": "Centre for Food-Borne Environmental & Zoonotic Infectious Diseases (CFEZID)",
+    "branch": "Infectious Diseases Programs Branch (IDPB)",
+    "domain": "SCI"
+  },
+  {
+    "division": "Centre for Immunization & Respiratory Infectious Diseases (CIRID)",
+    "centre": "Centre for Immunization & Respiratory Infectious Diseases (CIRID)",
+    "branch": "Infectious Diseases Programs Branch (IDPB)",
+    "domain": "MED"
+  },
+  {
+    "division": "COVID-19 Therapeutics",
+    "centre": "Centre for Communicable Diseases & Infection Control (CCDIC)",
+    "branch": "Infectious Diseases Programs Branch (IDPB)",
+    "domain": "MED"
+  },
+  {
+    "division": "Executive Director's Office",
+    "centre": "Centre for Communicable Diseases & Infection Control (CCDIC)",
+    "branch": "Infectious Diseases Programs Branch (IDPB)",
+    "domain": "LEAD"
+  },
+  {
+    "division": "Food-Borne Disease & AMR Surveillance Division",
+    "centre": "Centre for Food-Borne Environmental & Zoonotic Infectious Diseases (CFEZID)",
+    "branch": "Infectious Diseases Programs Branch (IDPB)",
+    "domain": "SCI"
+  },
+  {
+    "division": "Outbreak Management Division",
+    "centre": "Centre for Food-Borne Environmental & Zoonotic Infectious Diseases (CFEZID)",
+    "branch": "Infectious Diseases Programs Branch (IDPB)",
+    "domain": "SCI"
+  },
+  {
+    "division": "Pandemic Preparedness & Response Division",
+    "centre": "Centre for Immunization & Respiratory Infectious Diseases (CIRID)",
+    "branch": "Infectious Diseases Programs Branch (IDPB)",
+    "domain": "POL"
+  },
+  {
+    "division": "Policy Integration & Zoonoses Division",
+    "centre": "Centre for Food-Borne Environmental & Zoonotic Infectious Diseases (CFEZID)",
+    "branch": "Infectious Diseases Programs Branch (IDPB)",
+    "domain": "SCI"
+  },
+  {
+    "division": "Policy, Planning & Engagement",
+    "centre": "Antimicrobial Resistance Task Force (AMR-TF)",
+    "branch": "Infectious Diseases Programs Branch (IDPB)",
+    "domain": "POL"
+  },
+  {
+    "division": "Prion Diseases Division",
+    "centre": "Centre for Food-Borne Environmental & Zoonotic Infectious Diseases (CFEZID)",
+    "branch": "Infectious Diseases Programs Branch (IDPB)",
+    "domain": "SCI"
+  },
+  {
+    "division": "Programs & Parterships Division",
+    "centre": "Centre for Communicable Diseases & Infection Control (CCDIC)",
+    "branch": "Infectious Diseases Programs Branch (IDPB)",
+    "domain": "PART"
+  },
+  {
+    "division": "Stewardship & Infection Prevention & Control",
+    "centre": "Antimicrobial Resistance Task Force (AMR-TF)",
+    "branch": "Infectious Diseases Programs Branch (IDPB)",
+    "domain": "POL"
+  },
+  {
+    "division": "STTBI Surveillance Division",
+    "centre": "Centre for Communicable Diseases & Infection Control (CCDIC)",
+    "branch": "Infectious Diseases Programs Branch (IDPB)",
+    "domain": "SCI"
+  },
+  {
+    "division": "Surveillance & Epidemiology Division",
+    "centre": "Centre for Immunization & Respiratory Infectious Diseases (CIRID)",
+    "branch": "Infectious Diseases Programs Branch (IDPB)",
+    "domain": "PH"
+  },
+  {
+    "division": "Surveillance Integration & Transformation",
+    "centre": "Antimicrobial Resistance Task Force (AMR-TF)",
+    "branch": "Infectious Diseases Programs Branch (IDPB)",
+    "domain": "PH"
+  },
+  {
+    "division": "Biorisk & Occupational Safety Servicse",
+    "centre": "Scientific Operations & Response (SOR)",
+    "branch": "National Microbiology Laboratory Branch (NMLB)",
+    "domain": "POL"
+  },
+  {
+    "division": "Border Response",
+    "centre": "Scientific Operations & Response (SOR)",
+    "branch": "National Microbiology Laboratory Branch (NMLB)",
+    "domain": "POL"
+  },
+  {
+    "division": "Enteric Diseases",
+    "centre": "Science Refefence & Surveillance (SRS)",
+    "branch": "National Microbiology Laboratory Branch (NMLB)",
+    "domain": "SCI"
+  },
+  {
+    "division": "Genomic Surveillance Systems",
+    "centre": "Medical & Scientific Affairs (MSA)",
+    "branch": "National Microbiology Laboratory Branch (NMLB)",
+    "domain": "SCI"
+  },
+  {
+    "division": "Health Security & Response",
+    "centre": "Scientific Operations & Response (SOR)",
+    "branch": "National Microbiology Laboratory Branch (NMLB)",
+    "domain": "POL"
+  },
+  {
+    "division": "Innovation in Public Health Informatics",
+    "centre": "Scientific Operations & Response (SOR)",
+    "branch": "National Microbiology Laboratory Branch (NMLB)",
+    "domain": "IT"
+  },
+  {
+    "division": "Laboratory Infrastructure",
+    "centre": "Scientific Operations & Response (SOR)",
+    "branch": "National Microbiology Laboratory Branch (NMLB)",
+    "domain": "SCI"
+  },
+  {
+    "division": "Laboratory Surveillance & Surge Capacity",
+    "centre": "Scientific Operations & Response (SOR)",
+    "branch": "National Microbiology Laboratory Branch (NMLB)",
+    "domain": "SCI"
+  },
+  {
+    "division": "Medical & Scientific Affairs (MSA)",
+    "centre": "Medical & Scientific Affairs (MSA)",
+    "branch": "National Microbiology Laboratory Branch (NMLB)",
+    "domain": "MED"
+  },
+  {
+    "division": "National & International Laboratory Engagement",
+    "centre": "Medical & Scientific Affairs (MSA)",
+    "branch": "National Microbiology Laboratory Branch (NMLB)",
+    "domain": "SCI"
+  },
+  {
+    "division": "National Microbiology Laboratory (NML)",
+    "centre": "National Microbiology Laboratory Branch (NMLB)",
+    "branch": "National Microbiology Laboratory Branch (NMLB)",
+    "domain": "SCI"
+  },
+  {
+    "division": "One Health",
+    "centre": "Science Refefence & Surveillance (SRS)",
+    "branch": "National Microbiology Laboratory Branch (NMLB)",
+    "domain": "SCI"
+  },
+  {
+    "division": "Program Services & Support",
+    "centre": "Medical & Scientific Affairs (MSA)",
+    "branch": "National Microbiology Laboratory Branch (NMLB)",
+    "domain": "ADMIN"
+  },
+  {
+    "division": "Public Health Risk Sciences",
+    "centre": "Scientific Operations & Response (SOR)",
+    "branch": "National Microbiology Laboratory Branch (NMLB)",
+    "domain": "SCI"
+  },
+  {
+    "division": "Publich Health Genomics",
+    "centre": "Medical & Scientific Affairs (MSA)",
+    "branch": "National Microbiology Laboratory Branch (NMLB)",
+    "domain": "SCI"
+  },
+  {
+    "division": "Quality Office",
+    "centre": "Medical & Scientific Affairs (MSA)",
+    "branch": "National Microbiology Laboratory Branch (NMLB)",
+    "domain": "MGT"
+  },
+  {
+    "division": "Research & Innovation",
+    "centre": "Medical & Scientific Affairs (MSA)",
+    "branch": "National Microbiology Laboratory Branch (NMLB)",
+    "domain": "SCI"
+  },
+  {
+    "division": "Science Policy & Priorities",
+    "centre": "Medical & Scientific Affairs (MSA)",
+    "branch": "National Microbiology Laboratory Branch (NMLB)",
+    "domain": "POL"
+  },
+  {
+    "division": "Science Refefence & Surveillance (SRS)",
+    "centre": "Science Refefence & Surveillance (SRS)",
+    "branch": "National Microbiology Laboratory Branch (NMLB)",
+    "domain": "PH"
+  },
+  {
+    "division": "Science Technology Cores & Services",
+    "centre": "Science Refefence & Surveillance (SRS)",
+    "branch": "National Microbiology Laboratory Branch (NMLB)",
+    "domain": "SCI"
+  },
+  {
+    "division": "Scientific Informatics Services",
+    "centre": "Scientific Operations & Response (SOR)",
+    "branch": "National Microbiology Laboratory Branch (NMLB)",
+    "domain": "IT"
+  },
+  {
+    "division": "Scientific Operations & Response (SOR)",
+    "centre": "Scientific Operations & Response (SOR)",
+    "branch": "National Microbiology Laboratory Branch (NMLB)",
+    "domain": "MGT"
+  },
+  {
+    "division": "Sexually Transmitted Bloodborne Infections",
+    "centre": "Science Refefence & Surveillance (SRS)",
+    "branch": "National Microbiology Laboratory Branch (NMLB)",
+    "domain": "MED"
+  },
+  {
+    "division": "Therapeutics & Countermeasures",
+    "centre": "Medical & Scientific Affairs (MSA)",
+    "branch": "National Microbiology Laboratory Branch (NMLB)",
+    "domain": "MED"
+  },
+  {
+    "division": "Viral Diseases Division",
+    "centre": "Science Refefence & Surveillance (SRS)",
+    "branch": "National Microbiology Laboratory Branch (NMLB)",
+    "domain": "MED"
+  },
+  {
+    "division": "Business Operations (BO)",
+    "centre": "Business Operations (BO)",
+    "branch": "Office of Audit & Evaluation (OAE)",
+    "domain": "MGT"
+  },
+  {
+    "division": "Director General's Office (DGO)",
+    "centre": "Director General's Office (DGO)",
+    "branch": "Office of Audit & Evaluation (OAE)",
+    "domain": "LEAD"
+  },
+  {
+    "division": "Internal Audit & Special Examinations",
+    "centre": "Internal Audit (IA)",
+    "branch": "Office of Audit & Evaluation (OAE)",
+    "domain": "MGT"
+  },
+  {
+    "division": "Internal Audit (IA)",
+    "centre": "Internal Audit (IA)",
+    "branch": "Office of Audit & Evaluation (OAE)",
+    "domain": "MGT"
+  },
+  {
+    "division": "Performance Measurement Planning & Integaration",
+    "centre": "Internal Audit (IA)",
+    "branch": "Office of Audit & Evaluation (OAE)",
+    "domain": "MGT"
+  },
+  {
+    "division": "Practice Management",
+    "centre": "Internal Audit (IA)",
+    "branch": "Office of Audit & Evaluation (OAE)",
+    "domain": "MGT"
+  },
+  {
+    "division": "Program Evaluation & Internal Disclosure",
+    "centre": "Internal Audit (IA)",
+    "branch": "Office of Audit & Evaluation (OAE)",
+    "domain": "MGT"
+  },
+  {
+    "division": "Bilateral Engagement, Summits & Trade Division",
+    "centre": "Office of International Affairs for the Health Portfolio (OIAHP)",
+    "branch": "Office of International Affairs for the Health Portfolio (OIAHP)",
+    "domain": "PART"
+  },
+  {
+    "division": "Multilatetal Relations Division",
+    "centre": "Office of International Affairs for the Health Portfolio (OIAHP)",
+    "branch": "Office of International Affairs for the Health Portfolio (OIAHP)",
+    "domain": "PART"
+  },
+  {
+    "division": "Official Delegations & Strategic Integration Division",
+    "centre": "Office of International Affairs for the Health Portfolio (OIAHP)",
+    "branch": "Office of International Affairs for the Health Portfolio (OIAHP)",
+    "domain": "PART"
+  },
+  {
+    "division": "Washington Health Counsellor",
+    "centre": "Office of International Affairs for the Health Portfolio (OIAHP)",
+    "branch": "Office of International Affairs for the Health Portfolio (OIAHP)",
+    "domain": "PART"
+  },
+  {
+    "division": "Canada Communicable Disease Report",
+    "centre": "Office of the Chief Science Officer (OCSO)",
+    "branch": "Office of the President and Chief Public Health Officer (OPCPHO)",
+    "domain": "COMM"
+  },
+  {
+    "division": "Chief Public Health Office Reports",
+    "centre": "Office of the Chief Public Health Officer (OCPHO)",
+    "branch": "Office of the President and Chief Public Health Officer (OPCPHO)",
+    "domain": "PH"
+  },
+  {
+    "division": "Corporate Operations",
+    "centre": "Office of the Chief of Staff (OCOS)",
+    "branch": "Office of the President and Chief Public Health Officer (OPCPHO)",
+    "domain": "ADMIN"
+  },
+  {
+    "division": "Office of the Chief of Staff (OCOS)",
+    "centre": "Office of the Chief of Staff (OCOS)",
+    "branch": "Office of the President and Chief Public Health Officer (OPCPHO)",
+    "domain": "ADMIN"
+  },
+  {
+    "division": "Office of the Chief Public Health Officer (OCPHO)",
+    "centre": "Office of the Chief Public Health Officer (OCPHO)",
+    "branch": "Office of the President and Chief Public Health Officer (OPCPHO)",
+    "domain": "ADMIN"
+  },
+  {
+    "division": "Office of the Chief Science Officer (OCSO)",
+    "centre": "Office of the Chief Science Officer (OCSO)",
+    "branch": "Office of the President and Chief Public Health Officer (OPCPHO)",
+    "domain": "SCI"
+  },
+  {
+    "division": "Outreach Unit",
+    "centre": "Office of the Chief Public Health Officer (OCPHO)",
+    "branch": "Office of the President and Chief Public Health Officer (OPCPHO)",
+    "domain": "PART"
+  },
+  {
+    "division": "Science Excellence Division",
+    "centre": "Office of the Chief Science Officer (OCSO)",
+    "branch": "Office of the President and Chief Public Health Officer (OPCPHO)",
+    "domain": "SCI"
+  },
+  {
+    "division": "Science Innovation & Collaboration Division",
+    "centre": "Office of the Chief Science Officer (OCSO)",
+    "branch": "Office of the President and Chief Public Health Officer (OPCPHO)",
+    "domain": "SCI"
+  },
+  {
+    "division": "Science Policy Unit",
+    "centre": "Office of the Chief Public Health Officer (OCPHO)",
+    "branch": "Office of the President and Chief Public Health Officer (OPCPHO)",
+    "domain": "POL"
+  },
+  {
+    "division": "Strategic & Risk Communications Unit",
+    "centre": "Office of the Chief Public Health Officer (OCPHO)",
+    "branch": "Office of the President and Chief Public Health Officer (OPCPHO)",
+    "domain": "COMM"
+  },
+  {
+    "division": "Vice President's Office (VPO)",
+    "centre": "Vice President's Office (VPO)",
+    "branch": "Office of the President and Chief Public Health Officer (OPCPHO)",
+    "domain": "LEAD"
+  },
+  {
+    "division": "Applied Policy Research & Results Division",
+    "centre": "Strategic Policy Directorate (SPD)",
+    "branch": "Strategic Policy Branch (SPB)",
+    "domain": "POL"
+  },
+  {
+    "division": "Cabinet Affairs",
+    "centre": "Policy Operations Directorate (POD)",
+    "branch": "Strategic Policy Branch (SPB)",
+    "domain": "MGT"
+  },
+  {
+    "division": "Emerging Policy Division",
+    "centre": "Strategic Policy Directorate (SPD)",
+    "branch": "Strategic Policy Branch (SPB)",
+    "domain": "POL"
+  },
+  {
+    "division": "Executive Secretariat",
+    "centre": "Policy Operations Directorate (POD)",
+    "branch": "Strategic Policy Branch (SPB)",
+    "domain": "ADMIN"
+  },
+  {
+    "division": "External Advice & Engagement",
+    "centre": "PHAC Renewal Directorate (PRD)",
+    "branch": "Strategic Policy Branch (SPB)",
+    "domain": "PART"
+  },
+  {
+    "division": "Governance Division",
+    "centre": "PHAC Renewal Directorate (PRD)",
+    "branch": "Strategic Policy Branch (SPB)",
+    "domain": "MGT"
+  },
+  {
+    "division": "Intergovernmental & Indigenous Affairs",
+    "centre": "Intersectoral Collaboration Directorate (ICD)",
+    "branch": "Strategic Policy Branch (SPB)",
+    "domain": "PART"
+  },
+  {
+    "division": "Internal Engagement",
+    "centre": "PHAC Renewal Directorate (PRD)",
+    "branch": "Strategic Policy Branch (SPB)",
+    "domain": "PART"
+  },
+  {
+    "division": "Intersectoral Collaboration Directorate (ICD)",
+    "centre": "Intersectoral Collaboration Directorate (ICD)",
+    "branch": "Strategic Policy Branch (SPB)",
+    "domain": "PART"
+  },
+  {
+    "division": "Knowledge Mobilization & Integration",
+    "centre": "PHAC Renewal Directorate (PRD)",
+    "branch": "Strategic Policy Branch (SPB)",
+    "domain": "PH"
+  },
+  {
+    "division": "Parliamentary Affairs",
+    "centre": "Policy Operations Directorate (POD)",
+    "branch": "Strategic Policy Branch (SPB)",
+    "domain": "POL"
+  },
+  {
+    "division": "PHAC Renewal Directorate (PRD)",
+    "centre": "PHAC Renewal Directorate (PRD)",
+    "branch": "Strategic Policy Branch (SPB)",
+    "domain": "POL"
+  },
+  {
+    "division": "Policy Development & Integration Division",
+    "centre": "Strategic Policy Directorate (SPD)",
+    "branch": "Strategic Policy Branch (SPB)",
+    "domain": "POL"
+  },
+  {
+    "division": "Policy Operations Directorate (POD)",
+    "centre": "Policy Operations Directorate (POD)",
+    "branch": "Strategic Policy Branch (SPB)",
+    "domain": "POL"
+  },
+  {
+    "division": "Shared Business Operations",
+    "centre": "Policy Operations Directorate (POD)",
+    "branch": "Strategic Policy Branch (SPB)",
+    "domain": "MGT"
+  },
+  {
+    "division": "Stakeholder Engagement & Public Confidence",
+    "centre": "Intersectoral Collaboration Directorate (ICD)",
+    "branch": "Strategic Policy Branch (SPB)",
+    "domain": "PART"
+  },
+  {
+    "division": "Strategic Policy Directorate (SPD)",
+    "centre": "Strategic Policy Directorate (SPD)",
+    "branch": "Strategic Policy Branch (SPB)",
+    "domain": "POL"
+  },
+  {
+    "division": "Biomanufacturing, Pandemic Vaccine & Immunization Policy",
+    "centre": "Centre for Immunization Surveillance (CIS)",
+    "branch": "Vaccine Roll Out Task Force (VRTF)",
+    "domain": "POL"
+  },
+  {
+    "division": "Centre for Immunization Surveillance (CIS)",
+    "centre": "Centre for Immunization Surveillance (CIS)",
+    "branch": "Vaccine Roll Out Task Force (VRTF)",
+    "domain": "MED"
+  },
+  {
+    "division": "COVID-19 Vaccine Surveillance (CVS)",
+    "centre": "COVID-19 Vaccine Surveillance (CVS)",
+    "branch": "Vaccine Roll Out Task Force (VRTF)",
+    "domain": "PH"
+  },
+  {
+    "division": "Immunization Program Division",
+    "centre": "Centre for Immunization Surveillance (CIS)",
+    "branch": "Vaccine Roll Out Task Force (VRTF)",
+    "domain": "SCI"
+  },
+  {
+    "division": "Operations, Planning & Reporting Team",
+    "centre": "COVID-19 Vaccine Surveillance (CVS)",
+    "branch": "Vaccine Roll Out Task Force (VRTF)",
+    "domain": "MGT"
+  },
+  {
+    "division": "Policy & Coordination Team",
+    "centre": "COVID-19 Vaccine Surveillance (CVS)",
+    "branch": "Vaccine Roll Out Task Force (VRTF)",
+    "domain": "POL"
+  },
+  {
+    "division": "Vaccine Confidence",
+    "centre": "Centre for Immunization Surveillance (CIS)",
+    "branch": "Vaccine Roll Out Task Force (VRTF)",
+    "domain": "POL"
+  },
+  {
+    "division": "Vaccine Coverage & Effectiveness Monitoring Division",
+    "centre": "COVID-19 Vaccine Surveillance (CVS)",
+    "branch": "Vaccine Roll Out Task Force (VRTF)",
+    "domain": "POL"
+  },
+  {
+    "division": "Vaccine Injury Support Program",
+    "centre": "Centre for Immunization Surveillance (CIS)",
+    "branch": "Vaccine Roll Out Task Force (VRTF)",
+    "domain": "POL"
+  },
+  {
+    "division": "Vaccine Safety Surveillance Division",
+    "centre": "COVID-19 Vaccine Surveillance (CVS)",
+    "branch": "Vaccine Roll Out Task Force (VRTF)",
+    "domain": "PH\r\n"
+  }
+]
