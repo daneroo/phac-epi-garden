@@ -1,0 +1,75 @@
+# Planning
+
+This is a high level planning document for discussions, until we have a common place for Tasks/Issues.
+
+This only covers the implementation aspects of the project.
+
+- Resolve Project Name : epicenter/epicentre
+  - In general do we adopt canadian spelling
+  - How much i18n do we include for demo
+- Authentication / Authorization
+  - Currently using discord
+  - No authorization, except POC for logged in state.
+  - select a final authentication authority
+  - what is required for demo
+- Move the Gihub repo to `https://github.com/PHACDataHub/phac-epi-garden`
+  - The repo has been created but the CI/CD has not been moved.
+    - will we keep vercel deployments for demo, if so which domain name
+- GraphQL
+  - Data is being transported to client using TRPC
+    - For developer, this has similar expressivity, and enforces type safety from schema, to front end code.
+  - Initial implmentation of GraphQL endpoint has been done with a single entity, to de risk
+- Review Database Model
+  - Canonical names for database entities/fields
+    - naming conventions: pluralization/case need to be validated
+  - Documentation
+    - Each entity and relation should be documented to descibe it's intent and invariants
+    - e.g. root of org_tiers, relation ro tier_level
+- GCP deployments
+- Testing
+  - Has not started
+  - Unit testing (jest/react testing library)
+  - End-to-end (cypress/playwright)
+
+## Specific Issues
+
+### Deploy to GCP
+
+- Obtain a domain name or zone (\*.epicenter.phac.alpha.canada.ca)
+  - this name cannot be used on vercel
+- Docker container build
+- Deploy to Cloud Run
+  - No (CloudRun) Domain mapping support in canada
+  - Alternative: deploy to US Region
+  - Alternative: Manually create:
+    - Load Balancer / Endpoints / certificates / etc...
+
+### Preview deployments
+
+Adjust CI/CD and neon integration to preseve preview deploys (feature branches).
+This seems to be related to vercel/neon integration.
+
+### Org Chart
+
+The rapid implementation required an extra div in `_app.tsx`; this should be removed
+
+```jsx
+<Layout>
+  {/* required by react-org-chart */}
+  <div id="root">
+    <Component {...pageProps} />
+  </div>
+</Layout>
+```
+
+The org_tier/person chart (d3), has unresolved peer dependencies.
+
+- d3 is locked to a very old version
+
+```txt
++    "d3": "^3.5.17",
++    "lodash": "^4.17.21",
++    "react-dnd": "^16.0.1",
++    "react-dnd-html5-backend": "^16.0.1",
++    "react-organizational-chart": "^2.2.1",
+```

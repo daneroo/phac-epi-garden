@@ -3,9 +3,9 @@
 ## TODO
 
 - [x] turbo repo
-- [ ] vercel deploy
-- [ ] copy things from phac garden (logo and intro)
-  - [ ] avoid TOC problems..
+- [x] vercel deploy
+- [x] copy things from phac garden (logo and intro)
+  - [ ] avoid TOC problems: seems to be (build time) cache related
 
 ## Initial Setup
 
