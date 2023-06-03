@@ -1,0 +1,25 @@
+# Infrastructure
+
+The first version of this prototype was deployed on vercel,
+and it's database was on [neon](https://neon.tech/) (serverless postgres with branches)
+
+We are moving to GCP.
+
+## Compute (Container)
+
+The compute will be on Cloud Run.
+
+Unfortunately becaause of geo-restrictions Domain mapping for Cloud Run is not an option for Canada.
+
+In addition to the Cloud Run service, we therefore need to:
+
+- Create a Managed SSL Certificate for the domain
+- Create a Backend Service. Note that the protocol is "HTTP2" for Cloud Run services.
+- Add the Cloud Run service as a backend to the Backend Service.
+- Create a URL Map to route traffic to the Backend Service using the Managed SSL Certificate.
+- Create/Lookup a Managed DNS Zone
+- Create an A record for your domain
+
+## Persistence (Database)
+
+We are using postgres. It will be provisioned as a Manages Cloud SQL Postgrtes instance, or an [AlloyDB](https://cloud.google.com/alloydb)
