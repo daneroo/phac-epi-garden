@@ -20,6 +20,7 @@ Monorepo based on [create-t3-turbo](https://github.com/t3-oss/create-t3-turbo)
   - Changing stack: <https://www.youtube.com/watch?v=hgglCqAXHuE>
     - [shadcdn/ui](https://ui.shadcn.com/)
 - `----- DONE (for now) -----`
+- [x] Dockerize apps: ~200-220 MB
 - [x] [Flowbite](https://flowbite.com/)
 - [x] create `apps/docs`
 - [x] orgs a org-with-tiers

@@ -60,4 +60,6 @@ COPY --from=installer --chown=nextjs:nodejs /app/apps/${APP_NAME}/.next/standalo
 COPY --from=installer --chown=nextjs:nodejs /app/apps/${APP_NAME}/.next/static ./apps/${APP_NAME}/.next/static
 COPY --from=installer --chown=nextjs:nodejs /app/apps/${APP_NAME}/public ./apps/${APP_NAME}/public
 
+# turn the ARG into ENV runner image
+ENV APP_NAME=${APP_NAME}
 CMD node apps/${APP_NAME}/server.js

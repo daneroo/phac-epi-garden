@@ -41,7 +41,7 @@ COPY turbo.json tsconfig.json ./
 RUN pnpm i --frozen-lockfile
 
 # Uncomment and use build args to enable remote caching
-# If we do this, ensudre that the TURBO_* env vars do not survive to the runner stage
+# If we do this, ensure that the TURBO_* env vars do not survive to the runner stage
 # ARG TURBO_TEAM
 # ENV TURBO_TEAM=$TURBO_TEAM
 
@@ -83,4 +83,6 @@ COPY --from=installer --chown=nextjs:nodejs /app/apps/${APP_NAME}/.next/standalo
 COPY --from=installer --chown=nextjs:nodejs /app/apps/${APP_NAME}/.next/static ./apps/${APP_NAME}/.next/static
 COPY --from=installer --chown=nextjs:nodejs /app/apps/${APP_NAME}/public ./apps/${APP_NAME}/public
 
+# turn the ARG into ENV runner image
+ENV APP_NAME=${APP_NAME}
 CMD node apps/${APP_NAME}/server.js
