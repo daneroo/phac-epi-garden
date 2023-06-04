@@ -1,0 +1,38 @@
+version: "3"
+
+services:
+  epi-t3:
+    # container_name: epi-t3
+    build:
+      context: .
+      dockerfile: ./apps/epi-t3/Dockerfile
+      args:
+        - APP_NAME=epi-t3
+        # - DATABASE_URL="postgresql://fake:NOT45@host:9999/not_a_database"
+
+    env_file:
+      - .env.compose
+    # environment:
+    #   - DATABASE_URL="postgresql://christopherallison:12345@db:5432/people_data_api"
+    # restart: always
+    ports:
+      - 3000:3000
+    # networks:
+    #   - app_network
+  epi-docs:
+    # container_name: epi-docs
+    build:
+      context: .
+      dockerfile: ./apps/epi-docs/Dockerfile
+      args:
+        - APP_NAME=epi-docs
+    restart: always
+    ports:
+      - 3001:3000
+    # networks:
+    #   - app_network
+# Define a network, which allows containers to communicate
+# with each other, by using their container name as a hostname
+# networks:
+#   app_network:
+#     external: true

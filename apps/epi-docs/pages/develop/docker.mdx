@@ -3,6 +3,34 @@
 - Containerizing both our apps
 - Can we re-use a single Dockerfile for multiple builds (using ARG)
 
+## Containerization
+
+To deploy to GCP Cloud Run, our app(s) need to be containerized.
+
+We wish to have dev/prod parity on building the containers, so this process must also run locally.
+
+There is a top level `docker-compose.yaml` file which refers to each of the apps, with their own Dockerfile.
+For now these Dockerfiles are almost but not comlpetely identical, due to some differences between the two apps.
+Both apps are next.js, but `epi-t3` has more complex dependencies (i.e. shared monorepo packages like `packages/{db,auth}`)
+
+### Dockerfile
+
+We are using multi-stage builds in the `Dockerfile`s, whi;s objectives are multiple
+
+- Keep the Dockerfiles as similar as possible, controling some if their behavior with `ARG`s (docker build time environment variables)
+- Keep docker build fast, by maximizing caching (a common technique)
+- Make the final production image as small as possible.
+
+Because we are in a `turbo` monorepo, and apps are not isolated to a single directory,
+they reference their library dependencies (like `packages/{api,auth,config,db}`).
+This makes it necessary to invoke the Dockerfile with the root of the repositry as the context.
+
+Luckily, `turbo` has a command to help: `turbo prune --scope=@phac/${APP_NAME} --docker`, which extracts the parts of the repository that an app needs, based on it's dependencies.
+This is actually what we use as the root context for building.
+This command is actually executed inside the `builder` stage of the docker build, and so `docker build` actually uses th repository root as it;s build context.
+
+We will comment the parts (and differences) between the Dockerfiles as we evolve and converge the build process.
+
 ## References
 
 - [turbo prune docs](https://turbo.build/repo/docs/handbook/deploying-with-docker)

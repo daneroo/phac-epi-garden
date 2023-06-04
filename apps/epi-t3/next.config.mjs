@@ -4,6 +4,7 @@ import "@phac/auth/env.mjs";
 
 /** @type {import("next").NextConfig} */
 const config = {
+  output: "standalone",
   reactStrictMode: true,
   /** Enables hot reloading for local packages without a build step */
   transpilePackages: ["@phac/api", "@phac/auth", "@phac/db"],
