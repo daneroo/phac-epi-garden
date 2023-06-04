@@ -3,7 +3,6 @@ FROM node:18-alpine AS base
 # this is set in all build stages
 # it is meant to be injected from docker-compose file
 ARG APP_NAME=epi-docs
-RUN echo "***** in base APP_NAME=${APP_NAME}"
 
 # Check https://github.com/nodejs/docker-node/tree/b4117f9333da4138b03a546ec926ef50a31506c3#nodealpine to understand why libc6-compat might be needed.
 RUN apk add --no-cache libc6-compat

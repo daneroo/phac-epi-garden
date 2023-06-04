@@ -3,7 +3,6 @@ FROM node:18-alpine AS base
 # this is set in all build stages
 # it is meant to be injected from docker-compose file
 ARG APP_NAME=epi-t3
-RUN echo "***** in base APP_NAME=${APP_NAME}"
 
 # Check https://github.com/nodejs/docker-node/tree/b4117f9333da4138b03a546ec926ef50a31506c3#nodealpine to understand why libc6-compat might be needed.
 RUN apk add --no-cache libc6-compat
@@ -17,9 +16,6 @@ RUN corepack enable && corepack prepare pnpm@latest --activate && pnpm --version
 
 COPY . .
 RUN pnpx turbo prune --scope=@phac/${APP_NAME} --docker
-
-RUN echo "********* in builder /app/out"
-RUN find /app/out/ -type l -print
 
 # Add lockfile and package.json's of isolated subworkspace
 FROM base AS installer
@@ -65,20 +61,8 @@ DISCORD_CLIENT_SECRET=dfdfdfdfdfdfdfdfdfd-dfdf-fdfdfdf
 # TURBO_TOKEN=Kxyxyxyxyxyxyxyxyxyxyxyx
 # TURBO_TEAM=turboteam
 EOF
-RUN echo "***** pnpm dotenv -e .env -- env"
-RUN pnpm dotenv -e .env -- env
 
 RUN pnpm turbo run build --filter=@phac/${APP_NAME}...
-
-# # Serve from installer stage for now
-# WORKDIR /app/apps/${APP_NAME}
-# # *** THIS SHOULD WORK but doesn't
-# # CMD node .next/standalone/server.js
-# # This works
-# CMD node /app/apps/epi-t3/.next/standalone/apps/epi-t3/server.js
-# # This works, but we get a warning when building standalone (next.congig.js: { output: "standalone" })
-# # CMD pnpm next start
-
 
 FROM base AS runner
 WORKDIR /app
