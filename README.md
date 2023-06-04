@@ -4,6 +4,7 @@ Monorepo based on [create-t3-turbo](https://github.com/t3-oss/create-t3-turbo)
 
 ## TODO
 
+- [ ] Cloud Build
 - [ ] Github Auth
   - <https://github.com/vercel/nextjs-planetscale-nextauth-tailwindcss-template>
 - [ ] people and role (search)
