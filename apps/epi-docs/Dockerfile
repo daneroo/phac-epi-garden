@@ -10,17 +10,19 @@ RUN apk update
 
 
 FROM base AS builder
+ARG APP_NAME=epi-docs
 # Set working directory
 WORKDIR /app
 RUN corepack enable && corepack prepare pnpm@latest --activate && pnpm --version 
 
 COPY . .
-# RUN pnpx turbo prune --scope=@phac/${APP_NAME} --docker
+RUN pnpx turbo prune --scope=@phac/${APP_NAME} --docker
 # Having trouble on cloudbuild
-RUN pnpx turbo prune --scope=@phac/epi-docs --docker
+# RUN pnpx turbo prune --scope=@phac/epi-docs --docker
 
 # Add lockfile and package.json's of isolated subworkspace
 FROM base AS installer
+ARG APP_NAME=epi-docs
 WORKDIR /app
 RUN corepack enable && corepack prepare pnpm@latest --activate && pnpm --version 
 
@@ -45,6 +47,7 @@ COPY turbo.json tsconfig.json ./
 RUN pnpm turbo run build --filter=@phac/${APP_NAME}...
 
 FROM base AS runner
+ARG APP_NAME=epi-docs
 WORKDIR /app
 
 # Don't run production as root
