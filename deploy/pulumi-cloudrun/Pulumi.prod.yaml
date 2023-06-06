@@ -1,0 +1,4 @@
+encryptionsalt: v1:vOdJjd7UxhY=:v1:ZFLdkgyE1GgymEWX:lbUC4FTl/oDtysCknwlfKyx7C8oEug==
+config:
+  gcp:project: pdcp-cloud-009-danl
+  gcp:region: northamerica-northeast1

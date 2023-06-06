@@ -81,13 +81,19 @@ Select the backend and setup gcloud auth
 
 # From this directory  - until we start using a GCP bucket for state
 mkdir PulumiState && pulumi login "file:$PWD/PulumiState"
-pulumi login file:/Users/daniel/Code/PHAC/phac-dhis2/PulumiState
 # required to operate on GCP
 gcloud auth application-default login
 
-pulumi stack select gcp
+pulumi stack select prod
 pulumi config set gcp:project pdcp-cloud-009-danl
 pulumi config set gcp:region "northamerica-northeast1"
 <space>export PULUMI_CONFIG_PASSPHRASE="your stack passhrase"
 pulumi up
+```
+
+```bash
+# setup
+mkdir pulumi-cloudrun
+cd pulumi-cloudrun/
+pulumi new container-gcp-typescript
 ```
