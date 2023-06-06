@@ -11,7 +11,8 @@ steps:
         "apps/${_SERVICE_NAME}/Dockerfile",
         # Build Arg
         "--build-arg",
-        "APP_NAME=${_SERVICE_NAME}",
+        # "APP_NAME=${_SERVICE_NAME}",
+        "APP_NAME=epi-docs",
         # docker context _root is repository root
         ".",
       ]
