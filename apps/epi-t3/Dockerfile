@@ -10,6 +10,7 @@ RUN apk update
 
 
 FROM base AS builder
+ARG APP_NAME=epi-t3
 # Set working directory
 WORKDIR /app
 RUN corepack enable && corepack prepare pnpm@latest --activate && pnpm --version 
@@ -19,6 +20,7 @@ RUN pnpx turbo prune --scope=@phac/${APP_NAME} --docker
 
 # Add lockfile and package.json's of isolated subworkspace
 FROM base AS installer
+ARG APP_NAME=epi-t3
 WORKDIR /app
 RUN corepack enable && corepack prepare pnpm@latest --activate && pnpm --version 
 
@@ -65,6 +67,7 @@ EOF
 RUN pnpm turbo run build --filter=@phac/${APP_NAME}...
 
 FROM base AS runner
+ARG APP_NAME=epi-t3
 WORKDIR /app
 
 # Don't run production as root

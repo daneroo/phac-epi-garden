@@ -47,14 +47,8 @@ export GITHUB_REPO_OWNER="daneroo"
 # list all existing triggers
 gcloud builds triggers list --format="table(name, createTime)" --region ${REGION}
 
-# confirm the trigger was created
-gcloud builds triggers describe test-site-nginx-001 --region ${REGION}
-
-# list all existing triggers - to see if the new trigger appeared
-gcloud builds triggers list --format="table(name, createTime)" --region ${REGION}
-
 # Now, in a loop create a trigger for each of our services
-for svc in epi-docs; do
+for svc in epi-docs epi-t3; do
   gcloud builds triggers create github \
     --name=${GITHUB_REPO_NAME}-${svc} \
     --region ${REGION} \
@@ -67,10 +61,15 @@ done
 # list all existing triggers - to see if the new triggers appeared, one for each service
 gcloud builds triggers list --format="table(name, createTime)" --region ${REGION}
 
+# describe : more details for each trigger
+for svc in epi-docs epi-t3; do
+  gcloud builds triggers describe --region ${REGION} ${GITHUB_REPO_NAME}-${svc}
+done
+
 # At this point you could push to the main branch of your github repo, and see the triggers fire
 
 # If this was only a test, you can delete all the triggers with the following command
-for svc in time-go time-deno site-nginx site-caddy; do
+for svc in epi-docs epi-t3; do
   gcloud builds triggers delete --region ${REGION} ${GITHUB_REPO_NAME}-${svc}
 done
 ```
