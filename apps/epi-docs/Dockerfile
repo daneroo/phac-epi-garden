@@ -15,7 +15,9 @@ WORKDIR /app
 RUN corepack enable && corepack prepare pnpm@latest --activate && pnpm --version 
 
 COPY . .
-RUN pnpx turbo prune --scope=@phac/${APP_NAME} --docker
+# RUN pnpx turbo prune --scope=@phac/${APP_NAME} --docker
+# Having trouble on cloudbuild
+RUN pnpx turbo prune --scope=@phac/epi-docs --docker
 
 # Add lockfile and package.json's of isolated subworkspace
 FROM base AS installer
