@@ -66,9 +66,15 @@ export const Header: FC<Record<string, never>> = function () {
         <Navbar.Collapse>
           {/* Links can be "Active" */}
           {/* <Navbar.Link href="/" active>Home</Navbar.Link> */}
-          <Navbar.Link href="https://docs.epi.phac.v.imetrical.com/" target="_blank">
+          <Navbar.Link href="https://epi-docs.dl.phac.alpha.canada.ca/" target="_blank">
             <span className="flex items-center stroke-current gap-1">
               <span>Documentation</span>
+              <ArrowTopRightOnSquareIcon className="h-4 w-4" />
+            </span>
+          </Navbar.Link>
+          <Navbar.Link href="https://docs.epi.phac.v.imetrical.com/" target="_blank">
+            <span className="flex items-center stroke-current gap-1">
+              <span>V</span>
               <ArrowTopRightOnSquareIcon className="h-4 w-4" />
             </span>
           </Navbar.Link>

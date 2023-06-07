@@ -5,6 +5,12 @@
   "demo": {
     "title": "Demo",
     "type": "page",
+    "href": "https://epi-t3.dl.phac.alpha.canada.ca/",
+    "newWindow": true
+  },
+  "v": {
+    "title": "Demo",
+    "type": "page",
     "href": "https://t3.epi.phac.v.imetrical.com/",
     "newWindow": true
   },
