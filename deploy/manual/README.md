@@ -100,6 +100,7 @@ for svc in epi-docs epi-t3; do
     --region ${REGION} \
     --repo-name=${GITHUB_REPO_NAME} \
     --repo-owner=${GITHUB_REPO_OWNER} \
+    --include-logs-with-status \
     --branch-pattern="^main$" \
     --build-config=deploy/cloudbuild/cloudbuild-${svc}.yaml
 done
