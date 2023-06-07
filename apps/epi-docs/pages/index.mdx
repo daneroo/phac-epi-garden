@@ -1,3 +1,23 @@
+import { useSSG } from "nextra/ssg";
+
+export const getStaticProps = ({ params }) => {
+  //  This is just an experiment in ssg : and cache busting
+  return {
+    props: {
+      ssg: {
+        now: new Date().toISOString(),
+      },
+    },
+    // The page will be considered as stale and regenerated every 60 seconds.
+    revalidate: 60,
+  };
+};
+export const Now = () => {
+  // Get the data from SSG, and render it as a component.
+  const { now } = useSSG();
+  return <span>{now}</span>;
+};
+
 # Introduction
 
 import Image from "next/image";
@@ -27,3 +47,14 @@ It also includes :
 
 {/* Bust the build cache?: date -Iseconds -u */}
 {/* 2023-06-02T15:45:17+00:00 */}
+
+<div
+  style={{
+    fontStyle: "italic",
+    color: "gray",
+    fontSize: "80%",
+    marginTop: "4rem",
+  }}
+>
+  Updated at <Now />
+</div>
