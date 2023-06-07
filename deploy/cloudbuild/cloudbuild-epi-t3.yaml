@@ -34,7 +34,7 @@ steps:
       - "--region"
       - "${_REGION}"
       - "--allow-unauthenticated"
-      - "--update-secrets=/app/apps/epi-t3/.env=epi-t3-env-secret:latest"
+      - "--set-secrets=/app/apps/epi-t3/.env=epi-t3-env-secret:latest"
 
 substitutions:
   # The must start with a "_" (_[A-Z0-9_]+)
