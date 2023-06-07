@@ -74,7 +74,7 @@ export const Header: FC<Record<string, never>> = function () {
           </Navbar.Link>
           <Navbar.Link href="https://docs.epi.phac.v.imetrical.com/" target="_blank">
             <span className="flex items-center stroke-current gap-1">
-              <span>V</span>
+              <span>(Vercel)</span>
               <ArrowTopRightOnSquareIcon className="h-4 w-4" />
             </span>
           </Navbar.Link>
