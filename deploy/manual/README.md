@@ -31,9 +31,9 @@ gcloud artifacts repositories create ${ARTIFACT_REGISTRY_REPO_NAME} \
 
 # Allow our service account to read from the registry
 gcloud artifacts repositories add-iam-policy-binding ${ARTIFACT_REGISTRY_REPO_NAME} \
-    --location=${REGION} \
-    --member=serviceAccount:${PROJECT_NUMBER}-compute@developer.gserviceaccount.com \
-    --role="roles/artifactregistry.reader"
+  --location=${REGION} \
+  --member=serviceAccount:${PROJECT_NUMBER}-compute@developer.gserviceaccount.com \
+  --role="roles/artifactregistry.reader"
 ```
 
 ## Creating a secret
@@ -41,11 +41,24 @@ gcloud artifacts repositories add-iam-policy-binding ${ARTIFACT_REGISTRY_REPO_NA
 This is to pass in environment variable that contain secrets, or to mount a secret as a file (like .env) into a container:
 
 ```bash
+export PROJECT_ID="pdcp-cloud-009-danl"
+# Get the PROJECT_NUMBER from the PROJECT_ID
+export PROJECT_NUMBER=$(gcloud projects describe ${PROJECT_ID} --format="value(projectNumber)")
+export REGION="northamerica-northeast1"
+
 # Automatic - globally replicated is not allowed in our accounts
 # gcloud secrets create epi-t3-env-secret --replication-policy="automatic"
-gcloud secrets create epi-t3-env-secret --replication-policy="user-managed" --locations="northamerica-northeast1"
+gcloud secrets create epi-t3-env-secret --replication-policy="user-managed" --locations="${REGION}"
 
 gcloud secrets versions add epi-t3-env-secret --data-file=".env.prod"
+
+gcloud projects add-iam-policy-binding ${PROJECT_ID} \
+  --member=serviceAccount:${PROJECT_NUMBER}-compute@developer.gserviceaccount.com \
+  --role=roles/secretmanager.secretAccessor
+
+# list and show the secret
+gcloud secrets list
+gcloud secrets versions access latest --secret=epi-t3-env-secret
 ```
 
 ## Register Cloud Build Trigger
