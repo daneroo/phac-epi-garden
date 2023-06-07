@@ -36,7 +36,19 @@ gcloud artifacts repositories add-iam-policy-binding ${ARTIFACT_REGISTRY_REPO_NA
     --role="roles/artifactregistry.reader"
 ```
 
-## Register CloudBuild Trigger
+## Creating a secret
+
+This is to pass in environment variable that contain secrets, or to mount a secret as a file (like .env) into a container:
+
+```bash
+# Automatic - globally replicated is not allowed in our accounts
+# gcloud secrets create epi-t3-env-secret --replication-policy="automatic"
+gcloud secrets create epi-t3-env-secret --replication-policy="user-managed" --locations="northamerica-northeast1"
+
+gcloud secrets versions add epi-t3-env-secret --data-file=".env.prod"
+```
+
+## Register Cloud Build Trigger
 
 ```bash
 export PROJECT_ID="pdcp-cloud-009-danl"
@@ -74,7 +86,9 @@ for svc in epi-docs epi-t3; do
 done
 ```
 
-## Deploy to cloudrun
+## Deploy to Cloud Run
+
+You don;t need to do this if you are using Cloud Build, this is an example of how to deploy manually with `gcloud`.
 
 ```bash
 # so we can push from a local docker registry
