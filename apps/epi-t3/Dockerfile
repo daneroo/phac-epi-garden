@@ -82,13 +82,4 @@ COPY --from=installer --chown=nextjs:nodejs /app/apps/${APP_NAME}/public ./apps/
 
 # turn the ARG into ENV runner image
 ENV APP_NAME=${APP_NAME}
-# CMD node apps/${APP_NAME}/server.js
-# load the .env in the same relative place as in the repo at the root, or parent of apps, which in this case is /app
-# explicitly:
-# /app:
-# ├── .env
-# ├── apps
-# │   ├── epi-docs
-# │   ├── epi-t3
-# if .env exists, then source it, export it's vars and exec the node process
-CMD if [ -f .env ]; then set -a; . .env; set +a; fi && exec node apps/${APP_NAME}/server.js
+CMD node apps/${APP_NAME}/server.js

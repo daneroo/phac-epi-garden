@@ -34,7 +34,14 @@ steps:
       - "--region"
       - "${_REGION}"
       - "--allow-unauthenticated"
-      - "--set-secrets=/app/.env=epi-t3-env-secret:latest"
+      # Could not get the .env to be read without modifying the program and Dockerfile
+      # - "--set-secrets=/app/.env=epi-t3-env-secret:latest"
+      # So one secret per var!
+      - "--set-secrets=DATABASE_URL=epi-t3-env-secret-DATABASE_URL:latest"
+      - "--set-secrets=DISCORD_CLIENT_ID=epi-t3-env-secret-DISCORD_CLIENT_ID:latest"
+      - "--set-secrets=DISCORD_CLIENT_SECRET=epi-t3-env-secret-DISCORD_CLIENT_SECRET:latest"
+      - "--set-secrets=NEXTAUTH_SECRET=epi-t3-env-secret-NEXTAUTH_SECRET:latest"
+      - "--set-secrets=NEXTAUTH_URL=epi-t3-env-secret-NEXTAUTH_URL:latest"
 
 substitutions:
   # The must start with a "_" (_[A-Z0-9_]+)

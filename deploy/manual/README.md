@@ -52,6 +52,27 @@ gcloud secrets create epi-t3-env-secret --replication-policy="user-managed" --lo
 
 gcloud secrets versions add epi-t3-env-secret --data-file=".env.prod"
 
+# alternative one secret per var
+VARIABLES=(DATABASE_URL NEXTAUTH_URL NEXTAUTH_SECRET DISCORD_CLIENT_ID DISCORD_CLIENT_SECRET)  # replace with your variable names
+for v in ${VARIABLES[@]}; do
+# extract the secret from the production dotenv file
+  SECRET=$(npx dotenv -e .env.prod -p $v)
+  echo Setting variable $v to $SECRET
+  # create if-not-exists
+  if ! gcloud secrets describe "epi-t3-env-secret-$v" >/dev/null 2>&1; then
+    gcloud secrets create "epi-t3-env-secret-$v" --replication-policy="user-managed" --locations="${REGION}"
+  fi
+  # # add/replace the secret
+  echo -n "${SECRET}" | gcloud secrets versions add "epi-t3-env-secret-$v" --data-file=-
+done
+
+# show them
+for v in ${VARIABLES[@]}; do
+  echo "Latest value for $v is:"
+  gcloud secrets versions access latest --secret="epi-t3-env-secret-$v"; echo
+done
+
+# Allow the service account to read the secrets
 gcloud projects add-iam-policy-binding ${PROJECT_ID} \
   --member=serviceAccount:${PROJECT_NUMBER}-compute@developer.gserviceaccount.com \
   --role=roles/secretmanager.secretAccessor
