@@ -46,23 +46,17 @@ RUN pnpm i --frozen-lockfile
 # If we do this, ensure that the TURBO_* env vars do not survive to the runner stage
 # ARG TURBO_TEAM
 # ENV TURBO_TEAM=$TURBO_TEAM
-
 # ARG TURBO_TOKEN
 # ENV TURBO_TOKEN=$TURBO_TOKEN
 
 # COPY .env.compose .env
 # TODO:(daneroo) Investigate: Need a fake env for the build to work, tried ARG's but didn't work: 
-# The only variable need to build is DATABASE_URL, and it just need to look like a url
-# from env.mjs: createEnv , in auth and app,..
-RUN cat <<EOF > .env
-DATABASE_URL=postgres://username:sekret@host/database
-NEXTAUTH_URL=http://host:3000
-NEXTAUTH_SECRET=xyxyxyxyxyxyxyxyxyxyxyxyxyxyxyxyxyxyxyxyxyx=
-DISCORD_CLIENT_ID=9999999999999999999
-DISCORD_CLIENT_SECRET=dfdfdfdfdfdfdfdfdfd-dfdf-fdfdfdf
-# TURBO_TOKEN=Kxyxyxyxyxyxyxyxyxyxyxyx
-# TURBO_TEAM=turboteam
-EOF
+# These are required from env.mjs: createEnv , in auth and app,..
+RUN printf "DATABASE_URL=postgres://username:sekret@host/database\n\
+NEXTAUTH_URL=http://host:3000\n\
+NEXTAUTH_SECRET=xyxyxyxyxyxyxyxyxyxyxyxyxyxyxyxyxyxyxyxyxyx=\n\
+DISCORD_CLIENT_ID=9999999999999999999\n\
+DISCORD_CLIENT_SECRET=dfdfdfdfdfdfdfdfdfd-dfdf-fdfdfdf\n" > .env
 
 RUN pnpm turbo run build --filter=@phac/${APP_NAME}...
 
