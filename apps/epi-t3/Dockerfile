@@ -83,4 +83,4 @@ COPY --from=installer --chown=nextjs:nodejs /app/apps/${APP_NAME}/public ./apps/
 # turn the ARG into ENV runner image
 ENV APP_NAME=${APP_NAME}
 # CMD node apps/${APP_NAME}/server.js
-CMD ls -l apps/${APP_NAME}/.env && cat apps/${APP_NAME}/.env && echo && node apps/${APP_NAME}/server.js
+CMD ls -l /app/.env && cat /app/.env && echo && dotenv -e /app/.env -- node apps/${APP_NAME}/server.js
