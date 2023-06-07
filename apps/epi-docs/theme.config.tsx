@@ -16,6 +16,11 @@ const logo = (
 )
 
 const config: DocsThemeConfig = {
+  useNextSeoProps() {
+    return {
+      titleTemplate: '%s' // '%s – TitleSuffix'
+    }
+  },
   logo,
   project: {
     link: 'https://github.com/daneroo/phac-epi-garden',
