@@ -21,6 +21,7 @@
       "cache": false
     },
     "build": {
+      "cache": false,
       "dependsOn": [
         "^build",
         "^db:generate"
