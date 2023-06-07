@@ -8,7 +8,7 @@
     "href": "https://epi-t3.dl.phac.alpha.canada.ca/",
     "newWindow": true
   },
-  "v": {
+  "vercel": {
     "title": "(Vercel)",
     "type": "page",
     "href": "https://t3.epi.phac.v.imetrical.com/",
