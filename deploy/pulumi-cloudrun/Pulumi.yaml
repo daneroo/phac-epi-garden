@@ -1,3 +1,3 @@
 name: epi-cloudrun
 runtime: nodejs
-description: A TypeScript program to deploy a containerized service on Google Cloud
+description: Provision Custom Domains for CloudRun Services

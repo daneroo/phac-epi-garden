@@ -92,10 +92,10 @@ pulumi stack select gcp-danl
 pulumi config set gcp:project pdcp-cloud-009-danl
 pulumi config set gcp:region "northamerica-northeast1"
 # This is a domain you have a managed DNS Zone for (in the same project)
-pulumi config set gcp:baseDomain "dl-phac-alpha-canada-ca"
+pulumi config set epi:managedZoneName "dl-phac-alpha-canada-ca"
 # use gcloud dns managed-zones describe dl-phac-alpha-canada-ca to get the ManagedZone Id
-managedZoneId=`gcloud dns managed-zones describe $(pulumi config get gcp:baseDomain) --format=json | jq -r .id`
-pulumi config set gcp:managedZoneId "${managedZoneId}"
+managedZoneId=`gcloud dns managed-zones describe $(pulumi config get epi:managedZoneName) --format=json | jq -r .id`
+pulumi config set epi:managedZoneId "${managedZoneId}"
 pulumi up
 ```
 
