@@ -1,0 +1,5 @@
+config:
+  gcp:baseDomain: dl-phac-alpha-canada-ca
+  gcp:managedZoneId: "5975330339948395253"
+  gcp:project: pdcp-cloud-009-danl
+  gcp:region: northamerica-northeast1

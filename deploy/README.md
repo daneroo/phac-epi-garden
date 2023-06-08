@@ -77,17 +77,25 @@ Select the backend and setup gcloud auth
 - [ ] TODO: put the state in a bucket!
 
 ```bash
-# Select the state backend (local)
-
-# From this directory  - until we start using a GCP bucket for state
-mkdir PulumiState && pulumi login "file:$PWD/PulumiState"
-# required to operate on GCP
+# TODO: Use Pulumi Cloud for state
+pulumi login  
+# required to operate pulumi on GCP
 gcloud auth application-default login
+# required to execute gcloud commands from the shell
+gcloud auth login
 
-pulumi stack select prod
+
+# Only init the first time
+pulumi stack init gcp-danl
+# Select the stack
+pulumi stack select gcp-danl
 pulumi config set gcp:project pdcp-cloud-009-danl
 pulumi config set gcp:region "northamerica-northeast1"
-<space>export PULUMI_CONFIG_PASSPHRASE="your stack passhrase"
+# This is a domain you have a managed DNS Zone for (in the same project)
+pulumi config set gcp:baseDomain "dl-phac-alpha-canada-ca"
+# use gcloud dns managed-zones describe dl-phac-alpha-canada-ca to get the ManagedZone Id
+managedZoneId=`gcloud dns managed-zones describe $(pulumi config get gcp:baseDomain) --format=json | jq -r .id`
+pulumi config set gcp:managedZoneId "${managedZoneId}"
 pulumi up
 ```
 
