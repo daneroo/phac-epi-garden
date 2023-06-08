@@ -161,6 +161,14 @@ done
 
 ## Create a Postgres Database
 
+Check tiers with: `gcloud sql tiers list`
+
+| Instance Type    |       RAM | Disk Size |
+|------------------|----------:|----------:|
+| db-f1-micro      | 614.4 MiB |   3.0 TiB |
+| db-g1-small      |   1.7 GiB |   3.0 TiB |
+| db-n1-standard-1 |   3.8 GiB |    64 TiB |
+
 ```bash
 export PROJECT_ID="pdcp-cloud-009-danl"
 export REGION="northamerica-northeast1"
@@ -169,20 +177,8 @@ export REGION="northamerica-northeast1"
 export DB_PASSWORD=$(openssl rand -base64 16 | tr -dc A-Za-z0-9 | head -c16 ; echo '')
 echo -n "${DB_PASSWORD}" | gcloud secrets create epi-db-password --replication-policy="user-managed" --locations="${REGION}" --data-file=-
 
-# Create a VPC
-gcloud compute networks create epi-vpc --subnet-mode=auto --bgp-routing-mode=regional
-
-# Regional subnet
-gcloud compute networks subnets create epi-subnet --network=epi-vpc --region=${REGION} --range=10.0.0.0/9
-
-# Reserve an IP range for the service networking connection
-gcloud compute addresses create google-managed-services-epi-vpc --global --purpose=VPC_PEERING --prefix-length=16 --network=epi-vpc
-
-# Setup a connection with the service networking connection
-gcloud services vpc-peerings connect --service=servicenetworking.googleapis.com --ranges=google-managed-services-epi-vpc --network=epi-vpc --project=${PROJECT_ID}
-
-# Create a regional Cloud SQL instance with the generated password
-gcloud sql instances create epi-instance --tier=db-f1-micro --region=${REGION} --root-password="${DB_PASSWORD}" --network=epi-vpc
+# Create a Cloud SQL instance with the generated password (public IP)
+gcloud sql instances create epi-instance --tier=db-f1-micro --region=${REGION} --database-version=POSTGRES_14 --root-password="${DB_PASSWORD}"
 
 # Create a Cloud SQL database in the instance
 gcloud sql databases create epi-database --instance=epi-instance
@@ -191,10 +187,17 @@ gcloud sql databases create epi-database --instance=epi-instance
 gcloud sql users create epi-user --instance=epi-instance --password="${DB_PASSWORD}"
 
 # Create a Secret in Secret Manager for the database connection string
-echo -n "postgresql://epi-user:${DB_PASSWORD}@/epi-database?host=/cloudsql/${PROJECT_ID}:${REGION}:epi-instance" | gcloud secrets create epi-db-connection-string --replication-policy="user-managed" --locations="${REGION}" --data-file=-
+INSTANCE_CONNECTION_NAME=$(gcloud sql instances describe epi-instance --format='value(connectionName)')
+echo -n "postgresql://epi-user:${DB_PASSWORD}@localhost/epi-database?host=/cloudsql/${INSTANCE_CONNECTION_NAME}" | gcloud secrets create epi-db-connection-string --replication-policy="user-managed" --locations="${REGION}" --data-file=-
 
 # Deploy your Cloud Run service in the ${REGION} region
-gcloud run deploy epi-service --image epi-container-image-url --add-cloudsql-instances epi-instance --update-secrets DATABASE_URL=epi-db-connection-string=latest --region ${REGION} --platform managed --allow-unauthenticated
+gcloud run deploy epi-service --image epi-container-image-url --add-cloudsql-instances $INSTANCE_CONNECTION_NAME --update-secrets DATABASE_URL=epi-db-connection-string:latest --region ${REGION} --platform managed --allow-unauthenticated
+```
+
+### Connect
+
+```bash
+gcloud sql connect epi-instance --user=root --quiet
 ```
 
 ### Cleanup
@@ -215,18 +218,9 @@ gcloud sql databases delete epi-database --instance=epi-instance
 # Delete the Cloud SQL instance
 gcloud sql instances delete epi-instance
 
-# Disconnect the service peering
-gcloud services vpc-peerings disconnect --service=servicenetworking.googleapis.com --network=epi-vpc --project=${PROJECT_ID}
-
-# Delete the IP range
-gcloud compute addresses delete google-managed-services-epi-vpc --global
-
-# Delete the subnet
-gcloud compute networks subnets delete epi-subnet --region=${REGION}
-
-# Delete the VPC
-gcloud compute networks delete epi-vpc
-
 # Delete the secret for the database password
 gcloud secrets delete epi-db-password
+
+# Delete the network
+gcloud compute networks delete epi-vpc
 ```

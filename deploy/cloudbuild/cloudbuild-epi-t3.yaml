@@ -45,7 +45,7 @@ steps:
 
 substitutions:
   # The must start with a "_" (_[A-Z0-9_]+)
-  _ARTIFACT_REGISTRY_REPO: "garden-repo"
+  _ARTIFACT_REGISTRY_REPO: "epi-repo"
   _SERVICE_NAME: "epi-t3"
   _REGION: "northamerica-northeast1"
 images:
