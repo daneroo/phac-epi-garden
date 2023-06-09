@@ -127,6 +127,13 @@ psql $DIRECT_URL -c "DROP SCHEMA public CASCADE; CREATE SCHEMA public;"
 # Restore to Neon
 psql $DIRECT_URL < db_backup-noacl.sql
 
+# CGP (danl)
+DB_PASSWORD=$(gcloud secrets versions access latest --secret="epi-db-password")
+PRIMARY_INSTANCE_IP=$(gcloud sql instances describe epi-instance --format=json | jq -r '.ipAddresses[] | select(.type=="PRIMARY") | .ipAddress')
+
+psql "postgresql://epi-user:${DB_PASSWORD}@${PRIMARY_INSTANCE_IP}/epi-database"
+psql "postgresql://epi-user:${DB_PASSWORD}@${PRIMARY_INSTANCE_IP}/epi-database" -c "DROP SCHEMA public CASCADE; CREATE SCHEMA public;"
+psql "postgresql://epi-user:${DB_PASSWORD}@${PRIMARY_INSTANCE_IP}/epi-database" < backups/db_backup-noacl-YYY--.sql
 
 ## Other formats
 # neon suggested format: --file=dumpfile.bak -Fc -Z 6 -v
