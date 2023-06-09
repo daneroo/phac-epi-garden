@@ -50,13 +50,13 @@ export REGION="northamerica-northeast1"
 # gcloud secrets create epi-t3-env-secret --replication-policy="automatic"
 gcloud secrets create epi-t3-env-secret --replication-policy="user-managed" --locations="${REGION}"
 
-gcloud secrets versions add epi-t3-env-secret --data-file=".env.prod"
+gcloud secrets versions add epi-t3-env-secret --data-file=".env.prod-gcp-danl"
 
 # alternative one secret per var
 VARIABLES=(DATABASE_URL NEXTAUTH_URL NEXTAUTH_SECRET DISCORD_CLIENT_ID DISCORD_CLIENT_SECRET)  # replace with your variable names
 for v in ${VARIABLES[@]}; do
 # extract the secret from the production dotenv file
-  SECRET=$(npx dotenv -e .env.prod -p $v)
+  SECRET=$(npx dotenv -e .env.prod-gcp-danl -p $v)
   echo Setting variable $v to $SECRET
   # create if-not-exists
   if ! gcloud secrets describe "epi-t3-env-secret-$v" >/dev/null 2>&1; then
@@ -191,13 +191,40 @@ INSTANCE_CONNECTION_NAME=$(gcloud sql instances describe epi-instance --format='
 echo -n "postgresql://epi-user:${DB_PASSWORD}@localhost/epi-database?host=/cloudsql/${INSTANCE_CONNECTION_NAME}" | gcloud secrets create epi-db-connection-string --replication-policy="user-managed" --locations="${REGION}" --data-file=-
 
 # Deploy your Cloud Run service in the ${REGION} region
-gcloud run deploy epi-service --image epi-container-image-url --add-cloudsql-instances $INSTANCE_CONNECTION_NAME --update-secrets DATABASE_URL=epi-db-connection-string:latest --region ${REGION} --platform managed --allow-unauthenticated
+# to get the lates tags for the epi-t3 image: quiet does not work..
+# gcloud artifacts docker images list ${REGION}-docker.pkg.dev/${PROJECT_ID}/${ARTIFACT_REGISTRY_REPO_NAME}/epi-docs --include-tags --format='csv[no-heading](tags)' --sort-by=UPDATE_TIME --limit=1 --quiet
+CONTAINER_IMAGE="northamerica-northeast1-docker.pkg.dev/pdcp-cloud-009-danl/epi-repo/epi-t3:a8983ff7945e2ce819fe0f999719b4102480486b"
+# replaced the DATABASE_URL secret
+# --set-secrets=DATABASE_URL=epi-t3-env-secret-DATABASE_URL:latest \
+gcloud run deploy epi-service --image ${CONTAINER_IMAGE} --add-cloudsql-instances $INSTANCE_CONNECTION_NAME \
+  --set-secrets DATABASE_URL=epi-db-connection-string:latest \
+  --set-secrets=DISCORD_CLIENT_ID=epi-t3-env-secret-DISCORD_CLIENT_ID:latest \
+  --set-secrets=DISCORD_CLIENT_SECRET=epi-t3-env-secret-DISCORD_CLIENT_SECRET:latest \
+  --set-secrets=NEXTAUTH_SECRET=epi-t3-env-secret-NEXTAUTH_SECRET:latest \
+  --set-secrets=NEXTAUTH_URL=epi-t3-env-secret-NEXTAUTH_URL:latest \
+  --region ${REGION} --platform managed --allow-unauthenticated
 ```
 
 ### Connect
 
 ```bash
-gcloud sql connect epi-instance --user=root --quiet
+# get the password
+DB_PASSWORD=$(gcloud secrets versions access latest --secret="epi-db-password")
+echo ${DB_PASSWORD}
+# open a connection,
+gcloud sql connect epi-instance --user=epi-user --database=epi-database
+
+# Even if we can connect, we must open with above: gcloud sql connect epi-instance...
+# Even if it is public for now:
+DB_PASSWORD=$(gcloud secrets versions access latest --secret="epi-db-password")
+# hope primary is the first address!
+# PRIMARY_INSTANCE_IP=$(gcloud sql instances describe epi-instance --format='value(ipAddresses[0].ipAddress)')
+# Or more mrecise qirh jq
+PRIMARY_INSTANCE_IP=$(gcloud sql instances describe epi-instance --format=json | jq -r '.ipAddresses[] | select(.type=="PRIMARY") | .ipAddress')
+
+psql "postgresql://epi-user:${DB_PASSWORD}@${PRIMARY_INSTANCE_IP}/epi-database"
+
+# You can now use this to restore, pg_dump, etc..
 ```
 
 ### Cleanup
