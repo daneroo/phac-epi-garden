@@ -34,6 +34,8 @@ steps:
       - "--region"
       - "${_REGION}"
       - "--allow-unauthenticated"
+      # Setup the database connection
+      - "--set-cloudsql-instances=${PROJECT_ID}:${_REGION}:${CLOUD_SQL_DB_INSTANCE}"
       # Could not get the .env to be read without modifying the program and Dockerfile
       # - "--set-secrets=/app/.env=epi-t3-env-secret:latest"
       # So one secret per var!
@@ -48,5 +50,6 @@ substitutions:
   _ARTIFACT_REGISTRY_REPO: "epi-repo"
   _SERVICE_NAME: "epi-t3"
   _REGION: "northamerica-northeast1"
+  CLOUD_SQL_DB_INSTANCE: "epi-instance"
 images:
   - "${_REGION}-docker.pkg.dev/${PROJECT_ID}/${_ARTIFACT_REGISTRY_REPO}/${_SERVICE_NAME}:${COMMIT_SHA}"

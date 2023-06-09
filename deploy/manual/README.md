@@ -166,7 +166,7 @@ Check tiers with: `gcloud sql tiers list`
 | Instance Type    |       RAM | Disk Size |
 |------------------|----------:|----------:|
 | db-f1-micro      | 614.4 MiB |   3.0 TiB |
-| db-g1-small      |   1.7 GiB |   3.0 TiB |
+| **db-g1-small**  |   1.7 GiB |   3.0 TiB |
 | db-n1-standard-1 |   3.8 GiB |    64 TiB |
 
 ```bash
@@ -178,7 +178,7 @@ export DB_PASSWORD=$(openssl rand -base64 16 | tr -dc A-Za-z0-9 | head -c16 ; ec
 echo -n "${DB_PASSWORD}" | gcloud secrets create epi-db-password --replication-policy="user-managed" --locations="${REGION}" --data-file=-
 
 # Create a Cloud SQL instance with the generated password (public IP)
-gcloud sql instances create epi-instance --tier=db-f1-micro --region=${REGION} --database-version=POSTGRES_14 --root-password="${DB_PASSWORD}"
+gcloud sql instances create epi-instance --tier=db-g1-small --region=${REGION} --database-version=POSTGRES_14 --root-password="${DB_PASSWORD}"
 
 # Create a Cloud SQL database in the instance
 gcloud sql databases create epi-database --instance=epi-instance
@@ -190,19 +190,39 @@ gcloud sql users create epi-user --instance=epi-instance --password="${DB_PASSWO
 INSTANCE_CONNECTION_NAME=$(gcloud sql instances describe epi-instance --format='value(connectionName)')
 echo -n "postgresql://epi-user:${DB_PASSWORD}@localhost/epi-database?host=/cloudsql/${INSTANCE_CONNECTION_NAME}" | gcloud secrets create epi-db-connection-string --replication-policy="user-managed" --locations="${REGION}" --data-file=-
 
+# Don't forget to update (potentially)
+# 1- file:.env.prod-XXX
+# 2- secret: epi-t3-env-secret-DATABASE_URL
+# create secret, if not exists:
+#   gcloud secrets create "epi-t3-env-secret-DATABASE_URL" --replication-policy="user-managed" --locations="${REGION}"
+# Then update the secret with:
+echo -n "postgresql://epi-user:${DB_PASSWORD}@localhost/epi-database?host=/cloudsql/${INSTANCE_CONNECTION_NAME}" | gcloud secrets versions add "epi-t3-env-secret-DATABASE_URL" --data-file=-
+# Or copy it from epi-db-connection-string
+gcloud secrets versions access latest --secret=epi-db-connection-string | gcloud secrets versions add "epi-t3-env-secret-DATABASE_URL" --data-file=-
+```
+
+### Cloud Run Test Service
+
+```bash
+INSTANCE_CONNECTION_NAME=$(gcloud sql instances describe epi-instance --format='value(connectionName)')
+
 # Deploy your Cloud Run service in the ${REGION} region
 # to get the lates tags for the epi-t3 image: quiet does not work..
 # gcloud artifacts docker images list ${REGION}-docker.pkg.dev/${PROJECT_ID}/${ARTIFACT_REGISTRY_REPO_NAME}/epi-docs --include-tags --format='csv[no-heading](tags)' --sort-by=UPDATE_TIME --limit=1 --quiet
 CONTAINER_IMAGE="northamerica-northeast1-docker.pkg.dev/pdcp-cloud-009-danl/epi-repo/epi-t3:a8983ff7945e2ce819fe0f999719b4102480486b"
 # replaced the DATABASE_URL secret
 # --set-secrets=DATABASE_URL=epi-t3-env-secret-DATABASE_URL:latest \
-gcloud run deploy epi-service --image ${CONTAINER_IMAGE} --add-cloudsql-instances $INSTANCE_CONNECTION_NAME \
+gcloud run deploy epi-service --image ${CONTAINER_IMAGE} --set-cloudsql-instances $INSTANCE_CONNECTION_NAME \
   --set-secrets DATABASE_URL=epi-db-connection-string:latest \
   --set-secrets=DISCORD_CLIENT_ID=epi-t3-env-secret-DISCORD_CLIENT_ID:latest \
   --set-secrets=DISCORD_CLIENT_SECRET=epi-t3-env-secret-DISCORD_CLIENT_SECRET:latest \
   --set-secrets=NEXTAUTH_SECRET=epi-t3-env-secret-NEXTAUTH_SECRET:latest \
   --set-secrets=NEXTAUTH_URL=epi-t3-env-secret-NEXTAUTH_URL:latest \
   --region ${REGION} --platform managed --allow-unauthenticated
+
+# Cleanup
+# Delete the Cloud Run service
+gcloud run services delete epi-service --region ${REGION} --platform managed
 ```
 
 ### Connect
@@ -230,24 +250,20 @@ psql "postgresql://epi-user:${DB_PASSWORD}@${PRIMARY_INSTANCE_IP}/epi-database"
 ### Cleanup
 
 ```bash
-# Delete the Cloud Run service
-gcloud run services delete epi-service --region ${REGION} --platform managed
-
 # Delete the secret for the database connection string
 gcloud secrets delete epi-db-connection-string
 
 # Delete the Cloud SQL user
-gcloud sql users delete epi-user --instance=epi-instance
+# Skipped because delete instance deletes this user as well
+# gcloud sql users delete epi-user --instance=epi-instance
 
 # Delete the Cloud SQL database
-gcloud sql databases delete epi-database --instance=epi-instance
+# Skipped because delete instance delete this database as well
+# gcloud sql databases delete epi-database --instance=epi-instance
 
-# Delete the Cloud SQL instance
+# Delete the Cloud SQL instance : This should delete the user and database
 gcloud sql instances delete epi-instance
 
 # Delete the secret for the database password
 gcloud secrets delete epi-db-password
-
-# Delete the network
-gcloud compute networks delete epi-vpc
 ```
