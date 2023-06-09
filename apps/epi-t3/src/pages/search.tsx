@@ -1,15 +1,21 @@
 import { useState } from "react";
 import type { NextPage } from "next";
 import Head from "next/head";
-import { capNames, capNamesDistributionObject } from "~/components/taxonomy";
+import { capNames, capNamesDistributionObject, capLevels, capLevelsDistributionObject, skillDomains, skillDomainsDistributionObject } from "~/components/taxonomy";
 
-const CapabilityPage: NextPage = () => {
+const SearchPage: NextPage = () => {
   const [search, setSearch] = useState("");
   const onSearchChange = (evt: React.ChangeEvent<HTMLInputElement>) => {
     setSearch(evt.target.value);
   };
 
-  // Filter the capability names based on the search term
+  // Filter the capability names, domains, and levels based on the search term
+  const filteredCapLevels = capLevels.filter((lvl) =>
+    lvl.toLowerCase().includes(search.toLowerCase())
+  );
+  const filteredSkillDomains = skillDomains.filter((domain) =>
+    domain.toLowerCase().includes(search.toLowerCase())
+  );
   const filteredCapabilities = capNames.filter((name) =>
     name.toLowerCase().includes(search.toLowerCase())
   );
@@ -17,11 +23,11 @@ const CapabilityPage: NextPage = () => {
   return (
     <>
       <Head>
-        <title>Capabilities - Epicenter</title>
-        <meta name="description" content="Capabilities - Epicenter" />
+        <title>Taxonomy - Epicenter</title>
+        <meta name="description" content="Taxonomy - Epicenter" />
       </Head>
       <main className="max-w-3xl mx-auto px-4 pb-4 md:max-w-5xl">
-        <h2 className="text-2xl font-extrabold my-4">Capabilities</h2>
+        <h2 className="text-2xl font-extrabold my-4">Taxonomy</h2>
 
         <form className="flex items-center mb-4 max-w-lg">
           <label htmlFor="simple-search" className="sr-only">
@@ -54,11 +60,35 @@ const CapabilityPage: NextPage = () => {
           </div>
         </form>
 
-        {filteredCapabilities.length === 0 ? (
-          <span>No capabilities found!</span>
+        {filteredCapabilities.length + filteredCapLevels.length === 0 ? (
+          <span>No capabilities or levels found!</span>
         ) : (
           <div className="relative overflow-x-auto">
             <div className="flex flex-wrap gap-2">
+              {filteredCapLevels.map((level, i) => (
+                <span
+                  key={i}
+                  className="flex items-center px-3 py-1 bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-gray-300 rounded-full gap-1"
+                >
+                  <span className="w-2 h-2 rounded-full bg-green-500"></span>
+                  <span>{level}</span>
+                  <span className="text-xs text-gray-500 dark:text-gray-400">
+                    {capLevelsDistributionObject[level]}
+                  </span>
+                </span>
+              ))}
+              {filteredSkillDomains.map((domain, i) => (
+                <span
+                  key={i}
+                  className="flex items-center px-3 py-1 bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-gray-300 rounded-full gap-1"
+                >
+                  <span className="w-2 h-2 rounded-full bg-yellow-500"></span>
+                  <span>{domain}</span>
+                  <span className="text-xs text-gray-500 dark:text-gray-400">
+                    {skillDomainsDistributionObject[domain]}
+                  </span>
+                </span>
+              ))}
               {filteredCapabilities.map((name, i) => (
                 <span
                   key={i}
@@ -79,4 +109,4 @@ const CapabilityPage: NextPage = () => {
   );
 }
 
-export default CapabilityPage;
+export default SearchPage;

@@ -48,7 +48,6 @@ export function OrgAsTree({ org_tiers }: { org_tiers: org_tiers[] }) {
 
   // const treeData = buildTree(org_tiers, null);
   useEffect(() => {
-    console.log('build tree')
     const buildTree = (items: org_tiers[], parentId: string | null): OrgTierTreeData[] => {
       const nodes: OrgTierTreeData[] = [];
 

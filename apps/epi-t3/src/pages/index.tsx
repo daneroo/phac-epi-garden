@@ -108,7 +108,6 @@ const GotoCard: React.FC<{
 }
 const Home: NextPage = () => {
   const statQuery = api.stat.all.useQuery();
-  console.log(JSON.stringify(statQuery.data, null, 2))
   return (
     <>
       <Head>
