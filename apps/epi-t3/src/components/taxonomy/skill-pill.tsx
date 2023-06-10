@@ -31,7 +31,7 @@ export const SkillPillSearchResults = ({ search = "epi", allSkills = skills }: S
     <>
       {filteredSkills.map(({ domain, name_en }, i) => (
         SkillPill(i, domain, name_en)
-      ))})
+      ))}
     </>
   )
 }
