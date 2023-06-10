@@ -1,4 +1,4 @@
-export type SkillDomains =
+export type SkillDomain =
   | "public_health"
   | "scientific"
   | "medical"
@@ -13,7 +13,7 @@ export type SkillDomains =
   | "partnerships"
   | "finance";
 
-export const domainCodes: { [domain in SkillDomains]: string } = {
+export const domainCodes: { [domain in SkillDomain]: string } = {
   public_health: "PH",
   scientific: "SCI",
   medical: "MED",
@@ -30,8 +30,10 @@ export const domainCodes: { [domain in SkillDomains]: string } = {
 };
 
 export type Skill = {
-  domain: SkillDomains;
+  domain: SkillDomain;
   name_en: string;
+};
+export type SkillWithCount = Skill & {
   count: number;
 };
 
@@ -39,7 +41,7 @@ export type Skill = {
 // SELECT domain, name_en, COUNT(*) as count FROM capabilities GROUP BY domain, name_en order by count desc
 // could order by domain,count desc.. or domain asc, name_en asc
 // SELECT domain, name_en, COUNT(*) as count FROM capabilities GROUP BY domain, name_en order by domain asc,count desc
-export const skillsDistribution: Skill[] = [
+export const skillsDistribution: SkillWithCount[] = [
   { domain: "scientific", name_en: "Genomics", count: 602 },
   { domain: "scientific", name_en: "Anti-Microbial Resistance", count: 589 },
   { domain: "scientific", name_en: "Modelling", count: 584 },
@@ -155,7 +157,7 @@ export const skillsDistribution: Skill[] = [
   { domain: "data", name_en: "Bioinfomatics", count: 130 },
 ];
 
-export const skills = skillsDistribution.map((item) => ({
+export const skills: Skill[] = skillsDistribution.map((item) => ({
   domain: item.domain,
   name_en: item.name_en,
 }));
@@ -176,11 +178,11 @@ const skillDistributionObject: SkillDistribution = skillsDistribution.reduce(
 );
 
 export type SkillDomainDistribution = {
-  [domain in SkillDomains]: { [name_en: string]: number };
+  [domain in SkillDomain]: { [name_en: string]: number };
 };
 
 export function getSkillCount(
-  domain: SkillDomains,
+  domain: SkillDomain,
   name_en: string,
 ): number | undefined {
   const key = JSON.stringify({ domain, name_en });
@@ -197,12 +199,12 @@ export const skillDomainDistributionObject: SkillDomainDistribution =
     return acc;
   }, {} as SkillDomainDistribution);
 
-export const skillDomains: SkillDomains[] = Array.from(
+export const skillDomains: SkillDomain[] = Array.from(
   new Set(skillsDistribution.map((skill) => skill.domain)),
 );
 
 // Add a splash of color for domains return 'hsl()'
-export function hslColorForDomain(domain: SkillDomains): string {
+export function hslColorForDomain(domain: SkillDomain): string {
   const hueStep = 360 / skillDomains.length;
   const saturation = 100; // constant saturation for simplicity
   const lightness = 50; // works in dark and light modes

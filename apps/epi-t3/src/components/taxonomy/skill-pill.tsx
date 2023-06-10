@@ -1,20 +1,18 @@
 import {
-  skills, getSkillCount, domainCodes, hslColorForDomain, type SkillDomains
+  getSkillCount, domainCodes, hslColorForDomain, type Skill
 } from "~/components/taxonomy";
 
 
 interface SkillPillSearchResultsProps {
-  search: string // 👈️ marked optional, but defaults to empty string
-  allSkills: {
-    domain: SkillDomains
-    name_en: string
-  }[]
+  search: string // 👈️ marked not optional, but defaults to empty string
+  allSkills: Skill[]
+  onClick: (skill: Skill) => void; // adding onClick handler prop for pills
 }
 
 // export function LogoVariant({ variant = "pulsing", }: LogoVariantProps) {
 
-// return an inline *spans* representing search result
-export const SkillPillSearchResults = ({ search = "epi", allSkills = skills }: SkillPillSearchResultsProps) => {
+// return inline *spans* representing search result
+export const SkillPillSearchResults = ({ search, allSkills, onClick }: SkillPillSearchResultsProps) => {
   // Filter the skill {domains,name_en}, and levels based on the search term
   const filteredSkills = allSkills.filter(({ domain, name_en }) =>
     domain.toLowerCase().includes(search.toLowerCase()) ||
@@ -26,51 +24,60 @@ export const SkillPillSearchResults = ({ search = "epi", allSkills = skills }: S
   }
 
   // wrapping in <>{xx.map()}</> produced the proper result type
-  // (as opposed to just returm xx.map())
+  // (as opposed to just return xx.map())
   return (
     <>
-      {filteredSkills.map(({ domain, name_en }, i) => (
-        SkillPill(i, domain, name_en)
+      <SkillPills skills={filteredSkills} onClick={onClick}></SkillPills>
+    </>
+  )
+}
+
+interface SkillPillsProps {
+  skills: Skill[]
+  onClick: (skill: Skill) => void; // adding onClick handler prop for pills
+}
+
+export const SkillPills = ({ skills, onClick }: SkillPillsProps) => {
+
+  if (skills.length === 0) {
+    return <span>No skills found!</span>
+  }
+
+  // wrapping in <>{xx.map()}</> produced the proper result type
+  // (as opposed to just return xx.map())
+  return (
+    <>
+      {skills.map((skill, i) => (
+        <SkillPill key={i} skill={skill} onClick={onClick} />
       ))}
     </>
   )
 }
 
 
-function SkillPill(i: number, domain: SkillDomains, name_en: string) {
-  return <span
-    key={i}
-    className="flex items-center px-3 py-1 bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-gray-300 rounded-full gap-1"
-  >
-    <span
-      style={{ backgroundColor: hslColorForDomain(domain) }}
-      className="w-2 h-2 rounded-full"></span>
-    <span
-      className="text-[10px]">{domainCodes[domain]}</span>
-    <span className="px-1">{name_en}</span>
-    <span className="text-[10px] text-gray-600 dark:text-gray-400">
-      {getSkillCount(domain, name_en)}
-    </span>
-  </span>;
+interface SkillPillProps {
+  skill: Skill
+  onClick: (skill: Skill) => void; // adding onClick handler prop
 }
-// export const SkillPill = () => {
-//   return (
-//     {
-//       filteredSkills.map(({ domain, name_en }, i) => (
-//         <span
-//           key={i}
-//           className="flex items-center px-3 py-1 bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-gray-300 rounded-full gap-1"
-//         >
-//           <span
-//             style={{ backgroundColor: hslColorForDomain(domain) }}
-//             className="w-2 h-2 rounded-full"></span>
-//           <span
-//             className="text-[10px]">{domainCodes[domain]}</span>
-//           <span className="px-1">{name_en}</span>
-//           <span className="text-[10px] text-gray-600 dark:text-gray-400">
-//             {getSkillCount(domain, name_en)}
-//           </span>
-//         </span>
-//       ))
-//     }
-//   )
+
+// currently gets it's count from our static data structures
+function SkillPill({ skill, onClick }: SkillPillProps) {
+  const { domain, name_en } = skill;
+
+  return (
+    <span
+      onClick={() => onClick(skill)} // adding onClick handler to span
+      className="flex items-center px-3 py-1 bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-gray-300 rounded-full gap-1"
+    >
+      <span
+        style={{ backgroundColor: hslColorForDomain(domain) }}
+        className="w-2 h-2 rounded-full"
+      ></span>
+      <span className="text-[10px]">{domainCodes[domain]}</span>
+      <span className="px-1">{name_en}</span>
+      <span className="text-[10px] text-gray-600 dark:text-gray-400">
+        {getSkillCount(domain, name_en)}
+      </span>
+    </span>
+  );
+}
