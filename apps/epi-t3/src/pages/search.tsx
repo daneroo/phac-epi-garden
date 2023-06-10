@@ -1,7 +1,9 @@
 import { useState } from "react";
 import type { NextPage } from "next";
 import Head from "next/head";
-import { capNames, capNamesDistributionObject, capLevels, capLevelsDistributionObject, skillDomains, skillDomainsDistributionObject } from "~/components/taxonomy";
+import {
+  skills, getSkillCount, domainCodes, hslColorForDomain
+} from "~/components/taxonomy";
 
 const SearchPage: NextPage = () => {
   const [search, setSearch] = useState("");
@@ -9,15 +11,10 @@ const SearchPage: NextPage = () => {
     setSearch(evt.target.value);
   };
 
-  // Filter the capability names, domains, and levels based on the search term
-  const filteredCapLevels = capLevels.filter((lvl) =>
-    lvl.toLowerCase().includes(search.toLowerCase())
-  );
-  const filteredSkillDomains = skillDomains.filter((domain) =>
-    domain.toLowerCase().includes(search.toLowerCase())
-  );
-  const filteredCapabilities = capNames.filter((name) =>
-    name.toLowerCase().includes(search.toLowerCase())
+  // Filter the skill {domains,name_en}, and levels based on the search term
+  const filteredSkills = skills.filter(({ domain, name_en }) =>
+    domain.toLowerCase().includes(search.toLowerCase()) ||
+    name_en.toLowerCase().includes(search.toLowerCase())
   );
 
   return (
@@ -60,44 +57,23 @@ const SearchPage: NextPage = () => {
           </div>
         </form>
 
-        {filteredCapabilities.length + filteredCapLevels.length === 0 ? (
-          <span>No capabilities or levels found!</span>
+        {filteredSkills.length === 0 ? (
+          <span>No skills found!</span>
         ) : (
           <div className="relative overflow-x-auto">
             <div className="flex flex-wrap gap-2">
-              {filteredCapLevels.map((level, i) => (
+              {filteredSkills.map(({ domain, name_en }, i) => (
                 <span
                   key={i}
                   className="flex items-center px-3 py-1 bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-gray-300 rounded-full gap-1"
                 >
-                  <span className="w-2 h-2 rounded-full bg-green-500"></span>
-                  <span>{level}</span>
-                  <span className="text-xs text-gray-500 dark:text-gray-400">
-                    {capLevelsDistributionObject[level]}
-                  </span>
-                </span>
-              ))}
-              {filteredSkillDomains.map((domain, i) => (
-                <span
-                  key={i}
-                  className="flex items-center px-3 py-1 bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-gray-300 rounded-full gap-1"
-                >
-                  <span className="w-2 h-2 rounded-full bg-yellow-500"></span>
-                  <span>{domain}</span>
-                  <span className="text-xs text-gray-500 dark:text-gray-400">
-                    {skillDomainsDistributionObject[domain]}
-                  </span>
-                </span>
-              ))}
-              {filteredCapabilities.map((name, i) => (
-                <span
-                  key={i}
-                  className="flex items-center px-3 py-1 bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-gray-300 rounded-full gap-1"
-                >
-                  <span className="w-2 h-2 rounded-full bg-blue-500"></span>
-                  <span>{name}</span>
-                  <span className="text-xs text-gray-500 dark:text-gray-400">
-                    {capNamesDistributionObject[name]}
+                  <span
+                    style={{ backgroundColor: hslColorForDomain(domain) }}
+                    className="w-2 h-2 rounded-full"></span>
+                  <span className="text-xs">{domainCodes[domain]}</span>
+                  <span>{name_en}</span>
+                  <span className="text-xs text-gray-600 dark:text-gray-400">
+                    {getSkillCount(domain, name_en)}
                   </span>
                 </span>
               ))}
