@@ -2,7 +2,7 @@ import { useState } from "react";
 import type { NextPage } from "next";
 import Head from "next/head";
 import {
-  skills, getSkillCount, domainCodes, hslColorForDomain
+  skills, SkillPillSearchResults
 } from "~/components/taxonomy";
 
 const SearchPage: NextPage = () => {
@@ -10,12 +10,6 @@ const SearchPage: NextPage = () => {
   const onSearchChange = (evt: React.ChangeEvent<HTMLInputElement>) => {
     setSearch(evt.target.value);
   };
-
-  // Filter the skill {domains,name_en}, and levels based on the search term
-  const filteredSkills = skills.filter(({ domain, name_en }) =>
-    domain.toLowerCase().includes(search.toLowerCase()) ||
-    name_en.toLowerCase().includes(search.toLowerCase())
-  );
 
   return (
     <>
@@ -57,29 +51,11 @@ const SearchPage: NextPage = () => {
           </div>
         </form>
 
-        {filteredSkills.length === 0 ? (
-          <span>No skills found!</span>
-        ) : (
-          <div className="relative overflow-x-auto">
-            <div className="flex flex-wrap gap-2">
-              {filteredSkills.map(({ domain, name_en }, i) => (
-                <span
-                  key={i}
-                  className="flex items-center px-3 py-1 bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-gray-300 rounded-full gap-1"
-                >
-                  <span
-                    style={{ backgroundColor: hslColorForDomain(domain) }}
-                    className="w-2 h-2 rounded-full"></span>
-                  <span className="text-xs">{domainCodes[domain]}</span>
-                  <span>{name_en}</span>
-                  <span className="text-xs text-gray-600 dark:text-gray-400">
-                    {getSkillCount(domain, name_en)}
-                  </span>
-                </span>
-              ))}
-            </div>
+        <div className="relative overflow-x-auto">
+          <div className="flex flex-wrap gap-2">
+            <SkillPillSearchResults search={search} allSkills={skills.slice(10)}></SkillPillSearchResults>
           </div>
-        )}
+        </div>
       </main>
     </>
   );
