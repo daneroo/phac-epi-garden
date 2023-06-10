@@ -35,12 +35,13 @@ export const SkillPillSearchResults = ({ search, allSkills, onClick }: SkillPill
 interface SkillPillsProps {
   skills: Skill[]
   onClick: (skill: Skill) => void; // adding onClick handler prop for pills
+  emptyMessage?: string
 }
 
-export const SkillPills = ({ skills, onClick }: SkillPillsProps) => {
+export const SkillPills = ({ skills, onClick, emptyMessage = "No skills found!" }: SkillPillsProps) => {
 
   if (skills.length === 0) {
-    return <span>No skills found!</span>
+    return <span>{emptyMessage}</span>
   }
 
   // wrapping in <>{xx.map()}</> produced the proper result type
