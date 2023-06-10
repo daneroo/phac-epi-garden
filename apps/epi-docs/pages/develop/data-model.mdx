@@ -1,0 +1,33 @@
+# Data Modelling
+
+The given schema provides a comprehensive structure to express relationships, affiliations, skills, capabilities, roles, and other attributes of persons and organizations in a complex hierarchical system.
+
+1. **Persons**: This model represents individuals with fields for a unique user id, family name, given name, email, phone, and their affiliated organization. There are relations established to affiliations, capabilities, tier ownerships in organizations, roles, and team ownerships.
+
+2. **Organizations**: The model represents various organizations with a unique name, acronym, type, and URL. It also has a timestamp for creation, updating, and retiring. It establishes relationships with affiliations, capabilities, different tiers within the organization, persons associated, and teams.
+
+3. **Affiliations**: This model stores relationships between persons and organizations, along with their roles and the time span of the affiliation.
+
+4. **Capabilities**: This model contains details about a person's capabilities in different domains. It includes self-identified levels and validated levels of capability. It has a connection with organizations, persons, skills, and validations.
+
+5. **Org_tiers**: The model represents different hierarchical levels within organizations with unique names and primary domains. It maintains a relationship with tier ownerships, its parent tier, other tiers, teams, and the organization itself.
+
+6. **Org_tier_ownerships**: This model represents the ownership of organizational tiers by different persons.
+
+7. **Roles**: This model represents roles held by persons within teams, along with the associated effort, HR group, and HR level. It maintains relations with tasks and works done in that role.
+
+8. **Skills**: The model represents various skills in different domains, each with unique names and descriptions.
+
+9. **Tasks**: This model represents various tasks created by different roles. It maintains the intended outcome, final outcome, and approval tier of tasks.
+
+10. **Team_ownerships**: This model represents the ownership of teams by different persons.
+
+11. **Teams**: The model represents different teams within an organization, each with unique names and descriptions in multiple languages. It has relations with roles, team ownerships, organizational tiers, and the organization itself.
+
+12. **Users**: This model represents users of the system, each with unique emails and access keys. It also maintains the approved role and access level of each user.
+
+13. **Valid_roles**: This model represents the valid roles that a user can have in the system.
+
+14. **Validations**: The model stores validation details about a person's capabilities, done by a validator.
+
+The schema also has enums for access level, capability level, HR group, and skill domain to maintain consistent and valid data across different models.

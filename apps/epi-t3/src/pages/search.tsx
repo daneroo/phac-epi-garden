@@ -24,7 +24,7 @@ const SearchPage: NextPage = () => {
         <meta name="description" content="Taxonomy - Epicenter" />
       </Head>
       <main className="max-w-3xl mx-auto px-4 pb-4 md:max-w-5xl">
-        <h2 className="text-2xl font-extrabold my-4">Taxonomy</h2>
+        <h2 className="text-2xl font-extrabold my-4">Taxonomy Search</h2>
 
         <form className="flex items-center mb-4 max-w-lg">
           <label htmlFor="simple-search" className="sr-only">
