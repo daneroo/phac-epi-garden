@@ -51,25 +51,17 @@ This seems to be related to vercel/neon integration.
 
 ### Org Chart
 
-The rapid implementation required an extra div in `_app.tsx`; this should be removed
+D3, although a fantastic visualization library has a fundamentally differnt way of treating state dynamics,
+and is always a challenge to integrate with React.
 
-```jsx
-<Layout>
-  {/* required by react-org-chart */}
-  <div id="root">
-    <Component {...pageProps} />
-  </div>
-</Layout>
-```
+This component should be replaced.
 
 The org_tier/person chart (d3), has unresolved peer dependencies.
 
-- d3 is locked to a very old version
+- d3 is locked to a very old version. The peer deps from the chart we imported specify `"d3": ">= 3.x < 4"`
 
 ```txt
-+    "d3": "^3.5.17",
-+    "lodash": "^4.17.21",
-+    "react-dnd": "^16.0.1",
-+    "react-dnd-html5-backend": "^16.0.1",
-+    "react-organizational-chart": "^2.2.1",
+  "@unicef/react-org-chart": "^0.3.4",
+  "d3": "^3.5.17",
+  "react-organizational-chart": "^2.2.1",
 ```

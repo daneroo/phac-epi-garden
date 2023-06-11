@@ -259,6 +259,7 @@ const ChartPersonsPage: NextPage = () => {
         <title>Chart - Persons - Epicenter</title>
         <meta name="description" content="Chart - Persons - Epicenter" />
       </Head>
+      {/* required by react-org-chart */}
       <div id="root">
 
 
