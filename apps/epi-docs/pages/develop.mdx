@@ -7,24 +7,27 @@ This is our progress so far
 
 - We have implemented a monorepo (turbo) - which gives us orchestration and operational caching
 - We have an initial CI (GitHub Actions)
-- We have an initial CD (Vercel) - with preview-deployments
+- We have an initial CD (Google Cloud Build)
+  - Cloud Run for compute
+  - Cloud SQL for the Postgres instance
+- We have a previous CD (Vercel) - with preview-deployments
   - Serverless Database (with forks) - Neon
 - ORM model (Prisma) - synchronized on Chris' unmodified schema
 
 ## Tech Stack
 
-| Component         | Current  | Planned or Alternatives           |
-| ----------------- | -------- | --------------------------------- |
-| Frontend          | React    |                                   |
-| Framework         | Next.js  |                                   |
-| Monorepo          | Turbo    | Nx (nrwl)                         |
-| ORM               | Prisma   |                                   |
-| RPC               | tRPC     | GraphQL                           |
-| Styling           | Tailwind |                                   |
-| Testing           |          | Jest/Storybook/Cypress/Playwright |
-| Deployment        | Vercel   | GCP Cloud Run                     |
-| Database (deploy) | Neon     | AlloyDB, CloudSQL Postgres        |
-| Observability     |          |                                   |
+| Component         | Current                 | Planned or Alternatives           |
+| ----------------- | ----------------------- | --------------------------------- |
+| Frontend          | React                   |                                   |
+| Framework         | Next.js                 |                                   |
+| Monorepo          | Turbo                   | Nx (nrwl)                         |
+| ORM               | Prisma                  |                                   |
+| RPC               | tRPC                    | GraphQL                           |
+| Styling           | Tailwind                |                                   |
+| Testing           |                         | Jest/Storybook/Cypress/Playwright |
+| Deployment        | Vercel, GCP Cloud Run   |                                   |
+| Database (deploy) | Neon, CloudSQL Postgres | AlloyDB                           |
+| Observability     |                         |                                   |
 
 ## History
 
@@ -38,7 +41,8 @@ It is a static site authored in rust. The javascript is using `jquery, jquery-ui
 
 ## References
 
-- [Dan's monorepo (this one)](https://github.com/daneroo/phac-epi-garden)
+- [PHACDataHub's forked monorepo](https://github.com/PHACDataHub/phac-epi-garden)
+- [Dan's monorepo](https://github.com/daneroo/phac-epi-garden)
 - [tRPC](https://trpc.io/)
 - [Chris' Rust based repo (GraphQL endpoint)](https://github.com/ToferC/epi_center)
 - [Chris' frontend](https://github.com/ToferC/epifront)
