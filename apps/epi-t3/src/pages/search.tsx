@@ -34,8 +34,6 @@ const SearchPage: NextPage = () => {
       )
   );
 
-  console.log('Clicked skills:', selectedSkills);
-
   return (
     <>
       <Head>
