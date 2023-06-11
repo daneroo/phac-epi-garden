@@ -1,4 +1,136 @@
-# Data Modelling
+# Data Model
+
+This document serves as a discussion point for the _entities_ and _relationships_ represented in our data model.
+
+Our objective is to facilitate effective communication between technical and business stakeholders.
+As a shared responsibility, the creation and maintenance of our data model
+require clear understanding and agreement from all parties involved.
+
+Developers need precise rules to ensure data integrity and to effectively express the business requirements in the data.
+Business stakeholders need to ensure the model can capture the required information and answer key business questions.
+
+For example, let's consider these important questions:
+
+- An Org Tier has a Many-to-Many relationship to Persons, which implies ownership.
+  Ownership, in common parlance, tends to be singular.
+  Does this mean that an org_tier can have multiple owners or none at all?
+  If ownership is intended to be singular, can we guarantee that a change in ownership is atomic,
+  i.e., there is never a point in time when an org_tier is without an owner or has multiple owners?
+
+- Our tables have a common pattern, featuring `created_at`, `updated_at`, and `retired_at` fields.
+  This brings up several points for discussion:
+  - Privacy and Data Retention: In line with privacy principles,
+    personal data should not be retained longer than necessary.
+    If a record is marked as retired but not actually deleted,
+    this might conflict with the principle of data minimization and
+    the requirement to delete data that is no longer necessary.
+  - Auditing: The `updated_at` field suggests we might intend to implement some sort of auditing system.
+    If that's the case, should we not also have an `updated_by` field?
+    In fact, might we not want a historical record of all such updates?
+    This would allow us to track changes over time and identify who made those changes.
+  - Impact on Performance: It's worth noting that the addition of fields for tracking and auditing purposes
+    might have an impact on system performance, especially for large and frequently updated tables.
+    How can we balance the need for data integrity and traceability with the requirement for optimal performance?
+
+By addressing these questions and other similar considerations, we can ensure that our data model is robust, flexible, and fully supportive of our business needs while maintaining compliance with legal and regulatory requirements.
+
+Remember, our data model isn't just a technical artifact; it's also a representation of our business. Changes to it can have far-reaching implications, so every decision should be well-considered and agreed upon by all stakeholders.
+
+## Entities
+
+### Persons
+
+Persons are individuals within the organization. They hold unique pieces of information about them such as:
+
+- **id**: Unique identifier for each person.
+- **user_id**: Identifier linking the person to a user account.
+- **family_name**: The family name of the person.
+- **given_name**: The given name of the person.
+- **email**: Email of the person.
+- **phone**: Phone number of the person.
+- **organization_id**: Identifier linking the person to an organization.
+
+### Organizations
+
+Organizations are structured entities that might represent businesses, associations, government agencies, etc. They have details like:
+
+- **id**: Unique identifier for each organization.
+- **name_en**: The English name of the organization.
+- **name_fr**: The French name of the organization.
+- **acronym_en**: The English acronym of the organization.
+- **acronym_fr**: The French acronym of the organization.
+- **org_type**: The type of organization.
+- **url**: Website URL of the organization.
+
+### Org_tiers
+
+Org_tiers represent different hierarchical levels or departments within an organization. They have attributes such as:
+
+- **id**: Unique identifier for each org_tier.
+- **organization_id**: Identifier linking the org_tier to an organization.
+- **tier_level**: Numeric value representing the level of the tier.
+- **name_en**: The English name of the org_tier.
+- **name_fr**: The French name of the org_tier.
+- **primary_domain**: The main domain of the org_tier (e.g., public_health, policy, data, etc.)
+- **parent_tier**: Identifier linking to a parent tier (if any).
+
+### Skills
+
+Skills represent capabilities or expertise areas individuals may possess. They include details like:
+
+- **id**: Unique identifier for each skill.
+- **name_en**: The English name of the skill.
+- **name_fr**: The French name of the skill.
+- **description_en**: English description of the skill.
+- **description_fr**: French description of the skill.
+- **domain**: The domain to which the skill belongs (e.g., public_health, policy, data, etc.)
+
+### Capabilities
+
+Capabilities refer to specific skills that individuals possess within the organization, including their level of expertise. They are defined by:
+
+- **id**: Unique identifier for each capability.
+- **name_en**: The English name of the capability.
+- **name_fr**: The French name of the capability.
+- **domain**: The domain to which the capability belongs (e.g., public_health, policy, data, etc.)
+- **person_id**: Identifier linking the capability to a person.
+- **skill_id**: Identifier linking the capability to a skill.
+- **organization_id**: Identifier linking the capability to an organization.
+- **self_identified_level**: The level of the capability as identified by the person (e.g., novice, experienced, etc.)
+- **validated_level**: The validated level of the capability, if it has been validated.
+- **validation_values**: Array of validation values, if any.
+
+## Relationships
+
+Thank you for the additional information, which helps clarify the relationships between the various entities in your data model.
+
+### Organizations
+
+- An organization is the overarching entity within this model. Each person in the system belongs to exactly one organization, indicating a One-to-Many relationship between Organizations and Persons. This relationship ensures that every person is linked to an organization, establishing clear ownership and accountability.
+
+### Org Tiers
+
+- Org Tiers are the next level in the hierarchy. Each Org Tier belongs to exactly one organization, again indicating a One-to-Many relationship, this time between Organizations and Org Tiers. This relationship serves to segment or structure the organization into manageable parts.
+
+- Org Tiers then form a Tree (or a Forest in the case of multiple independent Trees), each node representing an Org Tier.
+
+- Each Org Tier has exactly one parent Org Tier (One-to-One relationship), except for the top-level Org Tiers which have no parent, making them the root nodes of each Tree or Forest.
+
+- On the other hand, an Org Tier can have multiple child Org Tiers. The expectation is that this would usually be between 0-10 (Many-to-One relationship). The system is therefore designed to manage a reasonable number of relationships, ensuring that it remains efficient and usable.
+
+- Importantly, the set of transitive "parent" relationships must not form a cycle. This means that you can't have an Org Tier that is indirectly its own parent. This restriction is critical to maintaining the Tree (or Forest) structure and preventing logical inconsistencies or infinite loops in traversals.
+
+This hierarchical data model serves to create a well-defined structure for the organization, with clear relationships between the different entities and levels. It allows for efficient querying of the data, such as finding all persons under a particular Org Tier or determining the top-level Org Tier for a given person.
+
+### Between Persons and Organizations
+
+Each person is linked to an organization, suggesting that they are a part of that organization. The field 'organization_id' in the 'persons' table references the 'id' field in the 'organizations' table.
+
+### Between Org_tiers and Organizations
+
+Each org_tier is part of an organization, shown by the 'organization_id' field in 'org_tiers' referencing the 'id' field in 'organizations'. Additionally, org_tiers can be part of another org_t
+
+## Schema Summary
 
 The given schema provides a comprehensive structure to express relationships, affiliations, skills, capabilities, roles, and other attributes of persons and organizations in a complex hierarchical system.
 
