@@ -25,32 +25,39 @@ In addition to the Cloud Run service, we therefore need to provision:
 These are the resources in the stack with details about encryption
 
 1. **RegionNetworkEndpointGroup (`my-neg`)**:
+
    - Represents the Serverless Region Network Endpoint Group (NEG).
    - It acts as the target for the load balancer and handles routing traffic to the Cloud Run service.
 
 2. **BackendService (`my-backend`)**:
+
    - Defines the configuration for load balancing.
    - Associated with the NEG (`my-neg`) as its backend.
    - Handles traffic between the load balancer and the Cloud Run service.
 
 3. **URLMap (`my-url-map`)**:
+
    - Defines the routing rules for incoming requests.
    - Maps URL paths to the appropriate backend service.
    - No specific encryption-related functionality, but helps with request routing.
 
 4. **ManagedZone (`dl-phac-alpha-canada-ca`)**:
+
    - Represents the managed DNS zone.
    - Provides the DNS configuration for your custom domain.
 
 5. **ManagedSslCertificate (`my-certificate`)**:
+
    - Secures traffic between the client's browser and the load balancer.
    - Provides SSL/TLS encryption for HTTPS connections.
 
 6. **TargetHttpsProxy (`my-https-proxy`)**:
+
    - Acts as an intermediary between the load balancer and the Cloud Run service.
    - Terminates SSL connections from clients and establishes an encrypted connection with the Cloud Run service.
 
 7. **GlobalForwardingRule (`my-forwarding-rule`)**:
+
    - Receives incoming requests from clients and directs them to the appropriate backend service based on URL paths and other defined rules.
    - Traffic between the client and the Global Forwarding Rule is encrypted via SSL/TLS.
 
@@ -63,7 +70,7 @@ In summary, the traffic encryption within this setup is as follows:
 - Traffic Encryption Summary:
   - Encryption between the client's browser and the load balancer is provided by the **Managed SSL Certificate** (`my-certificate`). It ensures secure communication over HTTPS.
   - Traffic between the load balancer and the Cloud Run service is encrypted within the Google Cloud network, utilizing secure internal communication mechanisms.
-  
+
 In this setup, the load balancer is not using the auto-provisioned certificate from the Cloud Run service's default URL (https://time-deno-2m3hexrmga-nn.a.run.app).
 
 ## Persistence (Database)
@@ -78,7 +85,7 @@ Select the backend and setup gcloud auth
 
 ```bash
 # TODO: Use Pulumi Cloud for state
-pulumi login  
+pulumi login
 # required to operate pulumi on GCP
 gcloud auth application-default login
 # required to execute gcloud commands from the shell

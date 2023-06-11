@@ -1,7 +1,8 @@
 "use client";
 
-import { Flowbite } from "flowbite-react";
 import { type FC, type PropsWithChildren } from "react";
+import { Flowbite } from "flowbite-react";
+
 // import { type CustomFlowbiteTheme } from "flowbite-react/lib/esm/components/Flowbite/FlowbiteTheme";
 
 const FlowbiteContext: FC<PropsWithChildren> = function ({ children }) {

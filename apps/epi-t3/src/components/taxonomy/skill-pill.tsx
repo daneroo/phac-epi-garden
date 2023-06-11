@@ -1,26 +1,33 @@
 import {
-  getSkillCount, domainCodes, hslColorForDomain, type Skill
+  domainCodes,
+  getSkillCount,
+  hslColorForDomain,
+  type Skill,
 } from "~/components/taxonomy";
 
-
 interface SkillPillSearchResultsProps {
-  search: string // 👈️ marked not optional, but defaults to empty string
-  allSkills: Skill[]
+  search: string; // 👈️ marked not optional, but defaults to empty string
+  allSkills: Skill[];
   onClick: (skill: Skill) => void; // adding onClick handler prop for pills
 }
 
 // export function LogoVariant({ variant = "pulsing", }: LogoVariantProps) {
 
 // return inline *spans* representing search result
-export const SkillPillSearchResults = ({ search, allSkills, onClick }: SkillPillSearchResultsProps) => {
+export const SkillPillSearchResults = ({
+  search,
+  allSkills,
+  onClick,
+}: SkillPillSearchResultsProps) => {
   // Filter the skill {domains,name_en}, and levels based on the search term
-  const filteredSkills = allSkills.filter(({ domain, name_en }) =>
-    domain.toLowerCase().includes(search.toLowerCase()) ||
-    name_en.toLowerCase().includes(search.toLowerCase())
+  const filteredSkills = allSkills.filter(
+    ({ domain, name_en }) =>
+      domain.toLowerCase().includes(search.toLowerCase()) ||
+      name_en.toLowerCase().includes(search.toLowerCase()),
   );
 
   if (filteredSkills.length === 0) {
-    return <span>No skills found!</span>
+    return <span>No skills found!</span>;
   }
 
   // wrapping in <>{xx.map()}</> produced the proper result type
@@ -29,19 +36,22 @@ export const SkillPillSearchResults = ({ search, allSkills, onClick }: SkillPill
     <>
       <SkillPills skills={filteredSkills} onClick={onClick}></SkillPills>
     </>
-  )
-}
+  );
+};
 
 interface SkillPillsProps {
-  skills: Skill[]
+  skills: Skill[];
   onClick: (skill: Skill) => void; // adding onClick handler prop for pills
-  emptyMessage?: string
+  emptyMessage?: string;
 }
 
-export const SkillPills = ({ skills, onClick, emptyMessage = "No skills found!" }: SkillPillsProps) => {
-
+export const SkillPills = ({
+  skills,
+  onClick,
+  emptyMessage = "No skills found!",
+}: SkillPillsProps) => {
   if (skills.length === 0) {
-    return <span>{emptyMessage}</span>
+    return <span>{emptyMessage}</span>;
   }
 
   // wrapping in <>{xx.map()}</> produced the proper result type
@@ -52,12 +62,11 @@ export const SkillPills = ({ skills, onClick, emptyMessage = "No skills found!" 
         <SkillPill key={i} skill={skill} onClick={onClick} />
       ))}
     </>
-  )
-}
-
+  );
+};
 
 interface SkillPillProps {
-  skill: Skill
+  skill: Skill;
   onClick: (skill: Skill) => void; // adding onClick handler prop
 }
 
@@ -68,11 +77,11 @@ function SkillPill({ skill, onClick }: SkillPillProps) {
   return (
     <span
       onClick={() => onClick(skill)} // adding onClick handler to span
-      className="flex items-center px-3 py-1 bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-gray-300 rounded-full gap-1"
+      className="flex items-center gap-1 rounded-full bg-gray-200 px-3 py-1 text-gray-800 dark:bg-gray-700 dark:text-gray-300"
     >
       <span
         style={{ backgroundColor: hslColorForDomain(domain) }}
-        className="w-2 h-2 rounded-full"
+        className="h-2 w-2 rounded-full"
       ></span>
       <span className="text-[10px]">{domainCodes[domain]}</span>
       <span className="px-1">{name_en}</span>

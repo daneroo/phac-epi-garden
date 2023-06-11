@@ -1,5 +1,6 @@
-import baseConfig from "@phac/tailwind-config";
 import type { Config } from "tailwindcss";
+
+import baseConfig from "@phac/tailwind-config";
 
 export default {
   content: ["./src/**/*.tsx"],

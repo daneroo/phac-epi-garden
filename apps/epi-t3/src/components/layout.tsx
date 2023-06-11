@@ -1,12 +1,13 @@
 import React from "react";
+
+import FlowbiteContext from "../context/flowbite";
 // import { useRouter } from 'next/router';
 import { SidebarProvider } from "../context/sidebar";
-import FlowbiteContext from "../context/flowbite";
-import { Header } from "./header";
 import { Footer } from "./footer";
+import { Header } from "./header";
 
 type LayoutProps = {
-  children: React.ReactNode,
+  children: React.ReactNode;
 };
 
 // export default function DashboardLayout({ children }: DashboardLayoutProps) {

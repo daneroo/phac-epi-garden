@@ -1,11 +1,11 @@
 {
-    "name": "epi-cloudrun",
-    "main": "index.ts",
-    "devDependencies": {
-        "@types/node": "^18"
-    },
-    "dependencies": {
-        "@pulumi/gcp": "^6.58.0",
-        "@pulumi/pulumi": "^3.0.0"
-    }
+  "name": "epi-cloudrun",
+  "main": "index.ts",
+  "devDependencies": {
+    "@types/node": "^18"
+  },
+  "dependencies": {
+    "@pulumi/gcp": "^6.58.0",
+    "@pulumi/pulumi": "^3.0.0"
+  }
 }

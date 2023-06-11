@@ -164,7 +164,7 @@ done
 Check tiers with: `gcloud sql tiers list`
 
 | Instance Type    |       RAM | Disk Size |
-|------------------|----------:|----------:|
+| ---------------- | --------: | --------: |
 | db-f1-micro      | 614.4 MiB |   3.0 TiB |
 | **db-g1-small**  |   1.7 GiB |   3.0 TiB |
 | db-n1-standard-1 |   3.8 GiB |    64 TiB |

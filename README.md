@@ -94,7 +94,7 @@ pnpm db:push
 pnpm db:seed # WIP
 
 # both od these are deprecated (json data dump)
-pnpm db:dump 
+pnpm db:dump
 pnpm db:restore # too slow for remote
 
 ```
@@ -211,31 +211,31 @@ The stack originates from [create-t3-app](https://github.com/t3-oss/create-t3-ap
 some parent tiers have children who's tier_level is not paret.tier_level+1
 
 ```sql
-SELECT 
-  child.id AS child_id, 
+SELECT
+  child.id AS child_id,
   parent.id AS parent_id,
-  child.parent_tier, 
+  child.parent_tier,
   child.tier_level AS child_tier_level,
   parent.tier_level AS parent_tier_level,
   child.tier_level - parent.tier_level AS tier_level_difference
-FROM 
+FROM
   org_tiers AS child
-JOIN 
+JOIN
   org_tiers AS parent ON child.parent_tier = parent.id
 WHERE
   child.tier_level - parent.tier_level != 1;
 
 -- or with names
-SELECT 
-  child.name_en AS child_name, 
+SELECT
+  child.name_en AS child_name,
   parent.name_en AS parent_name,
-  child.parent_tier, 
+  child.parent_tier,
   child.tier_level AS child_tier_level,
   parent.tier_level AS parent_tier_level,
   child.tier_level - parent.tier_level AS tier_level_difference
-FROM 
+FROM
   org_tiers AS child
-JOIN 
+JOIN
   org_tiers AS parent ON child.parent_tier = parent.id
 WHERE
   child.tier_level - parent.tier_level != 1;

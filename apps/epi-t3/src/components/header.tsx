@@ -1,8 +1,9 @@
-import { DarkThemeToggle, Navbar } from "flowbite-react";
-import Image from "next/image";
 import { type FC } from "react";
+import Image from "next/image";
+import { ArrowTopRightOnSquareIcon } from "@heroicons/react/24/outline";
+import { DarkThemeToggle, Navbar } from "flowbite-react";
+
 import { useSidebarContext } from "../context/sidebar";
-import { ArrowTopRightOnSquareIcon } from '@heroicons/react/24/outline'
 
 export const Header: FC<Record<string, never>> = function () {
   const { isOpenOnSmallScreens, isPageWithSidebar, setOpenOnSmallScreens } =
@@ -11,7 +12,7 @@ export const Header: FC<Record<string, never>> = function () {
   return (
     <header className="sticky top-0 z-20">
       {/* border-none */}
-      <Navbar fluid className="border-t-0 border-b border-gray-900/10">
+      <Navbar fluid className="border-b border-t-0 border-gray-900/10">
         {isPageWithSidebar && (
           <button
             aria-controls="sidebar"
@@ -66,14 +67,20 @@ export const Header: FC<Record<string, never>> = function () {
         <Navbar.Collapse>
           {/* Links can be "Active" */}
           {/* <Navbar.Link href="/" active>Home</Navbar.Link> */}
-          <Navbar.Link href="https://epi-docs.dl.phac.alpha.canada.ca/" target="_blank">
-            <span className="flex items-center stroke-current gap-1">
+          <Navbar.Link
+            href="https://epi-docs.dl.phac.alpha.canada.ca/"
+            target="_blank"
+          >
+            <span className="flex items-center gap-1 stroke-current">
               <span>Documentation</span>
               <ArrowTopRightOnSquareIcon className="h-4 w-4" />
             </span>
           </Navbar.Link>
-          <Navbar.Link href="https://docs.epi.phac.v.imetrical.com/" target="_blank">
-            <span className="flex items-center stroke-current gap-1">
+          <Navbar.Link
+            href="https://docs.epi.phac.v.imetrical.com/"
+            target="_blank"
+          >
+            <span className="flex items-center gap-1 stroke-current">
               <span>(Vercel)</span>
               <ArrowTopRightOnSquareIcon className="h-4 w-4" />
             </span>

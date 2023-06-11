@@ -114,15 +114,15 @@ export function Node({ o, parent }: { o: OrgNode; parent?: OrgNode }) {
       parent
         ? TreeNode
         : (props: JSX.IntrinsicAttributes & TreeProps) => (
-          <Tree
-            {...props}
-            lineWidth={"2px"}
-            lineColor={"#bbc"}
-            lineBorderRadius={"12px"}
-          >
-            {props.children}
-          </Tree>
-        ),
+            <Tree
+              {...props}
+              lineWidth={"2px"}
+              lineColor={"#bbc"}
+              lineBorderRadius={"12px"}
+            >
+              {props.children}
+            </Tree>
+          ),
     [parent],
   );
   const childNodes = !collapsed ? (

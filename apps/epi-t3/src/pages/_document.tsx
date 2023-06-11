@@ -1,5 +1,11 @@
-import type { DocumentContext, DocumentInitialProps } from 'next/document';
-import Document, { Html, Head, Main, NextScript } from 'next/document';
+import Document, {
+  Head,
+  Html,
+  Main,
+  NextScript,
+  type DocumentContext,
+  type DocumentInitialProps,
+} from "next/document";
 
 //  This ws mostly to provide <heml lang="en" />
 //  see https://nextjs.org/docs/pages/building-your-application/routing/custom-document#typescript
@@ -13,16 +19,15 @@ class MyDocument extends Document {
   }
   render() {
     return (
-      <Html lang='en'>
+      <Html lang="en">
         <Head />
-        <body className='antialiased text-gray-500 dark:text-gray-300 bg-white dark:bg-gray-900'>
+        <body className="bg-white text-gray-500 antialiased dark:bg-gray-900 dark:text-gray-300">
           <Main />
           <NextScript />
         </body>
       </Html>
     );
   }
-
 }
 
 export default MyDocument;

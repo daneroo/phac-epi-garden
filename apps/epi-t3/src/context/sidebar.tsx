@@ -1,7 +1,12 @@
 "use client";
 
-import type { PropsWithChildren } from "react";
-import { createContext, useContext, useEffect, useState } from "react";
+import {
+  createContext,
+  useContext,
+  useEffect,
+  useState,
+  type PropsWithChildren,
+} from "react";
 
 interface SidebarContextProps {
   isOpenOnSmallScreens: boolean;
@@ -70,7 +75,7 @@ export function useSidebarContext(): SidebarContextProps {
 
   if (!context) {
     throw new Error(
-      "useSidebarContext should be used within the SidebarContext provider!"
+      "useSidebarContext should be used within the SidebarContext provider!",
     );
   }
 

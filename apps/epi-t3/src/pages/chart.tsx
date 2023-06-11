@@ -1,5 +1,12 @@
 // eslint disable-all
-import { type SetStateAction, useCallback, useEffect, useMemo, useRef, useState } from "react";
+import {
+  useCallback,
+  useEffect,
+  useMemo,
+  useRef,
+  useState,
+  type SetStateAction,
+} from "react";
 import type { NextPage } from "next";
 import dynamic from "next/dynamic";
 import Head from "next/head";
@@ -27,9 +34,8 @@ const OrgChart = dynamic<any>(
       return mod.OrgChart;
     }),
   {
-    ssr: false, loading: () => <div>
-      {/* loading */}
-    </div>
+    ssr: false,
+    loading: () => <div>{/* loading */}</div>,
   },
 );
 
@@ -145,7 +151,6 @@ const ChartPersonsPage: NextPage = () => {
   const childLoading = useRef<any>();
   const [mode, setMode] = useState(1);
 
-
   // reset page to 0, on search term change
 
   const orgTiers = api.person.getPersonsByOrgTier.useQuery(undefined, {
@@ -169,7 +174,7 @@ const ChartPersonsPage: NextPage = () => {
     if (mode === 2) r.refetch();
   };
 
-  const handleChildLoad = (d: { id: SetStateAction<string>; }) => {
+  const handleChildLoad = (d: { id: SetStateAction<string> }) => {
     return new Promise((resolve) => {
       childLoading.current = resolve;
       setChildId(d.id);
@@ -211,7 +216,7 @@ const ChartPersonsPage: NextPage = () => {
         source: r,
         id: r.id,
         person: {
-          id: r.org_tier_ownerships[0]?.id ? r.org_tier_ownerships[0]?.id : '',
+          id: r.org_tier_ownerships[0]?.id ? r.org_tier_ownerships[0]?.id : "",
           avatar: "https://freesvg.org/img/abstract-user-flat-4.png",
           department: r.name_en,
           name: `${r.org_tier_ownerships[0]?.persons.given_name} ${r.org_tier_ownerships[0]?.persons.family_name}`,
@@ -261,8 +266,6 @@ const ChartPersonsPage: NextPage = () => {
       </Head>
       {/* required by react-org-chart */}
       <div id="root">
-
-
         <main className="mx-auto max-w-3xl px-4 pb-4 md:max-w-5xl lg:max-w-full">
           <h2 className="my-4 text-2xl font-extrabold">Chart of Persons</h2>
 
@@ -270,16 +273,18 @@ const ChartPersonsPage: NextPage = () => {
             <div className="flex w-full justify-end">
               <button
                 type="button"
-                className={`ml-2 rounded-lg border border-gray-400 ${mode === 1 ? "bg-stone-500" : "bg-gray-500"
-                  } p-2.5 text-sm font-medium text-white hover:bg-gray-800 focus:outline-none focus:ring-4 focus:ring-blue-300 dark:bg-gray-600 dark:hover:bg-gray-700 dark:focus:ring-gray-800`}
+                className={`ml-2 rounded-lg border border-gray-400 ${
+                  mode === 1 ? "bg-stone-500" : "bg-gray-500"
+                } p-2.5 text-sm font-medium text-white hover:bg-gray-800 focus:outline-none focus:ring-4 focus:ring-blue-300 dark:bg-gray-600 dark:hover:bg-gray-700 dark:focus:ring-gray-800`}
                 onClick={() => handleModeSwitch(1)}
               >
                 Mode 1
               </button>
               <button
                 type="button"
-                className={`ml-2 rounded-lg border border-gray-400 ${mode === 2 ? "bg-stone-500" : "bg-gray-500"
-                  } p-2.5 text-sm font-medium text-white hover:bg-gray-800 focus:outline-none focus:ring-4 focus:ring-blue-300 dark:bg-gray-600 dark:hover:bg-gray-700 dark:focus:ring-gray-800`}
+                className={`ml-2 rounded-lg border border-gray-400 ${
+                  mode === 2 ? "bg-stone-500" : "bg-gray-500"
+                } p-2.5 text-sm font-medium text-white hover:bg-gray-800 focus:outline-none focus:ring-4 focus:ring-blue-300 dark:bg-gray-600 dark:hover:bg-gray-700 dark:focus:ring-gray-800`}
                 onClick={() => handleModeSwitch(2)}
               >
                 Mode 2
@@ -333,9 +338,11 @@ const ChartPersonsPage: NextPage = () => {
                 loadImage={() => {
                   return Promise.resolve();
                 }}
-                loadParent={(/*d: any*/) => {
-                  // for lazy loading
-                }}
+                loadParent={
+                  (/*d: any*/) => {
+                    // for lazy loading
+                  }
+                }
                 // eslint-disable-next-line @typescript-eslint/no-explicit-any
                 loadChildren={(d: any) => {
                   // eslint-disable-next-line @typescript-eslint/no-unsafe-argument
@@ -348,7 +355,6 @@ const ChartPersonsPage: NextPage = () => {
           </div>
         </main>
       </div>
-
     </>
   );
 };
