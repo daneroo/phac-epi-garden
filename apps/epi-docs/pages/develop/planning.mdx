@@ -12,18 +12,18 @@ This only covers the implementation aspects of the project.
   - No authorization, except POC for logged in state.
   - select a final authentication authority
   - what is required for demo
-- Move the Gihub repo to `https://github.com/PHACDataHub/phac-epi-garden`
+- Move the GitHub repo to `https://github.com/PHACDataHub/phac-epi-garden`
   - The repo has been created but the CI/CD has not been moved.
     - will we keep vercel deployments for demo, if so which domain name
 - GraphQL
   - Data is being transported to client using TRPC
     - For developer, this has similar expressivity, and enforces type safety from schema, to front end code.
-  - Initial implmentation of GraphQL endpoint has been done with a single entity, to de risk
+  - Initial implementation of GraphQL endpoint has been done with a single entity, to de risk
 - Review Database Model
   - Canonical names for database entities/fields
     - naming conventions: pluralization/case need to be validated
   - Documentation
-    - Each entity and relation should be documented to descibe it's intent and invariants
+    - Each entity and relation should be documented to describe it's intent and invariants
     - e.g. root of org_tiers, relation ro tier_level
 - GCP deployments
 - Testing
@@ -46,12 +46,12 @@ This only covers the implementation aspects of the project.
 
 ### Preview deployments
 
-Adjust CI/CD and neon integration to preseve preview deploys (feature branches).
+Adjust CI/CD and neon integration to preserve preview deploys (feature branches).
 This seems to be related to vercel/neon integration.
 
 ### Org Chart
 
-D3, although a fantastic visualization library has a fundamentally differnt way of treating state dynamics,
+D3, although a fantastic visualization library has a fundamentally different way of treating state dynamics,
 and is always a challenge to integrate with React.
 
 This component should be replaced.
