@@ -1,6 +1,7 @@
 {
-  "planning": "Planning",
+  "system-considerations": "System Considerations",
   "data-model": "Data Modeling",
+  "planning": "Planning",
   "docker": "Docker",
   "infra": "Infrastructure",
   "persistence": "Persistence / API",
