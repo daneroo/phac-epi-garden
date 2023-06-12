@@ -148,7 +148,12 @@ const SearchPage: NextPage = () => {
                             </Link>
                           </th>
                           <td className="px-6 py-4">
-                            {p.capabilities.map((c) => c.name_en).join(", ")}
+                            {p.capabilities
+                              .map(
+                                (c) =>
+                                  c.name_en + ` (${c.self_identified_level})`,
+                              )
+                              .join(", ")}
                           </td>
                         </tr>
                       ))}
