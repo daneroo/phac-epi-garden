@@ -34,7 +34,6 @@ const PersonsPage: NextPage = () => {
     setPage(0);
   };
 
-  // const personQuery = api.person.all.useQuery()
   const { data, fetchNextPage } = api.person.getPagedSearch.useInfiniteQuery(
     {
       limit: 10,
