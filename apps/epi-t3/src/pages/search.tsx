@@ -85,11 +85,11 @@ const SearchPage: NextPage = () => {
   return (
     <>
       <Head>
-        <title>Taxonomy - Epicenter</title>
+        <title>Skill Search - Epicenter</title>
         <meta name="description" content="Taxonomy - Epicenter" />
       </Head>
       <main className="mx-auto max-w-3xl px-4 pb-4 md:max-w-5xl">
-        <h2 className="my-4 text-2xl font-extrabold">Taxonomy Search</h2>
+        <h2 className="my-4 text-2xl font-extrabold">Skill Search</h2>
 
         <div className="mb-4">
           <div className="flex flex-wrap gap-2">
@@ -112,13 +112,13 @@ const SearchPage: NextPage = () => {
         </div>
 
         <Tabs.Group aria-label="Tabs with underline" style="underline">
-          <Tabs.Item active title="Search for Skills">
+          <Tabs.Item active title="1-Search for Skills">
             <SkillSearch
               onPillClickSelect={onPillClickSelect}
               allSkills={remainingSkills}
             />
           </Tabs.Item>
-          <Tabs.Item title="Select Persons">
+          <Tabs.Item title="2-Show Selected Persons">
             These are the persons that meet your skill search criteria
             {data ? (
               toShow?.length === 0 ? (
@@ -211,12 +211,12 @@ const SearchPage: NextPage = () => {
               <p>Loading Persons...</p>
             )}
           </Tabs.Item>
-          <Tabs.Item title="Perform an Action">
+          {/* <Tabs.Item title="Perform an Action">
             <ul>
               <li>Print report</li>
               <li>Send some emails</li>
             </ul>
-          </Tabs.Item>
+          </Tabs.Item> */}
         </Tabs.Group>
       </main>
     </>

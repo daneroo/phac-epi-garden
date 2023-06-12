@@ -68,6 +68,7 @@ export const Header: FC<Record<string, never>> = function () {
           <Navbar.Collapse>
             {/* Links can be "Active" */}
             {/* <Navbar.Link href="/" active>Home</Navbar.Link> */}
+            <Navbar.Link href="/search">Skills Search</Navbar.Link>
             <Navbar.Link
               href="https://epi-docs.dl.phac.alpha.canada.ca/"
               target="_blank"
