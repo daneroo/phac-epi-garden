@@ -92,17 +92,28 @@ const SearchPage: NextPage = () => {
         <h2 className="my-4 text-2xl font-extrabold">Skill Search</h2>
 
         <div className="mb-4">
-          <div className="flex flex-wrap gap-2">
-            Searching for:{" "}
+          <div>
+            Searching for
+            {/* singular skill */}
+            {selectedSkills.length == 1 && (
+              <span> people who have this skill: </span>
+            )}
+            {/* multiple (AND) skill */}
+            {selectedSkills.length > 1 && (
+              <span> people who have ALL these skills: </span>
+            )}
+            :
+          </div>
+          <div className="flex flex-wrap gap-2 pl-4">
             <SkillPills
               skills={selectedSkills}
               onClick={onPillClickRemove}
-              emptyMessage="Anyone! (Add some criteria to refine.)"
+              emptyMessage="Anyone! (Add some skills criteria to refine.)"
             />
             {selectedSkills.length > 0 && (
               <button
                 onClick={() => setSelectedSkills([])}
-                className="rounded bg-blue-500 p-2 text-white hover:bg-blue-600"
+                className="rounded bg-blue-500 px-2 text-white hover:bg-blue-600"
               >
                 Clear All
               </button>

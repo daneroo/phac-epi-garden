@@ -84,7 +84,7 @@ function SkillPill({ skill, onClick }: SkillPillProps) {
         className="h-2 w-2 rounded-full"
       ></span>
       <span className="text-[10px]">{domainCodes[domain]}</span>
-      <span className="px-1">{name_en}</span>
+      <span className="px-1 text-sm">{name_en}</span>
       <span className="text-[10px] text-gray-600 dark:text-gray-400">
         {getSkillCount(domain, name_en)}
       </span>
