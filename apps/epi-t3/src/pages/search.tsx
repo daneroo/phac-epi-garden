@@ -28,6 +28,14 @@ const SearchPage: NextPage = () => {
   const [openExportModal, setOpenExportModal] = useState<string | undefined>();
   const [openRFIModal, setOpenRFIModal] = useState<string | undefined>();
 
+  const onClearAllSkills = () => {
+    setSelectedSkills([]);
+    // reset pagination when search criteria changes
+    setPage(0);
+    // reset selectedPersons when search criteria changes
+    setSelectedPersons([]);
+  };
+
   const onPillClickSelect = (skill: Skill) => {
     // You may want to prevent the same skill from being added multiple times
     if (
@@ -168,7 +176,7 @@ const SearchPage: NextPage = () => {
             />
             {selectedSkills.length > 0 && (
               <button
-                onClick={() => setSelectedSkills([])}
+                onClick={onClearAllSkills}
                 className="rounded bg-blue-500 px-2 text-white hover:bg-blue-600"
               >
                 Clear All
