@@ -1,11 +1,10 @@
-"use client";
-
 import React, { useEffect, useState, type ReactNode } from "react";
 import type { NextPage } from "next";
 import Head from "next/head";
 import Link from "next/link";
 import {
   ArrowDownCircleIcon,
+  ArrowTopRightOnSquareIcon,
   InformationCircleIcon,
 } from "@heroicons/react/24/outline";
 import { Button, Modal, Tabs } from "flowbite-react";
@@ -261,10 +260,14 @@ const SearchPage: NextPage = () => {
                               onChange={() => handleSelectPerson(p.id)}
                             />
                           </td>
-
-                          <th scope="row" className="px-6 py-4 ">
-                            <Link href={`/persons/${p.id}`}>
-                              {p.family_name}, {p.given_name}
+                          <th scope="row" className="px-6 py-4">
+                            {/* open in separate tab (to not loose the search context and selection) */}
+                            {/* never break line between given name and external link icon */}
+                            <Link href={`/persons/${p.id}`} target="_blank">
+                              {p.family_name}, {/* prettier-ignore */}
+                              <span className="whitespace-nowrap">
+                                {p.given_name} <ArrowTopRightOnSquareIcon className="h-4 w-4 inline align-middle -mt-1" />
+                              </span>
                             </Link>
                           </th>
                           <td className="px-6 py-4">
