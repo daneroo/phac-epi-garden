@@ -175,7 +175,7 @@ const SearchPage: NextPage = () => {
               </button>
             )}
           </div>
-          <div>Resulting in {count} persons.</div>
+          Resulting in {count !== undefined ? count : "..."} persons.
         </div>
 
         <Tabs.Group aria-label="Tabs with underline" style="underline">
