@@ -21,8 +21,13 @@ export function SkillSearch({
 
   return (
     <>
-      <p>Add some search criteria, by clicking on a Skill.</p>
-      <p>You can refine by searching within the remaining skills below</p>
+      <p className="pb-2">
+        Add some search criteria (above), by clicking on a skill below.
+      </p>
+      <p>
+        You can refine your choices by searching within the remaining skills
+        below
+      </p>
       <form className="mb-4 flex max-w-lg items-center">
         <label htmlFor="simple-search" className="sr-only">
           Search

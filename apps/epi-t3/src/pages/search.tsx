@@ -166,7 +166,6 @@ const SearchPage: NextPage = () => {
             {selectedSkills.length > 1 && (
               <span> people who have ALL these skills: </span>
             )}
-            :
           </div>
           <div className="flex flex-wrap gap-2 pl-4">
             <SkillPills
@@ -193,7 +192,7 @@ const SearchPage: NextPage = () => {
               allSkills={remainingSkills}
             />
           </Tabs.Item>
-          <Tabs.Item title="2-Show Selected Persons">
+          <Tabs.Item title="2-Show Matching Persons">
             <div className="flex flex-col items-start justify-between sm:flex-row sm:items-center">
               <div>
                 These are the persons that meet your skill search criteria
