@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState, type ReactNode } from "react";
+import React, { useEffect, useState, type ReactNode } from "react";
 import type { NextPage } from "next";
 import Head from "next/head";
 import Link from "next/link";
@@ -268,12 +268,25 @@ const SearchPage: NextPage = () => {
                             </Link>
                           </th>
                           <td className="px-6 py-4">
-                            {p.capabilities
-                              .map(
-                                (c) =>
-                                  c.name_en + ` (${c.self_identified_level})`,
-                              )
-                              .join(", ")}
+                            {p.capabilities.map((c, index) => (
+                              // if the skill is also selected, make it bold, but not the separating comma
+                              <React.Fragment key={index}>
+                                <span
+                                  className={`${
+                                    selectedSkills.some(
+                                      (skill) =>
+                                        skill.domain === c.domain &&
+                                        skill.name_en === c.name_en,
+                                    )
+                                      ? "font-bold"
+                                      : ""
+                                  }`}
+                                >
+                                  {c.name_en} ({c.self_identified_level})
+                                </span>
+                                {index !== p.capabilities.length - 1 && ", "}
+                              </React.Fragment>
+                            ))}
                           </td>
                         </tr>
                       ))}
