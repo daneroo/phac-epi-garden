@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, type ReactNode } from "react";
+import { useEffect, useState, type ReactNode } from "react";
 import type { NextPage } from "next";
 import Head from "next/head";
 import Link from "next/link";
@@ -21,6 +21,7 @@ import {
 const SearchPage: NextPage = () => {
   const [selectedSkills, setSelectedSkills] = useState<Skill[]>([]);
   const [selectedPersons, setSelectedPersons] = useState<string[]>([]);
+  const [selectAllPersons, setSelectAllPersons] = useState(false);
   const [page, setPage] = useState(0);
 
   // Modal controls for my 2 actions
@@ -63,6 +64,17 @@ const SearchPage: NextPage = () => {
       setSelectedPersons(selectedPersons.filter((personId) => personId !== id));
     } else {
       setSelectedPersons([...selectedPersons, id]);
+    }
+  };
+
+  const handleSelectAllPersons = () => {
+    if (selectAllPersons) {
+      // Deselect all persons
+      setSelectedPersons([]);
+    } else {
+      // Select all persons
+      const allPersonIds = toShow?.map((p) => p.id) || [];
+      setSelectedPersons(allPersonIds);
     }
   };
 
@@ -112,6 +124,19 @@ const SearchPage: NextPage = () => {
   }));
 
   const nextCursor = data?.pages[page]?.nextCursor;
+
+  // Update selectAllPersons state when selectedPersons or toShow changes
+  useEffect(() => {
+    if (selectedPersons.length === toShow?.length) {
+      setSelectAllPersons(true);
+    } else {
+      setSelectAllPersons(false);
+    }
+  }, [selectedPersons, toShow]);
+
+  const isSelectedAllPersonsIndeterminate =
+    selectedPersons.length > 0 &&
+    selectedPersons.length < (toShow?.length || 0);
 
   return (
     <>
@@ -197,7 +222,16 @@ const SearchPage: NextPage = () => {
                       <tr>
                         <tr>
                           <th scope="col" className="px-6 py-3">
-                            Select
+                            <input
+                              type="checkbox"
+                              checked={selectAllPersons}
+                              onChange={handleSelectAllPersons}
+                              className={`${
+                                isSelectedAllPersonsIndeterminate
+                                  ? "bg-blue-200 dark:bg-blue-800"
+                                  : ""
+                              }`}
+                            />
                           </th>
                         </tr>
                         <th scope="col" className="px-6 py-3">
