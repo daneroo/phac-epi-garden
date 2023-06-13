@@ -1,0 +1,35 @@
+# DSCO Deep Dive 2023-06-14
+
+Possible topics
+
+- What is epicenter
+- What is a monorepo?
+- What is an API?
+- What is a modern full stack web app?
+- How's epicenter deployed
+  - Provisioning lifecycle(s)
+  - Right tool for the right job
+- UX design to DX Design
+
+### Modern Stack Parts
+
+### Modern stack deployment
+
+```mermaid
+graph TB
+  A["Codebase (Frontend & Backend)"]
+  B["Vercel/Netlify/Cloudflare/Deno deploy Deployment"]
+  C["Edge Network (CDN)"]
+  D1["Serverless Function 1"]
+  Dn["Serverless Function n"]
+  E["User Browser"]
+  F["Load Balancer/Router"]
+  A -- Build --> B
+  B -- Distribute --> C
+  B -- Deploy --> D1
+  B -- Deploy --> Dn
+  E -- Request --> F
+  F -- Static Content --> C
+  F -- Dynamic Content --> D1
+  F -- Dynamic Content --> Dn
+```
