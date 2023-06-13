@@ -80,7 +80,7 @@ export const Header: FC<Record<string, never>> = function () {
             </Navbar.Link>
           </Navbar.Collapse>
         </Navbar>
-      </div>{" "}
+      </div>
     </header>
   );
 };

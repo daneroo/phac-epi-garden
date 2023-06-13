@@ -191,7 +191,6 @@ const SearchPage: NextPage = () => {
                 These are the persons that meet your skill search criteria
               </div>
               <div className="min-w-max flex-shrink-0">
-                {" "}
                 <Button.Group>
                   <Button
                     color="gray"
@@ -394,7 +393,8 @@ const SearchPage: NextPage = () => {
               .map((person) => (
                 <li key={person.id}>{decodeURIComponent(person.email)}</li>
               ))}
-        </ul>{" "}
+        </ul>
+        ...
       </DummyModal>
     </>
   );
