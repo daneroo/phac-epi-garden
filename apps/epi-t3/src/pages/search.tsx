@@ -367,7 +367,9 @@ const SearchPage: NextPage = () => {
           Here you can export your selected persons to CSV
         </p>
         <pre>
+          {/* CSV Headers */}
           {`Family Name, Given Name, Email, ID\n`}
+          {/* lookup selectedPersons (id) in toShow array (all fields) */}
           {toShow &&
             toShow
               .filter((person) => selectedPersons.includes(person.id))
@@ -378,7 +380,8 @@ const SearchPage: NextPage = () => {
                     person.given_name
                   }, ${decodeURIComponent(person.email)}, ${person.id}\n`,
               )}
-          ...
+          {/* omit the ellipsis if slice was complete */}
+          {selectedPersons.length > 5 && "..."}
         </pre>
       </DummyModal>
 
@@ -414,7 +417,8 @@ const SearchPage: NextPage = () => {
                 <li key={person.id}>{decodeURIComponent(person.email)}</li>
               ))}
         </ul>
-        ...
+        {/* omit the ellipsis if slice was complete */}
+        {selectedPersons.length > 5 && "..."}
       </DummyModal>
     </>
   );
