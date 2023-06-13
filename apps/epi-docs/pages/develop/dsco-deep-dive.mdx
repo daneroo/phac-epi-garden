@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 # DSCO Deep Dive 2023-06-14
 
 Possible topics
@@ -11,19 +13,34 @@ Possible topics
   - Right tool for the right job
 - UX design to DX Design
 
-### Modern Stack Parts
+## Modern Stack Parts
+
+### Lighthouse Scores
+
+<Image
+  className="nx-mt-2"
+  src="/images/Epi-Lighthouse-Score-100.png"
+  alt="Epicenter Lighthouse Score"
+  width={368}
+  height={169}
+/>
 
 ### Modern stack deployment
+
+High-Performance Developer-Centric Cloud Platforms
+such as Vercel, Netlify, Cloudflare, Deno Deploy
 
 ```mermaid
 graph TB
   A["Codebase (Frontend & Backend)"]
-  B["Vercel/Netlify/Cloudflare/Deno deploy Deployment"]
+  B["Vercel Deployment"]
   C["Edge Network (CDN)"]
   D1["Serverless Function 1"]
   Dn["Serverless Function n"]
   E["User Browser"]
   F["Load Balancer/Router"]
+  G["(Serverless) Database"]
+  H["(Edge) Key-Value Store"]
   A -- Build --> B
   B -- Distribute --> C
   B -- Deploy --> D1
@@ -32,4 +49,8 @@ graph TB
   F -- Static Content --> C
   F -- Dynamic Content --> D1
   F -- Dynamic Content --> Dn
+  D1 -- Interact --> G
+  Dn -- Interact --> G
+  D1 -- Interact --> H
+  Dn -- Interact --> H
 ```
