@@ -2,7 +2,11 @@ import { useState } from "react";
 import type { NextPage } from "next";
 import Head from "next/head";
 import Link from "next/link";
-import { Tabs } from "flowbite-react";
+import {
+  ArrowDownCircleIcon,
+  InformationCircleIcon,
+} from "@heroicons/react/24/outline";
+import { Button, Tabs } from "flowbite-react";
 
 import { api } from "~/utils/api";
 import {
@@ -14,6 +18,7 @@ import {
 
 const SearchPage: NextPage = () => {
   const [selectedSkills, setSelectedSkills] = useState<Skill[]>([]);
+  const [selectedPersons, setSelectedPersons] = useState<string[]>([]);
   const [page, setPage] = useState(0);
 
   const onPillClickSelect = (skill: Skill) => {
@@ -24,7 +29,10 @@ const SearchPage: NextPage = () => {
       )
     ) {
       setSelectedSkills([...selectedSkills, skill]);
+      // reset pagination when search criteria changes
       setPage(0);
+      // reset selectedPersons when search criteria changes
+      setSelectedPersons([]);
     }
   };
 
@@ -38,7 +46,18 @@ const SearchPage: NextPage = () => {
           ),
       ),
     );
+    // reset pagination when search criteria changes
     setPage(0);
+    // reset selectedPersons when search criteria changes
+    setSelectedPersons([]);
+  };
+
+  const handleSelectPerson = (id: string) => {
+    if (selectedPersons.includes(id)) {
+      setSelectedPersons(selectedPersons.filter((personId) => personId !== id));
+    } else {
+      setSelectedPersons([...selectedPersons, id]);
+    }
   };
 
   // skills that are notSelected
@@ -130,7 +149,24 @@ const SearchPage: NextPage = () => {
             />
           </Tabs.Item>
           <Tabs.Item title="2-Show Selected Persons">
-            These are the persons that meet your skill search criteria
+            <div className="flex flex-col items-start justify-between sm:flex-row sm:items-center">
+              <div>
+                These are the persons that meet your skill search criteria
+              </div>
+              <div className="min-w-max flex-shrink-0">
+                {" "}
+                <Button.Group>
+                  <Button color="gray" disabled={selectedPersons.length === 0}>
+                    <ArrowDownCircleIcon className="mr-3 h-6 w-6 text-gray-500" />
+                    <p>Export</p>
+                  </Button>
+                  <Button color="gray" disabled={selectedPersons.length === 0}>
+                    <InformationCircleIcon className="mr-3 h-6 w-6 text-gray-500" />
+                    <p>Request for Information</p>
+                  </Button>
+                </Button.Group>
+              </div>
+            </div>
             {data ? (
               toShow?.length === 0 ? (
                 <span>There are no people!</span>
@@ -139,6 +175,11 @@ const SearchPage: NextPage = () => {
                   <table className="w-full text-left text-sm text-gray-500 dark:text-gray-400">
                     <thead className="bg-gray-50 text-xs uppercase dark:bg-gray-700 dark:text-gray-400">
                       <tr>
+                        <tr>
+                          <th scope="col" className="px-6 py-3">
+                            Select
+                          </th>
+                        </tr>
                         <th scope="col" className="px-6 py-3">
                           Name
                         </th>
@@ -153,6 +194,14 @@ const SearchPage: NextPage = () => {
                           key={p.id}
                           className="border-b bg-white dark:border-gray-700 dark:bg-gray-800"
                         >
+                          <td className="px-6 py-4">
+                            <input
+                              type="checkbox"
+                              checked={selectedPersons.includes(p.id)}
+                              onChange={() => handleSelectPerson(p.id)}
+                            />
+                          </td>
+
                           <th scope="row" className="px-6 py-4 ">
                             <Link href={`/persons/${p.id}`}>
                               {p.family_name}, {p.given_name}
@@ -192,9 +241,9 @@ const SearchPage: NextPage = () => {
                           xmlns="http://www.w3.org/2000/svg"
                         >
                           <path
-                            fill-rule="evenodd"
+                            fillRule="evenodd"
                             d="M7.707 14.707a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 1.414L5.414 9H17a1 1 0 110 2H5.414l2.293 2.293a1 1 0 010 1.414z"
-                            clip-rule="evenodd"
+                            clipRule="evenodd"
                           ></path>
                         </svg>
                         Prev
@@ -213,9 +262,9 @@ const SearchPage: NextPage = () => {
                           xmlns="http://www.w3.org/2000/svg"
                         >
                           <path
-                            fill-rule="evenodd"
+                            fillRule="evenodd"
                             d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z"
-                            clip-rule="evenodd"
+                            clipRule="evenodd"
                           ></path>
                         </svg>
                       </button>
