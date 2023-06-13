@@ -199,9 +199,16 @@ Also consider flowbite
 
 ## Commit counts
 
-as of 2023-06-12:
+As of 2023-06-12:
 
 ```bash
+# Commits outside of Work hours
+$ git log --pretty=format:'%ad' --date=format:'%a %H' | awk '!(/Tue|Wed|Thu [09-16]/)' |wc -l
+      83
+# Commits inside of Work hours
+$ git log --pretty=format:'%ad' --date=format:'%a %H' | awk '(/Tue|Wed|Thu [09-16]/)' |wc -l
+      47
+
 #  per day of the week, sorted
 git log --pretty=format:'%ad' --date=format:'%a' | sort | uniq -c | awk '{print $2,$1}' | awk 'BEGIN{split("Sun Mon Tue Wed Thu Fri Sat",a);for(i in a)d[a[i]]=i}{print d[$1],$0}' | sort -n | awk '{printf("%s (%02d): ", $2, $3); for(i=0;i<$3;i++){printf("#")}; print ""}'
 Sun (11): ###########
