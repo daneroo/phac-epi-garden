@@ -197,6 +197,47 @@ Also consider flowbite
 - [shadcdn/ui](https://ui.shadcn.com/)
 - [Radix UI](https://www.radix-ui.com/)
 
+## Commit counts
+
+as of 2023-06-12:
+
+```bash
+#  per day of the week, sorted
+git log --pretty=format:'%ad' --date=format:'%a' | sort | uniq -c | awk '{print $2,$1}' | awk 'BEGIN{split("Sun Mon Tue Wed Thu Fri Sat",a);for(i in a)d[a[i]]=i}{print d[$1],$0}' | sort -n | awk '{printf("%s (%02d): ", $2, $3); for(i=0;i<$3;i++){printf("#")}; print ""}'
+Sun (11): ###########
+Mon (13): #############
+Tue (22): ######################
+Wed (24): ########################
+Thu (17): #################
+Fri (06): ######
+Sat (36): ####################################
+
+# per hour
+git log --pretty=format:'%ad' --date=format:%H | sort | uniq -c | awk '{print $2,$1}' | sort -n | awk '{printf("%02d - %02d (%2d): ", $1, $1+1, $2); for(i=0;i<$2;i++){printf("#")}; print ""}'
+# Commits per hour of day
+00 - 01 ( 6): ######
+01 - 02 ( 4): ####
+02 - 03 ( 6): ######
+03 - 04 ( 2): ##
+04 - 05 ( 2): ##
+09 - 10 ( 2): ##
+10 - 11 ( 1): #
+11 - 12 ( 4): ####
+12 - 13 ( 6): ######
+13 - 14 (11): ###########
+14 - 15 ( 8): ########
+15 - 16 (14): ##############
+16 - 17 (11): ###########
+17 - 18 (15): ###############
+18 - 19 ( 6): ######
+19 - 20 ( 4): ####
+20 - 21 ( 4): ####
+21 - 22 ( 5): #####
+22 - 23 (12): ############
+23 - 24 ( 6): ######
+
+```
+
 ## References
 
 The stack originates from [create-t3-app](https://github.com/t3-oss/create-t3-app).
