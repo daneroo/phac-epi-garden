@@ -1,4 +1,6 @@
-import { useState } from "react";
+"use client";
+
+import { useState, type ReactNode } from "react";
 import type { NextPage } from "next";
 import Head from "next/head";
 import Link from "next/link";
@@ -6,7 +8,7 @@ import {
   ArrowDownCircleIcon,
   InformationCircleIcon,
 } from "@heroicons/react/24/outline";
-import { Button, Tabs } from "flowbite-react";
+import { Button, Modal, Tabs } from "flowbite-react";
 
 import { api } from "~/utils/api";
 import {
@@ -20,6 +22,10 @@ const SearchPage: NextPage = () => {
   const [selectedSkills, setSelectedSkills] = useState<Skill[]>([]);
   const [selectedPersons, setSelectedPersons] = useState<string[]>([]);
   const [page, setPage] = useState(0);
+
+  // Modal controls for my 2 actions
+  const [openExportModal, setOpenExportModal] = useState<string | undefined>();
+  const [openRFIModal, setOpenRFIModal] = useState<string | undefined>();
 
   const onPillClickSelect = (skill: Skill) => {
     // You may want to prevent the same skill from being added multiple times
@@ -98,7 +104,13 @@ const SearchPage: NextPage = () => {
     setPage((prev) => prev - 1);
   };
 
-  const toShow = data?.pages[page]?.items;
+  // const toShow = data?.pages[page]?.items;
+  // TODO: CLEAN UP THE DATA AT SOURCE: emails contain spaces!
+  const toShow = data?.pages[page]?.items?.map((person) => ({
+    ...person,
+    email: person.email.replace(/\s/g, ""),
+  }));
+
   const nextCursor = data?.pages[page]?.nextCursor;
 
   return (
@@ -156,11 +168,19 @@ const SearchPage: NextPage = () => {
               <div className="min-w-max flex-shrink-0">
                 {" "}
                 <Button.Group>
-                  <Button color="gray" disabled={selectedPersons.length === 0}>
+                  <Button
+                    color="gray"
+                    disabled={selectedPersons.length === 0}
+                    onClick={() => setOpenExportModal("dismissible")}
+                  >
                     <ArrowDownCircleIcon className="mr-3 h-6 w-6 text-gray-500" />
                     <p>Export</p>
                   </Button>
-                  <Button color="gray" disabled={selectedPersons.length === 0}>
+                  <Button
+                    color="gray"
+                    disabled={selectedPersons.length === 0}
+                    onClick={() => setOpenRFIModal("dismissible")}
+                  >
                     <InformationCircleIcon className="mr-3 h-6 w-6 text-gray-500" />
                     <p>Request for Information</p>
                   </Button>
@@ -284,7 +304,102 @@ const SearchPage: NextPage = () => {
           </Tabs.Item> */}
         </Tabs.Group>
       </main>
+      <DummyModal
+        title="Export"
+        actionButtonText="Export to CSV"
+        openModal={openExportModal}
+        setOpenModal={setOpenExportModal}
+      >
+        <p className="text-base leading-relaxed text-gray-500 dark:text-gray-400">
+          Here you can export your selected persons to CSV
+        </p>
+        <pre>
+          {`Family Name, Given Name, Email, ID\n`}
+          {toShow &&
+            toShow
+              .filter((person) => selectedPersons.includes(person.id))
+              .slice(0, 5)
+              .map(
+                (person) =>
+                  `${person.family_name}, ${
+                    person.given_name
+                  }, ${decodeURIComponent(person.email)}, ${person.id}\n`,
+              )}
+          ...
+        </pre>
+      </DummyModal>
+
+      <DummyModal
+        title="Request For Information"
+        actionButtonText="Send Emails"
+        openModal={openRFIModal}
+        setOpenModal={setOpenRFIModal}
+      >
+        <p className="text-base leading-relaxed text-gray-500 dark:text-gray-400">
+          This is where we would send emails
+        </p>
+        <p className="text-base leading-relaxed text-gray-500 dark:text-gray-400">
+          EMAIL TEMPLATE:
+          <br />
+          Subject: Request to Update Your Profile
+          <br />
+          Dear [First Name], We are currently updating our records and would
+          like to kindly ask you to update your epicenter profile. Your profile
+          information is essential to ensure we have the most accurate and
+          up-to-date information.
+          <br />
+          Thank you for your prompt attention to this matter.
+          <br />
+          The epicenter team.
+        </p>
+        <ul>
+          {toShow &&
+            toShow
+              .filter((person) => selectedPersons.includes(person.id))
+              .slice(0, 5)
+              .map((person) => (
+                <li key={person.id}>{decodeURIComponent(person.email)}</li>
+              ))}
+        </ul>{" "}
+      </DummyModal>
     </>
+  );
+};
+
+interface DummyModalProps {
+  title: string;
+  actionButtonText: string;
+  openModal?: string;
+  setOpenModal: (value: string | undefined) => void;
+  children?: ReactNode; // add this line
+}
+
+const DummyModal: React.FC<DummyModalProps> = ({
+  title,
+  actionButtonText,
+  openModal,
+  setOpenModal,
+  children,
+}) => {
+  return (
+    <Modal
+      dismissible
+      show={openModal === "dismissible"}
+      onClose={() => setOpenModal(undefined)}
+    >
+      <Modal.Header>{title}</Modal.Header>
+      <Modal.Body>
+        <div className="space-y-6">{children}</div>
+      </Modal.Body>
+      <Modal.Footer>
+        <Button onClick={() => setOpenModal(undefined)}>
+          {actionButtonText}
+        </Button>
+        <Button color="gray" onClick={() => setOpenModal(undefined)}>
+          Dismiss
+        </Button>
+      </Modal.Footer>
+    </Modal>
   );
 };
 
