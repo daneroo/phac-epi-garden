@@ -13,7 +13,28 @@ Possible topics
   - Right tool for the right job
 - UX design to DX Design
 
-## Modern Stack Parts
+## Stack Parts
+
+### Our Stack
+
+```mermaid
+graph LR
+  A["Browser"]
+  B["Cloud Run"]
+  C["Database"]
+  D["GitHub"]
+  E(["Cloud Magic SSL"])
+  F(["Cloud Magic DBConnection"])
+
+  A --> E
+  E --> B
+  B --> F
+  F --> C
+  D -- "Deploy" --> B
+  D -- "Provision" --> C
+  D -- "Provision" --> E
+  D -- "Provision" --> F
+```
 
 ### Lighthouse Scores
 

@@ -7,7 +7,5 @@
   "persistence": "Persistence / API",
   "styling": "Styling",
   "logo": "Project Logo",
-  "dsco-deep-dive": {
-    "display": "hidden"
-  }
+  "dsco-deep-dive": "DSCO Deep Dive"
 }
