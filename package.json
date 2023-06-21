@@ -2,7 +2,7 @@
   "name": "phac-epi-garden",
   "private": true,
   "engines": {
-    "node": ">=v18.16.0"
+    "node": ">=v18.15.0"
   },
   "packageManager": "pnpm@8.5.0",
   "scripts": {
