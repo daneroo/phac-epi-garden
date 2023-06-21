@@ -4,7 +4,9 @@ Monorepo based on [create-t3-turbo](https://github.com/t3-oss/create-t3-turbo)
 
 ## TODO
 
-- [ ] Github Auth
+- [ ] Auth
+  - [ ] GitHub
+  - [ ] Passage Passkeys
 - [ ] Finish Seed
 - [ ] remove nextjs from repo
 - [ ] feature branches/pr's not deployed correctly (neon branch?)
