@@ -170,7 +170,7 @@ const SearchPage: NextPage = () => {
             <SkillPills
               skills={selectedSkills}
               onClick={onPillClickRemove}
-              emptyMessage="Anyone! (Add some skills criteria to refine the search.)"
+              emptyMessage="Anyone! (Add some skills criteria to refine the search)"
             />
             {selectedSkills.length > 0 && (
               <button
