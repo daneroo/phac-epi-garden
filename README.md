@@ -4,14 +4,8 @@ Monorepo based on [create-t3-turbo](https://github.com/t3-oss/create-t3-turbo)
 
 ## TODO
 
-- [ ] Cloud Build
 - [ ] Github Auth
-  - <https://github.com/vercel/nextjs-planetscale-nextauth-tailwindcss-template>
-- [ ] people and role (search)
-  - [useInfiniteQuery](https://trpc.io/docs/reactjs/useinfinitequery)
-  - <https://dev.to/esponges/react-query-infinite-query-and-t3-stack-34nb>
-- [ ] people/id and role/id with details
-- [ ] [prisma+Yoga+graphQl](https://www.prisma.io/blog/fullstack-nextjs-graphql-prisma-oklidw1rhw)
+- [ ] Finish Seed
 - [ ] remove nextjs from repo
 - [ ] feature branches/pr's not deployed correctly (neon branch?)
 - Refactor database dump/usernames, etc
@@ -20,7 +14,16 @@ Monorepo based on [create-t3-turbo](https://github.com/t3-oss/create-t3-turbo)
   - Axiom
   - Changing stack: <https://www.youtube.com/watch?v=hgglCqAXHuE>
     - [shadcdn/ui](https://ui.shadcn.com/)
-- `----- DONE (for now) -----`
+
+### DONE
+
+- [x] Cloud Build
+  - <https://github.com/vercel/nextjs-planetscale-nextauth-tailwindcss-template>
+- [x] people and role (search)
+  - [useInfiniteQuery](https://trpc.io/docs/reactjs/useinfinitequery)
+  - <https://dev.to/esponges/react-query-infinite-query-and-t3-stack-34nb>
+- [x] people/id and role/id with details
+- [x] [prisma+Yoga+graphQl](https://www.prisma.io/blog/fullstack-nextjs-graphql-prisma-oklidw1rhw)
 - [x] Dockerize apps: ~200-220 MB
 - [x] [Flowbite](https://flowbite.com/)
 - [x] create `apps/docs`
@@ -93,7 +96,7 @@ pnpm db:generate
 pnpm db:push
 pnpm db:seed # WIP
 
-# both od these are deprecated (json data dump)
+# both of these are deprecated (json data dump)
 pnpm db:dump
 pnpm db:restore # too slow for remote
 
@@ -194,6 +197,8 @@ NEXTAUTH_SECRET=`openssl rand -base64 32` # newly generated for prod
 Also consider flowbite
 
 - [Tailwind Cheat Sheet](https://flowbite.com/tools/tailwind-cheat-sheet/)
+- [Flowbite](https://flowbite.com/)
+- [Flowbite React](https://www.flowbite-react.com/)
 - [shadcdn/ui](https://ui.shadcn.com/)
 - [Radix UI](https://www.radix-ui.com/)
 
