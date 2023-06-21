@@ -11,10 +11,10 @@
     "type-check": "tsc --noEmit"
   },
   "dependencies": {
-    "@next-auth/prisma-adapter": "^1.0.6",
+    "@next-auth/prisma-adapter": "^1.0.7",
     "@phac/db": "^0.1.0",
     "@t3-oss/env-nextjs": "^0.3.1",
-    "next": "^13.4.3",
+    "next": "^13.4.7",
     "next-auth": "^4.22.1",
     "react": "18.2.0",
     "react-dom": "18.2.0",
@@ -22,7 +22,7 @@
   },
   "devDependencies": {
     "@phac/eslint-config": "^0.1.0",
-    "eslint": "^8.41.0",
-    "typescript": "^5.0.4"
+    "eslint": "^8.43.0",
+    "typescript": "^5.1.3"
   }
 }
