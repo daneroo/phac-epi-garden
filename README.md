@@ -4,6 +4,7 @@ Monorepo based on [create-t3-turbo](https://github.com/t3-oss/create-t3-turbo)
 
 ## TODO
 
+- [ ] Build problem (deps) only on vercel
 - [ ] Auth
   - [ ] GitHub
   - [ ] Passage Passkeys
