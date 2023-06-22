@@ -5,6 +5,8 @@ Monorepo based on [create-t3-turbo](https://github.com/t3-oss/create-t3-turbo)
 ## TODO
 
 - [ ] Build problem (deps) only on vercel
+  - try override vercel's install command to: pnpm i --frozen-lockfile
+  - [ ] re-enable turbo cache for build:
 - [ ] Auth
   - [ ] GitHub
   - [ ] Passage Passkeys
