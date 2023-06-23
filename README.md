@@ -5,6 +5,7 @@ Monorepo based on [create-t3-turbo](https://github.com/t3-oss/create-t3-turbo)
 ## TODO
 
 - [ ] Build problem (deps) only on vercel
+  - [ ] ENABLE_EXPERIMENTAL_COREPACK=1 on vercel fixed the build (cache is off)
   - [ ] re-enable turbo cache for build:
 - [ ] Auth
   - [ ] GitHub
